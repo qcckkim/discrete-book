@@ -235,7 +235,7 @@
 
   <exercise permid="SLc">
 
-    <introduction oldpermid="uis">
+    <introduction permid="uis">
       <p permid="jCj">
         Suppose you wanted to draw a quadrilateral using the dots below as vertices
         (corners).

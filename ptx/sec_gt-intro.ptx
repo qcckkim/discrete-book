@@ -684,7 +684,7 @@
   <assemblage permid="VNz">
     <title>Subgraphs</title>
       <idx><h>subgraph</h></idx>
-    <p oldpermid="cBa">
+    <p permid="cBa">
       We say that <m>G' = (V', E')</m> is a <term>subgraph</term>
       of <m>G = (V, E)</m>, and write <m>G' \subseteq G</m>,
       provided <m>V' \subseteq V</m> and <m>E' \subseteq E</m>.
@@ -952,9 +952,9 @@
           </p>
         </li>
 
-        <li oldpermid="Kjb">
+        <li permid="Kjb">
           <title><m>P_n</m></title>
-          <p oldpermid="NNB">
+          <p permid="NNB">
             The path on <m>n+1</m> vertices
             (so <m>n</m> edges),
             just one long path.
@@ -1006,7 +1006,7 @@
 				</latex-image>
       </image>
 
-      <image oldpermid="gPu">
+      <image permid="gPu">
 
 				<latex-image>
 					\begin{tikzpicture}[scale=.6]
@@ -1019,7 +1019,7 @@
     </sidebyside>
   </paragraphs>
 
-  <paragraphs oldpermid="drY">
+  <paragraphs permid="drY">
     <title>Graph Theory Definitions</title>
     <p>
       There are a lot of definitions to keep track of in graph theory.

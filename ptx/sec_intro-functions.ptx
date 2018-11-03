@@ -56,9 +56,9 @@
       There can only be one answer for any particular function.
     </p>
 
-    <example oldpermid="Zsm">
+    <example permid="Zsm">
       <statement>
-        <p oldpermid="jat">
+        <p permid="jat">
           The following are all examples of functions:
 
           <ol permid="nvR">
@@ -155,10 +155,7 @@
         </p>
       </statement>
     </example>
-  </introduction>
 
-  <subsection>
-    <title>Describing Functions</title>
     <p>
       It is worth making a distinction between a function and its description.
       The function is the abstract mathematical object that in some way exists whether or not anyone ever talks about it.
@@ -622,7 +619,7 @@
         </p>
       </solution>
     </example>
-  </subsection>
+  </introduction>
 
   <subsection permid="Ojn" xml:id="subsec_surj-inj-bij">
     <title>Surjections, Injections, and Bijections</title>
@@ -930,7 +927,7 @@
     </p>
   </subsection>
 <!-- Modify this to include the image of a set.  Then make some exercises about it -->
-  <subsection oldpermid="uqw">
+  <subsection permid="uqw">
     <title>Image and Inverse Image</title>
     <p permid="MWQ">
       When discussing functions,
@@ -1014,18 +1011,18 @@
       (since the function <m>f\inv</m> might not exist).
     </p>
 
-    <example oldpermid="gWL">
+    <example permid="gWL">
       <statement>
-        <p oldpermid="MmW">
+        <p permid="MmW">
           Consider the function <m>f:\{1,2,3,4,5,6\} \to \{a,b,c,d\}</m> given by
-          <me oldpermid="bav">
+          <me permid="bav">
             f = \begin{pmatrix}1 \amp 2 \amp 3 \amp 4 \amp 5 \amp 6 \\ a \amp a \amp b \amp b \amp b \amp c\end{pmatrix}
           </me>.
           Find <m>f(\{1,2,3\})</m>,
           <m>f\inf(\{a,b\})</m>, and <m>f\inv(d)</m>.
         </p>
       </statement>
-      <solution oldpermid="CEP">
+      <solution permid="CEP">
         <p>
           <m>f(\{1,2,3\}) = \{a,b\}</m> since <m>a</m> and <m>b</m> are the elements in the codomain to which <m>f</m> sends <m>1</m> and <m>2</m>.
         </p>
