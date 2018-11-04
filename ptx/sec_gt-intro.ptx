@@ -908,7 +908,7 @@
   </p>
 
 	<!-- TODO: give picture example of bipartite and not bipartite graphs -->
-  <paragraphs>
+  <paragraphs permid="xkP">
     <title>Named Graphs</title>
     <p permid="XRh">
       Some graphs are used more than others, and get special names.
