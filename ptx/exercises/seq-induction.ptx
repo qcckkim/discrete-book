@@ -2,6 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="Qie" xml:id="exercises_seq-induction">
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         On the way to the market,
@@ -37,7 +38,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution>
       <p>
         <ol>
@@ -80,15 +83,19 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="hIS">
+ 	 	<webwork>
     <statement>
       <p permid="hBO">
         Use induction to prove for all
         <m>n \in \N</m> that <m>\d\sum_{k=0}^n 2^k = 2^{n+1} - 1</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="dIT">
 
       <proof permid="JQc">
@@ -119,14 +126,18 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="NQb">
+ 	 	<webwork>
     <statement>
       <p permid="NIX">
         Prove that <m>7^n - 1</m> is a multiple of 6 for all <m>n \in \N</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="pXl">
 
       <proof permid="Weu">
@@ -159,14 +170,18 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="tXk">
+ 	 	<webwork>
     <statement>
       <p permid="tQg">
         Prove that <m>1 + 3 + 5 + \cdots + (2n-1) = n^2</m> for all <m>n \ge 1</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ClD">
 
       <proof permid="isM">
@@ -195,14 +210,18 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="aet">
+ 	 	<webwork>
     <statement>
       <p permid="ZXp">
         Prove that <m>F_0 + F_2 + F_4 + \cdots + F_{2n} = F_{2n+1} - 1</m> where <m>F_n</m> is the <m>n</m>th Fibonacci number.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="OzV">
 
       <proof permid="uHe">
@@ -230,15 +249,19 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="GlC">
+ 	 	<webwork>
     <statement>
       <p permid="Gey">
         Prove that <m>2^n \lt n!</m> for all <m>n \ge 4</m>.
         (Recall, <m>n! = 1\cdot 2 \cdot 3 \cdot \cdots\cdot n</m>.)
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="aOn">
 
       <proof permid="GVw">
@@ -269,9 +292,11 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="msL">
+ 	 	<webwork>
     <statement>
       <p permid="mlH">
         Prove, by mathematical induction,
@@ -280,10 +305,14 @@
         (<m>F_0 = 0</m>,
         <m>F_1 = 1</m> and <m>F_n = F_{n-1} + F_{n-2}</m>).
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="SzU">
+ 	 	<webwork>
     <statement>
       <p permid="SsQ">
         Zombie Euler and Zombie Cauchy,
@@ -297,10 +326,14 @@
         That is, explain what the base case and inductive case are,
         and why they together prove that Zombie Cauchy will have more followers on the 4th day.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="yHd">
+ 	 	<webwork>
     <statement>
       <p permid="yzZ">
         Find the largest number of points which a football team cannot get exactly using just 3-point field goals and 7-point touchdowns
@@ -308,15 +341,19 @@
         missed extra points, and two point conversions).
         Prove your answer is correct by mathematical induction.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         It is not possible to score exactly 11 points.  Can you prove that you can score <m>n</m> points for any <m>n \ge 12</m>?
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="eOm">
+ 	 	<webwork>
     <statement>
       <p permid="eHi">
         Prove that the sum of <m>n</m> squares can be found as follows
@@ -324,25 +361,33 @@
           1^2 +2^2 +3^2+...+n^2 = \frac{n(n+1)(2n+1)}{6}
         </me>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Prove that the sum of the interior angles of a convex <m>n</m>-gon is
         <m>(n-2)\cdot 180^\circ</m>. (A convex <m>n</m>-gon is a polygon with <m>n</m> sides for which each interior angle is less than <m>180^\circ</m>.)
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Start with <m>(k+1)</m>-gon and divide it up into a <m>k</m>-gon and a triangle.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="rcE">
+ 	 	<webwork>
     <statement>
       <p permid="qVA">
         What is wrong with the following
@@ -365,16 +410,20 @@
         </p>
       </proof>
 
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="fyg">
       <p permid="Ipk">
         The only problem is that we never established the base case.
         Of course, when <m>n = 0</m>, <m>0+3 \ne 0+7</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="XjN">
+ 	 	<webwork>
     <statement>
       <p permid="XcJ">
         The proof in the previous problem does not work.
@@ -385,7 +434,9 @@
         (without induction),
         but the goal of this exercise is to write out a valid induction proof.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="rMy">
 
       <proof permid="XTH">
@@ -405,9 +456,11 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="DqW">
+ 	 	<webwork>
     <statement>
       <p permid="DjS">
         Find the flaw in the following <q>proof</q> of the <q>fact</q>
@@ -432,7 +485,9 @@
         </p>
       </proof>
 
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="EaQ">
       <p permid="UDC">
         The problem here is that while <m>P(0)</m> is true,
@@ -445,9 +500,11 @@
         <m>P(k) \imp P(k+1)</m> must be true for all values of <m>k</m> greater than or equal to the base case.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="jyf" xml:id="exc-seq-lessthan-100">
+ 	 	<webwork>
     <statement>
       <p permid="jrb">
         While the above proof does not work
@@ -460,16 +517,20 @@
         we mean <m>a_n \lt a_{n+1}</m> for all <m>n</m>.
         So each term must be larger than the last.)
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         For the inductive step, you can assume you have a strictly increasing sequence up to <m>a_k</m> where <m>a_k \lt 100</m>.  Now you just need to find the next term <m>a_{k+1}</m> so that <m>a_{k} \lt a_{k+1} \lt 100</m>.  What should <m>a_{k+1}</m> be?
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="PFo">
+ 	 	<webwork>
     <statement>
       <p permid="Pyk">
         What is wrong with the following
@@ -496,16 +557,20 @@
         </p>
       </proof>
 
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="cDA">
       <p permid="gRU">
         We once again failed to establish the base case:
         when <m>n = 0</m>, <m>n^2 + n = 0</m> which is even, not odd.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="vMx">
+ 	 	<webwork>
     <statement>
       <p permid="vFt">
         Now give a valid proof
@@ -514,16 +579,20 @@
         of the statement, <q>for all <m>n \in \N</m>,
         the number <m>n^2 + n</m> is even.</q>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         For the inductive case, you will need to show that <m>(k+1)^2 + (k+1)</m> is even.  Factor this out and locate the part of it that is <m>k^2 + k</m>.  What have you assumed about that quantity?
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="bTG">
+ 	 	<webwork>
     <statement>
       <p permid="bMC">
         Prove that there is a sequence of positive real numbers
@@ -531,21 +600,27 @@
         <m>a_0 + a_1 + a_2 + \cdots + a_n</m> is strictly less than <m>2</m> for all <m>n \in \N</m>.
         Hint: think about how you could define what <m>a_{k+1}</m> is to make the induction argument work.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         This is similar to <xref ref="exc-seq-lessthan-100"/>, although there you were showing that a sequence had all its terms less than some value, and here you are showing that the sum is less than som value.  But the partial sums forms a sequence, so this is actually very similar.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="IaP">
+ 	 	<webwork>
     <statement>
       <p permid="HTL">
         Prove that every positive integer is either a power of 2, or can be written as the sum of distinct powers of 2.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="NuC">
       <p permid="xQf">
         The proof will by by strong induction.
@@ -579,16 +654,20 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ohY">
+ 	 	<webwork>
     <statement>
       <p permid="oaU">
         Prove, using strong induction,
         that every natural number is either a Fibonacci number or can be written as the <em>sum</em>
         of <em>distinct</em> Fibonacci numbers.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         As with the previous question, we will want to subtract something from <m>n</m> in the inductive step.  There we subtracted the largest power of 2 less than <m>n</m>.  So what should you subtract here?
@@ -597,15 +676,19 @@
         Note, you will still need to take care here that the sum you get from the inductive hypothesis, together with the number you subtracted will be a sum of <em>distinct</em> Fibonacci numbers.  In fact, you could prove that the Fibonacci numbers in the sum are non-consecutive!
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Uph">
+ 	 	<webwork>
     <statement>
       <p permid="Uid">
         Use induction to prove that if <m>n</m> people all shake hands with each other,
         that the total number of handshakes is <m>\frac{n(n-1)}{2}</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         We have already proved this without using induction, but looking at it inductively sheds light onto the problem (and is fun).
@@ -615,15 +698,19 @@
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Awq">
+ 	 	<webwork>
     <statement>
       <p permid="Apm">
         Suppose that a particular real number <m>x</m> has the property that <m>x + \frac{1}{x}</m> is an integer.
         Prove that <m>x^n + \frac{1}{x^n}</m> is an integer for all natural numbers <m>n</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         You will need to use strong induction.
@@ -631,15 +718,19 @@
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="gDz">
+ 	 	<webwork>
     <statement>
       <p permid="gwv">
         Use induction to prove that <m>\d\sum_{k=0}^n {n \choose k} = 2^n</m>.
         That is, the sum of the <m>n</m>th row of Pascal's Triangle is <m>2^n</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="Sev">
       <p permid="Tyj">
         Here's the idea:
@@ -654,15 +745,19 @@
         <m>{n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}</m> for the inductive case.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="MKI">
+ 	 	<webwork>
     <statement>
       <p permid="MDE">
         Use induction to prove <m>{4 \choose 0} + {5 \choose 1} + {6 \choose 2} + \cdots + {4+n \choose n} = {5+n \choose n}</m>.
         (This is an example of the hockey stick theorem.)
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p permid="zFs">
         To see why this works, try it on a copy of Pascal's triangle.
@@ -680,9 +775,11 @@
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="sRR">
+ 	 	<webwork>
     <statement>
       <p permid="sKN">
         Use the product rule for logarithms (<m>\log(ab) = \log(a) + \log(b)</m>) to prove,
@@ -690,7 +787,9 @@
         that <m>\log(a^n) = n \log(a)</m>,
         for all natural numbers <m>n \ge 2</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="KzW">
       <p permid="saT">
         The idea here is that if we take the logarithm of <m>a^n</m>,
@@ -721,9 +820,11 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="YZa">
+ 	 	<webwork>
     <statement>
       <p permid="YRW">
         Let <m>f_1, f_2,\ldots, f_n</m> be differentiable functions.
@@ -736,7 +837,9 @@
       <p permid="EZf">
         You may assume <m>(f+g)' = f' + g'</m> for any differentiable functions <m>f</m> and <m>g</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="WOo">
       <p permid="kwu">
         You are allowed to assume the base case.
@@ -746,9 +849,11 @@
         and then the inductive hypothesis.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Fgj">
+ 	 	<webwork>
     <statement>
       <p permid="lgo">
         Suppose <m>f_1, f_2, \ldots, f_n</m> are differentiable functions.
@@ -761,7 +866,9 @@
       <p permid="Rnx">
         You may assume the product rule for two functions is true.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="CVx">
       <p permid="QDD">
         For the inductive step, we know by the product rule for two functions that
@@ -775,9 +882,11 @@
         and distribute.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
     <!-- This is a nice problem, to include here, as an example, or save for homework.  It requires some double induction.-->
   <exercise>
+ 	 	<webwork>
     <idx><h>double induction</h></idx>
     <idx><h>induction&gt;</h><h>double</h></idx>
 
@@ -831,11 +940,15 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 <!-- The previous problem can be done with simultaneous induction, which could also make a nice problem -->
 <!-- Maybe one more double induction problem, without the scafolding? -->
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Given a square,
@@ -862,12 +975,15 @@
         Prove, using strong induction,
         that it is possible to cut a square into <m>n</m> smaller squares for any <m>n \ge 6</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         You will need three base cases.  This is a very good hint actually, as it suggests that to prove <m>P(n)</m> is true, you would want to use the fact that <m>P(n-3)</m> is true.  So somehow you need to increase the number of squares by 3.        
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 </exercises>

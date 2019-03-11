@@ -2,6 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="tVk" xml:id="exercises_gt-trees">
 
   <exercise permid="qcp">
+ 	 	<webwork>
     <statement>
       <p permid="LYO">
         Which of the following graphs are trees?
@@ -32,7 +33,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="LKt">
       <p permid="qqK">
         <ol permid="Blo">
@@ -69,9 +72,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Wjy" xml:id="ex-tree-deg-seq">
+ 	 	<webwork>
     <statement>
       <p permid="sfX">
         For each degree sequence below,
@@ -107,7 +112,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="rRC">
       <p permid="WxT">
         <ol permid="hsx">
@@ -158,9 +165,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         For each degree sequence below,
@@ -189,32 +198,40 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Careful: the graphs might not be connected.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
   <exercise permid="CqH">
+ 	 	<webwork>
     <statement>
       <p permid="Yng">
         Suppose you have a graph with <m>v</m> vertices and <m>e</m> edges that satisfies <m>v = e+1</m>.
         Must the graph be a tree?
         Prove your answer.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="EfU">
       <p permid="zKw">
         Try <xref ref="ex-tree-deg-seq"/>.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ixQ">
+ 	 	<webwork>
     <statement>
       <p permid="Eup">
         Prove that any graph
@@ -222,22 +239,28 @@
         with <m>v</m> vertices and <m>e</m> edges that satisfies
         <m>v \gt e+1</m> will NOT be connected.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="knd">
       <p permid="fRF">
         Try a proof by contradiction and consider a spanning tree of the graph.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="OEZ">
+ 	 	<webwork>
     <statement>
       <p permid="kBy">
         If a graph <m>G</m> with <m>v</m> vertices and <m>e</m> edges is connected and has
         <m>v \lt e+1</m>, must it contain a cycle?
         Prove your answer.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Qum">
       <p permid="iMl">
         Yes.
@@ -247,9 +270,11 @@
         so would have <m>v = e+1</m>, contrary to stipulation.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="uMi" xml:id="ex-forest">
+ 	 	<webwork>
     <statement>
       <p permid="QIH">
         We define a <term>forest</term> to be a graph with no cycles.
@@ -278,44 +303,56 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         For part (b), trying some simple examples should give you the formula.  Then you just need to prove it is correct.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           Give a careful proof of <xref ref="cor-unique-paths-forests"/>: A graph is a forest if and only if there is at most one path between any pair of vertices.  Use proof by contrapositive (and not a proof by contradiction) for both directions.
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint>
         <p>
           Examining the proof of <xref ref="prop-unique-paths-trees"/> gives you most of what you need, but make sure to just give the relevant parts, and take care to not use proof by contradiction.
         </p>
       </hint>
-    </exercise>
+    </webwork>
+ 	</exercise>
 
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           Give a careful proof by induction on the number of vertices, that every tree is bipartite.
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint>
         <p>
           You will need to remove a vertex of degree one, apply the inductive hypothesis to the result, and then say which set the degree one vertex to.
         </p>
       </hint>
-    </exercise>
+    </webwork>
+ 	</exercise>
 
 
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           Consider the tree drawn below.
@@ -367,7 +404,9 @@
             </li>
           </ol>
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint>
         <p>
           If <m>e</m> is the root, then <m>b</m> will have three children (<m>a</m>, <m>c</m>, and <m>d</m>), all of which will be siblings, and have <m>b</m> as their parent.  <m>a</m> will not have any children.
@@ -377,10 +416,12 @@
           In general, how can you determine the number of children a vertex will have, if it is not a root?
         </p>
       </hint>
-    </exercise>
+    </webwork>
+ 	</exercise>
 
 
     <exercise permid="fDk">
+ 	 	<webwork>
       <statement>
         <p permid="BzJ">
           Let <m>T</m> be a rooted tree that contains vertices <m>u</m>,
@@ -390,15 +431,19 @@
           Prove that if <m>w</m> is a descendant of both <m>u</m> and <m>v</m>,
           then <m>u</m> is a descendant of <m>v</m> or <m>v</m> is a descendant of <m>u</m>.
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <!-- <solution>
         NNEDS SOLUTION
       </solution> -->
-    </exercise>
+    </webwork>
+ 	</exercise>
 
 
 
   <exercise permid="aTr">
+ 	 	<webwork>
     <statement>
       <p permid="wPQ">
         Unless it is already a tree,
@@ -428,7 +473,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="cIE">
       <p permid="vaD">
         <ol permid="tGP">
@@ -464,9 +511,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="HaA">
+ 	 	<webwork>
     <statement>
       <p permid="cWZ">
         Find all spanning trees of the graph below.
@@ -491,48 +540,62 @@
         </image>
 
       </sidebyside>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="nhJ">
+ 	 	<webwork>
     <statement>
       <p permid="Jei">
         Give an example of a graph that has exactly 7 different spanning trees.
         Note, it acceptable for some or all of these spanning trees to be isomorphic.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         There is an example with 7 edges.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ToS">
+ 	 	<webwork>
     <statement>
       <p permid="plr">
         Prove that every connected graph which is not itself a tree must have at last three different
         (although possibly isomorphic)
         spanning trees.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         The previous exercise will be helpful.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zwb">
+ 	 	<webwork>
     <statement>
       <p permid="VsA">
         Consider edges that must be in every spanning tree of a graph.
         Must every graph have such an edge?
         Give an example of a graph that has exactly one such edge.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Note that such an edge, if removed, would disconnect the graph.          
@@ -540,6 +603,7 @@
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 </exercises>

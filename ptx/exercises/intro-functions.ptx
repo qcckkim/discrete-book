@@ -374,6 +374,7 @@
   </exercise>
 
   <exercise permid="lVM">
+ 	 	<webwork>
     <statement>
       <p permid="Rto">
         Consider the function <m>f:\{1,2,3,4,5\} \to \{1,2,3,4\}</m> given by the table below:
@@ -425,7 +426,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="OcW">
       <p permid="zLj">
         <ol permid="ZlV">
@@ -451,9 +454,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ScV">
+ 	 	<webwork>
     <statement>
       <p permid="dHG">
         Consider the function <m>f:\{1,2,3,4\} \to \{1,2,3,4\}</m> given by the graph below.
@@ -499,8 +504,11 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise>
     <webwork>
@@ -617,6 +625,7 @@
   </exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Suppose <m>f:\N \to \N</m> satisfies the recurrence relation
@@ -672,10 +681,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="qFF">
+ 	 	<webwork>
     <statement>
       <p permid="OyI">
         For each function given below,
@@ -694,7 +707,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Gyx">
       <p permid="sgK">
         <ol permid="lAn">
@@ -725,9 +740,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="WMO">
+ 	 	<webwork>
     <statement>
       <p permid="uFR">
         Let <m>A = \{1,2,3,\ldots,10\}</m>.
@@ -768,7 +785,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="mFG">
       <p permid="YnT">
         <ol permid="RHw">
@@ -814,7 +833,8 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="CTX">
     <webwork>
@@ -894,6 +914,7 @@
   </exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Consider the set <m>\N^2 = \N \times \N</m>,
@@ -928,10 +949,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Pip">
+ 	 	<webwork>
     <statement>
       <p permid="nbs">
         Let <m>f:X \to Y</m> be some function.
@@ -961,7 +986,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="SMP">
       <p permid="Evc">
         <ol permid="xOF">
@@ -994,15 +1021,19 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="vpy">
+ 	 	<webwork>
     <statement>
       <p permid="TiB">
         Find a set <m>X</m> and a function
         <m>f:X \to \N</m> so that <m>f\inv(0) \cup f\inv(1) = X</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="yTY">
       <p permid="kCl">
         <m>X</m> can really be any set,
@@ -1011,9 +1042,11 @@
         For example, <m>X = \N</m> and <m>f(n) = 0</m> works.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="bwH">
+ 	 	<webwork>
     <statement>
       <p permid="zpK">
         What can you deduce about the sets <m>X</m> and <m>Y</m> if you know,
@@ -1041,10 +1074,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="HDQ">
+ 	 	<webwork>
     <statement>
       <p permid="fwT">
         Suppose <m>f:X \to Y</m> is a function.
@@ -1075,10 +1112,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="nKZ">
+ 	 	<webwork>
     <statement>
       <p permid="LEc">
         Let <m>f:X \to Y</m> and <m>g:Y \to Z</m> be functions.
@@ -1124,16 +1165,20 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="fbh">
       <p permid="adg">
         Work with some examples.
         What if <m>f = \twoline{1\amp 2 \amp 3}{a \amp a \amp b}</m> and <m>g = \twoline{a\amp b \amp c}{5 \amp 6 \amp 7}</m>?
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="TSi">
+ 	 	<webwork>
     <statement>
       <p permid="rLl">
         Consider the function <m>f:\Z \to \Z</m> given by <m>f(n) = \begin{cases}n+1 \amp \text{ if }n\text{ is even} \\ n-3 \amp \text{ if }n\text{ is odd} . \end{cases}
@@ -1155,7 +1200,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Liq">
       <p permid="QJu">
         <ol permid="dVO">
@@ -1208,9 +1255,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zZr">
+ 	 	<webwork>
     <statement>
       <p permid="XSu">
         At the end of the semester a teacher assigns letter grades to each of her students.
@@ -1219,7 +1268,9 @@
         and is the function injective,
         surjective, bijective, or neither?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="DDR">
       <p permid="wQD">
         Yes, this is a function, if you choose the domain and codomain correctly.
@@ -1230,9 +1281,11 @@
         The function might be surjective <ndash/> it will be if there is at least one student who gets each grade.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ggA">
+ 	 	<webwork>
     <statement>
       <p permid="DZD">
         In the game of <em>Hearts</em>,
@@ -1242,10 +1295,14 @@
         and is the function injective,
         surjective, bijective, or neither?
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="MnJ">
+ 	 	<webwork>
     <statement>
       <p permid="kgM">
         Seven players are playing 5-card stud.
@@ -1255,22 +1312,28 @@
         and is the function injective,
         surjective, bijective, or neither?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution>
       <p>
         This is not a function.
       </p>
     </solution>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Consider the function <m>f:\N \to \N</m> that gives the number of handshakes that take place in a room of <m>n</m> people assuming everyone shakes hands with everyone else.
         Give a recursive definition for this function.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         To find the recurrence relation,
@@ -1283,9 +1346,11 @@
       </p>
     </solution>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Let <m>f:X \to Y</m> be a function and
@@ -1296,7 +1361,9 @@
         surjective,
         or bijective.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution>
       <p>
         In general, <m>\card{A} \ge \card{f(A)}</m>,
@@ -1309,9 +1376,11 @@
         (it must be injective <em>restricted</em> to <m>A</m>).
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Let <m>f:X \to Y</m> be a function and
@@ -1322,7 +1391,9 @@
         surjective,
         or bijective.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution>
       <p>
         In general, there is no relationship between
@@ -1343,9 +1414,11 @@
         Thus if <m>f</m> is bijective then <m>\card{B} = \card{f\inv(B)}</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Let <m>f:X \to Y</m> be a function,
@@ -1379,10 +1452,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Let <m>f:X \to Y</m> be a function and
@@ -1406,16 +1483,20 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         One of these is not always true.  Try some examples!
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Let <m>f:X \to Y</m> be a function and
@@ -1439,8 +1520,11 @@
           </li>
         </ol>
       </p>
-    </statement>
     
-  </exercise>
+ 	<p><var form="essay"/></p>
+ 	</statement>
+    
+  </webwork>
+ 	</exercise>
 
 </exercises>

@@ -229,6 +229,7 @@
   </exercise>
 
   <exercise>
+ 	 	<webwork>
     <!-- <webwork>
         <pg-macros><macro-file>contextIntegerFunctions.pl</macro-file></pg-macros>
         <setup>
@@ -269,14 +270,17 @@
               </li>
             </ol>
           </p>
-        </statement>
+        
+ 	<p><var form="essay"/></p>
+ 	</statement>
         <hint>
           <p>
           Which question should have the larger answer?  One of these is a combination, the other is a permutation.  
           </p>
         </hint>
     <!-- </webwork> -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
   <exercise permid="SLc">
@@ -401,6 +405,7 @@
   </exercise>
 <!-- The following is now also in combinatorial proof exercises -->
   <exercise permid="ySl">
+ 	 	<webwork>
     <statement>
       <p permid="JUg">
         How many triangles are there with vertices from the points shown below?
@@ -426,7 +431,9 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="MVQ">
       <p permid="Dva">
         If you pick any three points, you can get a triangle, unless those three points are all on the <m>x</m>-axis or on the <m>y</m>-axis.  There are other ways to start this as well, and any correct method should give the same answer.
@@ -437,7 +444,8 @@
         120.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="eZu">
     <webwork>
@@ -911,6 +919,7 @@
   </exercise>
 
   <exercise permid="ceO">
+ 	 	<webwork>
     <statement>
       <p permid="LJt">
         We have seen that the formula for <m>P(n,k)</m> is <m>\dfrac{n!}{(n-k)!}</m>.
@@ -950,8 +959,11 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 
 </exercises>

@@ -77,6 +77,7 @@
   </exercise>
 
   <exercise permid="wHm">
+ 	 	<webwork>
     <!-- <webwork>
         <pg-macros><macro-file>contextIntegerFunctions.pl</macro-file></pg-macros>
         <setup>
@@ -133,10 +134,13 @@
               </li>
             </ol>
           </p>
-        </statement>
+        
+ 	<p><var form="essay"/></p>
+ 	</statement>
         
     <!-- </webwork> -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="cOv">
     <webwork>
@@ -250,6 +254,7 @@
   </exercise>
 
   <exercise permid="VjW">
+ 	 	<webwork>
     <statement>
       <p permid="mwC">
         Based on the previous question,
@@ -258,11 +263,15 @@
           {n \choose k} = {n+k-1 \choose k} - \sum_{j=1}^n (-1)^{j+1}{n \choose j}{n+k-(2j+1) \choose k - 2j}
         </me>.
       </p>
-    </statement>
     
-  </exercise>
+ 	<p><var form="essay"/></p>
+ 	</statement>
+    
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Brf">
+ 	 	<webwork>
     <statement>
       <p permid="SDL">
         Illustrate how the counting of derangements works by writing all permutations of
@@ -270,13 +279,16 @@
         Keep track of the permutations you cross out more than once,
         using PIE.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="PuK">
       <p permid="slO">
         The 9 derangements are: 2143, 2341, 2413, 3142, 3412, 3421, 4123, 4312, 4321.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="hyo">
     <webwork>
@@ -341,6 +353,7 @@
   </exercise>
 
   <exercise permid="tMG">
+ 	 	<webwork>
     <!-- <webwork>
         <pg-macros><macro-file>contextIntegerFunctions.pl</macro-file></pg-macros>
         <setup>
@@ -392,10 +405,13 @@
               </li>
             </ol>
           </p>
-        </statement>
+        
+ 	<p><var form="essay"/></p>
+ 	</statement>
         
     <!-- </webwork> -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ZTP">
     <webwork>
@@ -505,6 +521,7 @@
   </exercise>
       <!-- TODO: Add derangment question to illustrate connection to e -->
   <exercise permid="ywz">
+ 	 	<webwork>
     <statement>
       <p permid="olP">
         Let <m>d_n</m> be the number of derangements of <m>n</m> objects.
@@ -523,7 +540,10 @@
         approximately what fraction of all permutations are derangements?
         Use your knowledge of Taylor series from calculus.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 </exercises>

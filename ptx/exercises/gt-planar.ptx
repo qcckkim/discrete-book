@@ -2,12 +2,15 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="xGO" xml:id="exercises_gt-planar">
 
   <exercise permid="boQ">
+ 	 	<webwork>
     <statement>
       <p permid="jDj">
         Is it possible for a planar graph to have 6 vertices, 10 edges and 5 faces?
         Explain.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="kIC">
       <p permid="yMh">
         No.
@@ -16,9 +19,11 @@
         Here <m>v - e + f = 6 - 10 + 5 = 1</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="HvZ">
+ 	 	<webwork>
     <statement>
       <p permid="PKs">
         The graph <m>G</m> has 6 vertices with degrees <m>2, 2, 3, 4, 4, 5</m>.
@@ -27,7 +32,9 @@
         If so, how many faces would it have.
         If not, explain.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="QPL">
       <p permid="eTq">
         <m>G</m> has 10 edges, since <m>10 = \frac{2+2+3+4+4+5}{2}</m>.
@@ -40,43 +47,57 @@
         (and is possible).
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Is it possible for a connected graph with 7 vertices and 10 edges to be drawn so that no edges cross and create 4 faces?  Explain.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         What would Euler's formula tell you?
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Is it possible for a graph with 10 vertices and edges to be a connected planar graph?  Explain.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Is there a connected planar graph with an odd number of faces where every vertex has degree 6?  Prove your answer.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         You can use the handshake lemma to find the number of edges, in terms of <m>v</m>, the number of vertices.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="nDi">
+ 	 	<webwork>
     <statement>
       <p permid="vRB">
         I'm thinking of a polyhedron containing 12 faces.
@@ -84,7 +105,9 @@
         The polyhedron has 11 vertices including those around the mystery face.
         How many sides does the last face have?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
 <!-- I should check that this is actually possible as a polyhedron -->
     <solution permid="wWU">
       <p permid="Laz">
@@ -99,9 +122,11 @@
         so the last face is a pentagon.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="TKr">
+ 	 	<webwork>
     <statement>
       <p permid="bYK">
         Consider some classic polyhedrons.
@@ -142,15 +167,21 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zRA">
+ 	 	<webwork>
     <statement>
       <p permid="IfT">
         Prove Euler's formula using induction on the number of edges in the graph.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ded">
 
       <proof permid="Jlm">
@@ -182,18 +213,24 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="fYJ">
+ 	 	<webwork>
     <statement>
       <p permid="onc">
         Prove Euler's formula using induction on the number of
         <em>vertices</em> in the graph.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="MfS">
+ 	 	<webwork>
     <statement>
       <p permid="Uul">
         Euler's formula (<m>v - e + f = 2</m>) holds for all
@@ -203,10 +240,14 @@
         What is the value of <m>v - e + f</m> now?
         What if it has <m>k</m> components?
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="snb">
+ 	 	<webwork>
     <statement>
       <p permid="ABu">
         Prove that the <em>Petersen graph</em>
@@ -229,21 +270,27 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="psv">
       <p permid="Dwa">
         What is the length of the shortest cycle? (This quantity is usually called the
         <term>girth</term> of the graph.)
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Yuk">
+ 	 	<webwork>
     <statement>
       <p permid="gID">
         Prove that any planar graph with <m>v</m> vertices and <m>e</m> edges satisfies <m>e \le 3v - 6</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="VzE">
 
       <proof permid="BGN">
@@ -268,17 +315,23 @@
       </proof>
 
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="EBt">
+ 	 	<webwork>
     <statement>
       <p permid="MPM">
         Prove that any planar graph must have a vertex of degree 5 or less.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
   
   <exercise xml:id="exr-grotzsch-nonplanar">
+ 	 	<webwork>
     <statement>
       <p>
         Give a careful proof that the graph below is not planar.
@@ -294,15 +347,19 @@
           </latex-image>
         </image>
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         The girth of the graph is 4.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Explain why we cannot use the same sort of proof we did in <xref ref="exr-grotzsch-nonplanar"/> to prove that the graph below is not planar.  Then explain how you know the graph is not planar anyway.
@@ -319,12 +376,15 @@
           </latex-image>
         </image>
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         What has happened to the girth?  Careful: we have a different number of edges as well.  Better check Euler's formula.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 </exercises>

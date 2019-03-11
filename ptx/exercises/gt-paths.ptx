@@ -2,6 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="Pay" xml:id="exercises_gt-paths">
 
   <exercise permid="bav">
+ 	 	<webwork>
     <statement>
       <p permid="zhG">
         You and your friends want to tour the southwest by car.
@@ -27,7 +28,9 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="wIz">
       <p permid="Ccm">
         This is a question about finding Euler paths.
@@ -38,9 +41,11 @@
         Thus you must start your road trip at in one of those states and end it in the other.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="HhE">
+ 	 	<webwork>
     <statement>
       <p permid="foP">
         Which of the following graphs contain an Euler path?
@@ -60,7 +65,9 @@
           <li permid="DhF"><m>P_7</m></li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="cPI">
       <p permid="ijv">
         <ol permid="tNT">
@@ -87,9 +94,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="noN">
+ 	 	<webwork>
     <statement>
       <p permid="LvY">
         Edward A. Mouse has just finished his brand new house.
@@ -142,65 +151,87 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="TvW">
+ 	 	<webwork>
     <statement>
       <p permid="XKq">
         For which <m>n</m> does the graph <m>K_n</m> contain an Euler circuit?
         Explain.
       </p>
-    </statement>
     
-  </exercise>
+ 	<p><var form="essay"/></p>
+ 	</statement>
+    
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zDf">
+ 	 	<webwork>
     <statement>
       <p permid="DRz">
         For which <m>m</m> and <m>n</m> does the graph <m>K_{m,n}</m> contain an Euler path?
         An Euler circuit?
         Explain.
       </p>
-    </statement>
     
-  </exercise>
+ 	<p><var form="essay"/></p>
+ 	</statement>
+    
+  </webwork>
+ 	</exercise>
 
   <exercise permid="fKo">
+ 	 	<webwork>
     <statement>
       <p permid="jYI">
         For which <m>n</m> does <m>K_n</m> contain a Hamilton path?
         A Hamilton cycle?
         Explain.
       </p>
-    </statement>
     
-  </exercise>
+ 	<p><var form="essay"/></p>
+ 	</statement>
+    
+  </webwork>
+ 	</exercise>
 
   <exercise permid="LRx">
+ 	 	<webwork>
     <statement>
       <p permid="QfR">
         For which <m>m</m> and <m>n</m> does the graph <m>K_{m,n}</m> contain a Hamilton path?
         A Hamilton cycle?
         Explain.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         This is harder than the previous three questions.  Think about which <q>side</q> of the graph the Hamilton path would need to be on every other step.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="rYG">
+ 	 	<webwork>
     <statement>
       <p permid="wna">
         A bridge builder has come to Königsberg and would like to add bridges so that it <em>is</em>
         possible to travel over every bridge exactly once.
         How many bridges must be built?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="hzB">
       <p permid="mTo">
         If we build one bridge, we can have an Euler path.
@@ -223,9 +254,11 @@
 
       </sidebyside>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="YfP">
+ 	 	<webwork>
     <statement>
       <p permid="cuj">
         Below is a graph representing friendships between a group of students
@@ -251,16 +284,20 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         If you read off the names of the students in order, you would need to read each student's name exactly once, and the last name would need to be of a student who was friends with the first.  What sort of a cycle is this?
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="EmY">
+ 	 	<webwork>
     <statement>
       <p permid="IBs">
         On the table rest 8 dominoes, as shown below.
@@ -352,15 +389,19 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Draw a graph with 6 vertices and 8 edges.  What sort of path would be appropriate?
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="kuh">
+ 	 	<webwork>
     <statement>
       <p permid="oIB">
         Is there anything we can say about whether a graph has a Hamilton path based on the degrees of its vertices?
@@ -381,10 +422,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="QBq">
+ 	 	<webwork>
     <statement>
       <p permid="UPK">
         Consider the following graph:
@@ -431,7 +476,10 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 </exercises>

@@ -2,6 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="APC" xml:id="exercises_gt-conc">
   <title>Chapter Review</title>
   <exercise permid="qEF">
+ 	 	<webwork>
     <statement>
       <p permid="sBj">
         Which (if any) of the graphs below are the same?
@@ -40,7 +41,9 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="BNE">
       <p permid="hsk">
         The first and the third graphs are the same
@@ -50,50 +53,64 @@
         by noting that the middle graph has only one vertex of degree 2, while the others have two such vertices).
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="WLO">
+ 	 	<webwork>
     <statement>
       <p permid="YIs">
         Which of the graphs in the previous question contain Euler paths or circuits?
         Which of the graphs are planar?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="hUN">
       <p permid="Nzt">
         The first (and third) graphs contain an Euler path.
         All the graphs are planar.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="CSX">
+ 	 	<webwork>
     <statement>
       <p permid="EPB">
         Draw a graph which has an Euler circuit but is not planar.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ObW">
       <p permid="tGC">
         For example, <m>K_5</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="jag">
+ 	 	<webwork>
     <statement>
       <p permid="kWK">
         Draw a graph which does not have an Euler path and is also not planar.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ujf">
       <p permid="ZNL">
         For example, <m>K_{3,3}</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Php">
+ 	 	<webwork>
     <statement>
       <p permid="RdT">
         Consider the graph <m>G = (V, E)</m> with
@@ -168,7 +185,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="aqo">
       <p permid="FUU">
         <ol permid="gPu">
@@ -279,16 +298,20 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="voy">
+ 	 	<webwork>
     <statement>
       <p permid="xlc">
         If a graph has 10 vertices and 10 edges and contains an Euler circuit,
         must it be planar?
         How many faces would it have?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Gxx">
       <p permid="mcd">
         Yes.
@@ -297,9 +320,11 @@
         The only such graph is <m>C_{10}</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="bvH">
+ 	 	<webwork>
     <statement>
       <p permid="dsl">
         Suppose <m>G</m> is a graph with <m>n</m> vertices, each having degree 5.
@@ -324,7 +349,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="mEG">
       <p permid="Sjm">
         <ol permid="MWD">
@@ -355,9 +382,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="HCQ">
+ 	 	<webwork>
     <statement>
       <p permid="Jzu">
         At a school dance, 6 girls and 4 boys take turns dancing
@@ -384,7 +413,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="SLP">
       <p permid="yqv">
         <ol permid="tdM">
@@ -411,16 +442,20 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="nJZ">
+ 	 	<webwork>
     <statement>
       <p permid="pGD">
         Among a group of <m>n</m> people,
         is it possible for everyone to be friends with an odd number of people in the group?
         If so, what can you say about <m>n</m>?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ySY">
       <p permid="exE">
         Yes, as long as <m>n</m> is even.
@@ -429,9 +464,11 @@
         which is impossible.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="TRi">
+ 	 	<webwork>
     <statement>
       <p permid="VNM">
         Your friend has challenged you to create a convex polyhedron containing 9 triangles and 6 pentagons.
@@ -463,7 +500,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="fah">
       <p permid="KEN">
         <ol permid="ZkV">
@@ -504,15 +543,19 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zYr">
+ 	 	<webwork>
     <statement>
       <p permid="BUV">
         Is there a convex polyhedron which requires 5 colors to properly color the vertices of the polyhedron?
         Explain.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Lhq">
       <p permid="qLW">
         No.
@@ -520,16 +563,20 @@
         and the Four Color Theorem says that every planar graph has chromatic number at most 4.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="gfA">
+ 	 	<webwork>
     <statement>
       <p permid="ice">
         How many edges does the graph <m>K_{n,n}</m> have?
         For which values of <m>n</m> does the graph contain an Euler circuit?
         For which values of <m>n</m> is the graph planar?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="roz">
       <p permid="Dao">
         <m>K_{n,n}</m> has <m>n^2</m> edges.
@@ -537,9 +584,11 @@
         The graph will be planar only when <m>n \lt 3</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="MmJ">
+ 	 	<webwork>
     <statement>
       <p permid="Ojn">
         The graph <m>G</m> has 6 vertices with degrees <m>1, 2, 2, 3, 3, 5</m>.
@@ -547,7 +596,9 @@
         If <m>G</m> was planar how many faces would it have?
         Does <m>G</m> have an Euler path?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="XvI">
       <p permid="jhx">
         <m>G</m> has 8 edges
@@ -556,15 +607,19 @@
         (since <m>6 - 8 + 4 = 2</m>). <m>G</m> does not have an Euler path since there are more than 2 vertices of odd degree.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="stS">
+ 	 	<webwork>
     <statement>
       <p permid="uqw">
         What is the smallest number of colors you need to properly color the vertices of <m>K_{7}</m>.
         Can you say whether <m>K_7</m> is planar based on your answer?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="DCR">
       <p permid="PoG">
         <m>7</m> colors.
@@ -572,15 +627,19 @@
         (by the contrapositive of the Four Color Theorem).
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="YBb">
+ 	 	<webwork>
     <statement>
       <p permid="axF">
         What is the smallest number of colors you need to properly color the vertices of <m>K_{3,4}</m>?
         Can you say whether <m>K_{3,4}</m> is planar based on your answer?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="jKa">
       <p permid="vvP">
         The chromatic number of <m>K_{3,4}</m> is 2, since the graph is bipartite.
@@ -590,16 +649,20 @@
         since it contains <m>K_{3,3}</m> as a subgraph.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="EIk">
+ 	 	<webwork>
     <statement>
       <p permid="GEO">
         Prove that <m>K_{3,4}</m> is not planar.
         Do this using Euler's formula,
         not just by appealing to the fact that <m>K_{3,3}</m> is not planar.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="PRj">
       <p permid="bCY">
         We have that <m>K_{3,4}</m> has 7 vertices and 12 edges
@@ -613,9 +676,11 @@
         But this would mean that <m>28 \le 24</m>, a contradiction.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="kPt">
+ 	 	<webwork>
     <statement>
       <p permid="mLX">
         A dodecahedron is a regular convex polyhedron made up of 12 regular pentagons.
@@ -641,7 +706,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="vYs">
       <p permid="HKh">
         For all these questions, we are really coloring the vertices of a graph.
@@ -690,9 +757,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="QWC">
+ 	 	<webwork>
     <statement>
       <p permid="STg">
         Decide whether the following statements are true or false.
@@ -721,7 +790,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="cfB">
       <p permid="nRq">
         <ol permid="lzn">
@@ -761,24 +832,30 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="xdL">
+ 	 	<webwork>
     <statement>
       <p permid="zap">
         If a planar graph <m>G</m> with <m>7</m> vertices divides the plane into 8 regions,
         how many edges must <m>G</m> have?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ImK">
       <p permid="TYz">
         <m>G</m> has <m>13</m> edges,
         since we need <m>7 - e + 8 = 2</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="dkU">
+ 	 	<webwork>
     <statement>
       <p permid="fhy">
         Consider the graph below:
@@ -828,7 +905,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="otT">
       <p permid="AfI">
         <ol permid="RGw">
@@ -864,9 +943,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Jsd">
+ 	 	<webwork>
     <statement>
       <p permid="rvQ">
         For each part below, say whether the statement is true or false.
@@ -905,7 +986,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="UBc">
       <p permid="gmR">
         <ol permid="xNF">
@@ -946,9 +1029,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="pzm">
+ 	 	<webwork>
     <statement>
       <p permid="XCZ">
         Consider the statement <q>If a graph is planar,
@@ -995,7 +1080,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="AIl">
       <p permid="Mua">
         <ol permid="dUO">
@@ -1038,9 +1125,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Let <m>G</m> be a connected graph with <m>v</m> vertices and <m>e</m> edges.  Use mathematical induction to prove that if <m>G</m> contains exactly one cycle (among other edges and vertices), then <m>v = e</m>.  
@@ -1049,13 +1138,16 @@
       <p>
         Note: this is asking you to prove a special case of Euler's formula for planar graphs, so do not use that formula in your proof.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         You might want to give the proof in two parts.  First prove by induction that the cycle <m>C_n</m> has <m>v=e</m>.  Then consider what happens if the graph is more than just the cycle.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <!-- <exercise permid="VGv">
     <statement>

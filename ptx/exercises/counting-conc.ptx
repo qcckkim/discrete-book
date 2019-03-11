@@ -92,6 +92,7 @@
   </exercise>
 <!-- Do something with this.  These would actually make fine webwork problems; maybe an exercisegroup? -->
   <exercise permid="oVW">
+ 	 	<webwork>
     <statement>
       <p permid="prI">
         For each of the following counting problems,
@@ -283,7 +284,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="HJu">
       <p permid="eiJ">
         <ol permid="GEb">
@@ -447,7 +450,8 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Vdf">
     <webwork>
@@ -556,12 +560,15 @@
   </exercise>
 
   <exercise permid="Bko">
+ 	 	<webwork>
     <statement>
       <p permid="BGa">
         Give a counting question where the answer is <m>8\cdot 3 \cdot 3 \cdot 5</m>.
         Give another question where the answer is <m>8 + 3 + 3 + 5</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="TXM">
       <p permid="qxb">
         You own 8 purple bow ties,
@@ -571,7 +578,8 @@
         How many choices do you have for a single bow tie to wear tomorrow? <m>8 + 3 + 3 + 5</m> choices.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="hrx">
     <webwork>
@@ -1061,11 +1069,14 @@
   </exercise>
 
   <exercise permid="qLj">
+ 	 	<webwork>
     <statement>
       <p permid="MOZ">
         Explain using lattice paths why <m>\sum_{k=0}^n {n \choose k} = 2^n</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="JyH">
       <p permid="smo">
         <m>2^n</m> is the number of lattice paths which have length <m>n</m>,
@@ -1082,7 +1093,8 @@
         These two methods count the same quantity, so are equal.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="WSs">
     <webwork>
@@ -1413,6 +1425,7 @@
   </exercise>
 
   <exercise permid="vvc">
+ 	 	<webwork>
     <statement>
       <p permid="xGb">
         For which of the parts of the previous problem
@@ -1422,7 +1435,9 @@
         and whether you are counting all functions, injections,
         surjections, or something else.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="upJ">
       <p permid="wWh">
         <ol permid="DJv">
@@ -1474,6 +1489,7 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 </exercises>

@@ -2,11 +2,14 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="UvL" xml:id="exercises_logic-conc">
   <title>Chapter Review</title>
   <exercise permid="GUJ" xml:id="tt">
+ 	 	<webwork>
     <statement>
       <p permid="NWF">
         Complete a truth table for the statement <m>\neg P \imp (Q \wedge R)</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="cCN">
       <sidebyside permid="Ozi">
 
@@ -73,9 +76,11 @@
 
       </sidebyside>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="nbS">
+ 	 	<webwork>
     <statement>
       <p permid="udO">
         Suppose you know that the statement
@@ -87,32 +92,40 @@
         (you may reference
         <xref ref="tt">problem</xref>).
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="IJW">
       <p permid="Hxz">
         Peter is not tall and Robert is not skinny.
         You must be in row 6 in the truth table above.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Tjb">
+ 	 	<webwork>
     <statement>
       <p permid="akX">
         Are the statements <m>P \imp (Q \vee R)</m> and
         <m>(P \imp Q) \vee (P \imp R)</m> logically equivalent?
         Explain your answer.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="oRf">
       <p permid="nEI">
         Yes.
         To see this, make a truth table for each statement and compare.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zqk">
+ 	 	<webwork>
     <statement>
       <p permid="Gsg">
         Is the following a valid deduction rule?
@@ -137,7 +150,9 @@
         </tabular>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="UYo">
       <p permid="TLR">
         Make
@@ -238,9 +253,11 @@
         In other words, the deduction rule is valid.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="fxt">
+ 	 	<webwork>
     <statement>
       <p permid="mzp">
         Write the negation,
@@ -306,7 +323,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Bfx">
       <p permid="gaj">
         <ol permid="Kzj">
@@ -453,9 +472,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="LEC">
+ 	 	<webwork>
     <statement>
       <p permid="SGy">
         Consider the statement: for all integers <m>n</m>,
@@ -494,7 +515,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="hmG">
       <p permid="Mhs">
         <ol permid="qGs">
@@ -534,9 +557,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="rLL">
+ 	 	<webwork>
     <statement>
       <p permid="yNH">
         Consider the statement:
@@ -576,7 +601,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="NtP">
       <p permid="YvK">
         <ol permid="WNB">
@@ -629,11 +656,13 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   
 
   <exercise permid="Ead">
+ 	 	<webwork>
     <statement>
       <p permid="LbZ">
         Simplify the following.
@@ -648,7 +677,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ZIh">
       <p permid="kKc">
         <ol permid="jbT">
@@ -662,9 +693,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="khm">
+ 	 	<webwork>
     <statement>
       <p permid="rji">
         Consider the statement: for all integers <m>n</m>,
@@ -686,7 +719,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="FPq">
       <p permid="QRl">
         <ol permid="Pjc">
@@ -735,9 +770,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Qov">
+ 	 	<webwork>
     <statement>
       <p permid="Xqr">
         Suppose you break your piggy bank and scoop up a handful of 22 coins
@@ -765,7 +802,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="ykR">
       <p permid="wYu">
         <ol permid="vql">
@@ -812,9 +851,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="wvE">
+ 	 	<webwork>
     <statement>
       <p permid="DxA">
         You come across four trolls playing bridge.
@@ -846,7 +887,10 @@
         or knaves
         (who always lie).
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 </exercises>

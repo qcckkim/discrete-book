@@ -597,6 +597,7 @@
   </exercise>
 
   <exercise permid="ngw">
+ 	 	<webwork>
     <statement>
       <p permid="EHx">
         Gridtown USA, besides having excellent donut shops,
@@ -652,7 +653,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="VcS">
       <p permid="epA">
         <ol permid="Sim">
@@ -690,7 +693,8 @@
       </p>
     </solution>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="TnF">
     <webwork>
@@ -781,11 +785,15 @@
   </exercise>
 
   <exercise permid="zuO">
+ 	 	<webwork>
     <statement>
       <p permid="xcY">
         Explain why the coefficient of <m>x^5y^3</m> the same as the coefficient of <m>x^3y^5</m> in the expansion of <m>(x+y)^8</m>?
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 </exercises>

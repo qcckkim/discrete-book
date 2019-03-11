@@ -2,6 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="UvY" xml:id="exercises_sec-logic">
 
   <exercise permid="Gzx">
+ 	 	<webwork>
     <statement>
       <p permid="MhF">
         Consider the statement about a party,
@@ -46,7 +47,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="gRu">
       <p permid="WGK">
         <ol permid="Wsp">
@@ -81,14 +84,18 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="mGG">
+ 	 	<webwork>
     <statement>
       <p permid="soO">
         Make a truth table for the statement <m>(P \vee Q) \imp (P \wedge Q)</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="MYD">
       <sidebyside permid="xfL">
 
@@ -125,15 +132,19 @@
 
       </sidebyside>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="SNP">
+ 	 	<webwork>
     <statement>
       <p permid="YvX">
         Make a truth table for the statement <m>\neg P \wedge (Q \imp P)</m>.
         What can you conclude about <m>P</m> and <m>Q</m> if you know the statement is true?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="tfM">
       <sidebyside permid="dmU">
 
@@ -174,22 +185,28 @@
         If the statement is true, then both <m>P</m> and <m>Q</m> are false.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="yUY">
+ 	 	<webwork>
     <statement>
       <p permid="EDg">
         Make a truth table for the statement <m>\neg P \imp (Q \wedge R)</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="ZmV">
       <p permid="zTn">
         Like above, only now you will need 8 rows instead of just 4.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   <exercise permid="nxe">
+ 	 	<webwork>
     <statement>
       <p permid="AvD">
         Geoff Poshingten is out at a fancy pizza joint,
@@ -222,7 +239,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         You should write down three statements using the symbols <m>P, Q, R, S</m>.  If Geoff is a truth-teller, then all three statements would be true.  If he was a liar, then all three statements would be false.  But in either case, we don't yet know whether the four atomic statements are true or false, since he hasn't said them by themselves. 
@@ -232,34 +251,44 @@
         A truth table might help, although is probably not entirely necessary.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="fch">
+ 	 	<webwork>
     <statement>
       <p permid="kKp">
         Determine whether the following two statements are logically equivalent:
         <m>\neg(P \imp Q)</m> and <m>P \wedge \neg Q</m>.
         Explain how you know you are correct.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Fue">
       <p permid="Pcl">
         Make a truth table for each and compare.
         The statements are logically equivalent.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Ljq">
+ 	 	<webwork>
     <statement>
       <p permid="QRy">
         Are the statements <m>P \imp (Q\vee R)</m> and
         <m>(P \imp Q) \vee (P \imp R)</m> logically equivalent?
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="rqz">
+ 	 	<webwork>
     <statement>
       <p permid="wYH">
         Simplify the following statements
@@ -284,7 +313,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="lBn">
       <p permid="TMe">
         <ol permid="uUZ">
@@ -312,9 +343,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="XxI">
+ 	 	<webwork>
     <statement>
       <p permid="dfQ">
         Use De Morgan's Laws,
@@ -344,11 +377,15 @@
           </li>
         </ol>
       </p>
-    </statement>
     
-  </exercise>
+ 	<p><var form="essay"/></p>
+ 	</statement>
+    
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Consider the statement,
@@ -378,7 +415,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         <ol>
@@ -401,9 +440,11 @@
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="jMa">
+ 	 	<webwork>
     <statement>
       <p permid="pui">
         Tommy Flanagan was telling you what he ate yesterday afternoon.
@@ -419,15 +460,19 @@
         Justify your answer by writing all of Tommy's statements using sentence variables (<m>P, Q, R, S, T</m>),
         taking their negations, and using these to deduce what Tommy actually ate.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Write down three statements, and then take the negation of each (since he is a liar).  You should find that Tommy ate one item and drank one item.  (<m>Q</m> is for cucumber sandwiches.)
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="PTj">
+ 	 	<webwork>
     <statement>
       <p permid="BIA">
         Determine if the following deduction rule is valid:
@@ -451,7 +496,9 @@
         </tabular>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="dWO">
       <p permid="HxM">
         The deduction rule is valid.
@@ -462,9 +509,11 @@
         <m>P \vee Q</m> and <m>\neg P</m> true.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="was">
+ 	 	<webwork>
     <statement>
       <p permid="hPJ">
         Determine if the following is a valid deduction rule:
@@ -488,10 +537,14 @@
         </tabular>
 
       </sidebyside>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="chB">
+ 	 	<webwork>
     <statement>
       <p permid="NWS">
         Determine if the following is a valid deduction rule:
@@ -515,10 +568,14 @@
         </tabular>
 
       </sidebyside>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="IoK">
+ 	 	<webwork>
     <statement>
       <p permid="ueb">
         Can you chain implications together?
@@ -593,15 +650,19 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         For the second part, you can inductively assume that from the first <m>n-2</m> implications you can deduce <m>P_1 \imp P_{n-1}</m>.  Then you are back in the case in part (a) again.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ovT">
+ 	 	<webwork>
     <statement>
       <p permid="alk">
         We can also simplify statements in predicate logic using our rules for passing negations over quantifiers,
@@ -632,7 +693,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="KdX">
       <p permid="nEV">
         <ol permid="ONQ">
@@ -658,9 +721,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Simplify the statements below to the point that negation symbols occur only directly next to predicates.
@@ -677,11 +742,15 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
   
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Simplifying negations will be especially useful in the next section when we try to prove a statement by considering what would happen if it were false.  For each statement below, write the <em>negation</em> of the statement as simply as possible.  Don't just say, <q>it is false that <ellipsis/></q>.
@@ -703,16 +772,20 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         It might help to translate the statements into symbols and then use the formulaic rules to simplify negations (i.e., rules for quantifiers and De Morgan's laws).  After simplifying, you should get <m>\forall x(\neg E(x) \wedge \neg O(x))</m>, for the first one, for example.  Then translate this back into English.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
 
   <exercise permid="UDc">
+ 	 	<webwork>
     <statement>
       <p permid="Gst">
         Suppose <m>P</m> and <m>Q</m> are
@@ -720,16 +793,20 @@
         propositional statements.
         Prove that <m>P</m> and <m>Q</m> are logically equivalent if any only if <m>P \iff Q</m> is a tautology.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="qlg">
       <p permid="gaw">
         What do these concepts mean in terms of truth tables?
       </p>
     </hint>
       <!-- TODO: needs solution -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="AKl">
+ 	 	<webwork>
     <statement>
       <p permid="mzC">
         Suppose <m>P_1, P_2, \ldots, P_n</m> and <m>Q</m> are
@@ -773,8 +850,11 @@
         </me>
         is a tautology.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <!-- TODO: needs solution -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 </exercises>

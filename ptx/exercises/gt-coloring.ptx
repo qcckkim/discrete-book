@@ -2,12 +2,15 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="lUM" xml:id="exercises_gt-coloring">
 
   <exercise permid="TCN">
+ 	 	<webwork>
     <statement>
       <p permid="GSW">
         What is the smallest number of colors you need to properly color the vertices of <m>K_{4,5}</m>?
         That is, find the chromatic number of the graph.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="pkR">
       <p permid="JNC">
         2, since the graph is bipartite.
@@ -15,16 +18,20 @@
         another color for the bottom set of vertices.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zJW">
+ 	 	<webwork>
     <statement>
       <p permid="naf">
         Draw a graph with chromatic number 6 (i.e., which requires 6 colors to properly color the vertices).
         Could your graph be planar?
         Explain.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Vsa">
       <p permid="pUL">
         For example, <m>K_6</m>.
@@ -32,9 +39,11 @@
         the 4-color theorem states that all planar graphs can be colored with 4 or fewer colors.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="fRf">
+ 	 	<webwork>
     <statement>
       <p permid="Tho">
         Find the chromatic number of each of the following graphs.
@@ -88,15 +97,19 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Bzj">
       <p permid="WbU">
         The chromatic numbers are 2, 3, 4, 5, and 3 respectively from left to right.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="LYo">
+ 	 	<webwork>
     <statement>
       <p permid="zox">
         A group of 10 friends decides to head up to a cabin in the woods
@@ -159,15 +172,21 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="sfx">
+ 	 	<webwork>
     <statement>
       <p permid="fvG">
         What is the smallest number of colors that can be used to color the vertices of a cube so that no two adjacent vertices are colored identically?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="hGs">
       <p permid="Cjd">
         The cube can be represented as a planar graph and colored with two colors as follows:
@@ -193,9 +212,11 @@
         (it is bipartite).
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="YmG">
+ 	 	<webwork>
     <statement>
       <p permid="LCP">
         Prove the chromatic number of any tree is two.
@@ -246,10 +267,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="EtP">
+ 	 	<webwork>
     <statement>
       <p permid="rJY">
         The two problems below can be solved using graph coloring.
@@ -315,16 +340,20 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         For (a), you will want the teams to be vertices and games to be edges.  Which does it make sense to color? 
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="kAY">
+ 	 	<webwork>
     <statement>
       <p permid="XRh">
         Prove the 6-color theorem: every planar graph has chromatic number 6 or less.
@@ -332,17 +361,23 @@
         (whose proof is MUCH harder),
         but you may assume the fact that every planar graph contains a vertex of degree at most 5.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="QIh">
+ 	 	<webwork>
     <statement>
       <p permid="DYq">
         Not all graphs are perfect.
         Give an example of a graph with chromatic number 4 that does not contain a copy of <m>K_4</m>.
         That is, there should be no 4 vertices all pairwise adjacent.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="tUK">
       <p permid="uEE">
         The wheel graph below has this property.
@@ -365,10 +400,12 @@
 
       </sidebyside>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Find the chromatic number of the graph below and prove you are correct.
@@ -384,7 +421,9 @@
           </latex-image>
         </image>
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         The chromatic number is 4.  Now prove this!
@@ -394,19 +433,25 @@
         Note that you cannot use the 4-color theorem, or Brooke's theorem, or the clique number here.  In fact, this graph, called the <em>Grötzsch graph</em> is the smallest graph with chromatic number 4 that does not contain any triangles.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="wPq">
+ 	 	<webwork>
     <statement>
       <p permid="kfz">
         Prove by induction on vertices that any graph <m>G</m> which contains at least one vertex of degree less than <m>\Delta(G)</m>
         (the maximal degree of all vertices in <m>G</m>)
         has chromatic number at most <m>\Delta(G)</m>.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="cWz">
+ 	 	<webwork>
     <statement>
       <p permid="QmI">
         You have a set of magnetic alphabet letters
@@ -416,7 +461,9 @@
         you don't want to put two consecutive letters in the same box.
         What is the fewest number of boxes you need (assuming the boxes are able to hold as many letters as they need to)?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="abT">
       <p permid="aLN">
         If we drew a graph with each letter representing a vertex,
@@ -429,14 +476,18 @@
         Thus only two boxes are needed.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Suppose you colored edges of a graph either red or blue (not requiring that adjacent edges be colored differently).  What must be true of the graph to guarantee some vertex is incident to three edges of the same color?  Prove your answer.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         You can color <m>K_5</m> in such a way that every vertex is adjacent to exactly two blue edges and two red edges.  However, there is a graph with only 5 edges that will result in a vertex incident to three edges of the same color no matter how they are colored.  What is it, and how can you generalize?
@@ -447,21 +498,26 @@
         
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="JdI">
+ 	 	<webwork>
     <statement>
       <p permid="wtR">
         Prove that if you color every edge of <m>K_6</m> either red or blue,
         you are guaranteed a monochromatic triangle
         (that is, an all red or an all blue triangle).
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         The previous exercise is useful as a starting point.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 </exercises>

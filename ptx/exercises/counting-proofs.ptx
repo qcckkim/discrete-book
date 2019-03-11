@@ -4,11 +4,14 @@
 
 
   <exercise permid="WiL">
+ 	 	<webwork>
     <statement>
       <p permid="GbL">
         Give a combinatorial proof of the identity <m>2+2+2 = 3\cdot 2</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="tGc">
 
       <proof permid="ZNl">
@@ -38,9 +41,11 @@
         </p>
       </proof>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           Suppose you own <m>x</m> fezzes and <m>y</m> bow ties. Of course, <m>x</m> and <m>y</m> are both greater than 1.
@@ -68,10 +73,14 @@
           </li>
         </ol>
       </p>
-      </statement>
-    </exercise>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
+    </webwork>
+ 	</exercise>
     
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           How many triangles can you draw using the dots below as vertices?
@@ -110,7 +119,9 @@
             </li>
           </ol>
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint>
         <p>
           There will be 185 triangles.  But to find them <ellipsis/>
@@ -128,11 +139,13 @@
           </ol>
         </p>
       </hint>
-    </exercise>
+    </webwork>
+ 	</exercise>
     
     
     
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           Consider all the triangles you can create using the points shown below as vertices.
@@ -184,17 +197,21 @@
             </li>
           </ol>
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint>
         <p>
           The answer is 120.  
         </p>
       </hint>
       
-    </exercise>
+    </webwork>
+ 	</exercise>
 
 
     <exercise permid="ixd" xml:id="exc-bridesmaids">
+ 	 	<webwork>
       <statement>
         <p permid="Sqd">
           A woman is getting married.
@@ -224,7 +241,9 @@
             </p>
           </li>
         </ol>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <solution permid="SiM">
         <p permid="ySL">
           <ol permid="VNm">
@@ -257,9 +276,11 @@
           </ol>
         </p>
       </solution>
-    </exercise>
+    </webwork>
+ 	</exercise>
     
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           Consider the identity:
@@ -287,20 +308,26 @@
             </li>
           </ol>
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint>
         <p>
           Try <xref ref="exc-bridesmaids"/>
         </p>
       </hint>
-    </exercise>
+    </webwork>
+ 	</exercise>
     
     <exercise permid="wAI">
+ 	 	<webwork>
       <statement>
         <p permid="MAR">
           Give a combinatorial proof of the identity <m>{n \choose 2}{n-2 \choose k-2} = {n\choose k}{k \choose 2}</m>.
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint permid="Rdt">
         <p permid="tNt">
           What if you wanted a pair of co-maids-of-honor?
@@ -341,9 +368,11 @@
         </proof>
 
       </solution>
-    </exercise>
+    </webwork>
+ 	</exercise>
     
     <exercise>
+ 	 	<webwork>
       <statement>
         <p>
           Consider the binomial identity
@@ -361,33 +390,41 @@
             </li>
           </ol>
         </p>
-      </statement>
+      
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <hint>
         <p>
           For the combinatorial proof: what if you don't yet know how many bridesmaids you will have?
         </p>
       </hint>
-    </exercise>
+    </webwork>
+ 	</exercise>
   
     
     
   <exercise permid="CpU">
+ 	 	<webwork>
     <statement>
       <p permid="miU">
         Give a combinatorial proof for the identity <m>1 + 2 + 3 + \cdots + n = {n+1 \choose 2}</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Count handshakes.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   
 
   <exercise permid="uLv">
+ 	 	<webwork>
     <statement>
       <p permid="eEv">
         Consider the bit strings in <m>\B^6_2</m>
@@ -432,12 +469,16 @@
           </p>
         </li>
       </ol>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
 
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="aSE">
+ 	 	<webwork>
     <statement>
       <p permid="KLE">
         Let's count <term>ternary</term> digit strings,
@@ -494,26 +535,34 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
             <!-- Remove solution in next edition -->
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="GZN">
+ 	 	<webwork>
     <statement>
       <p permid="qSN">
         How many ways are there to rearrange the letters in the word <q>rearrange</q>?
         Answer this question in at least two different ways to establish a binomial identity.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <!-- Remove solution in next edition -->
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
   
 
   <exercise permid="Tof">
+ 	 	<webwork>
     <statement>
       <p permid="Dhf">
         Establish the identity below using a combinatorial proof.
@@ -521,16 +570,20 @@
           {2 \choose 2}{n \choose 2} + {3 \choose 2}{n-1 \choose 2} + {4\choose 2}{n-2 \choose 2} + \cdots + {n\choose 2}{2\choose 2} = {n+3 \choose 5}
         </me>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         This one might remind you of <xref ref="ex-comb-proof-3elemsets"/>
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         In <xref ref="ex-comb-proof-rowsum"/> we established that the sum of any row in Pascal's triangle is a power of two.  Specifically,
@@ -556,13 +609,16 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         For the lattice paths, think about what sort of paths <m>2^n</m> would count.  Not all the paths will end at the same point, but you could describe the set of end points as a line.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
 </exercises>

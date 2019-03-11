@@ -142,6 +142,7 @@
   </exercise>
 
   <exercise permid="qzO">
+ 	 	<webwork>
     <statement>
       <p permid="vcD">
         Consider the sequence <m>5, 11, 19, 29, 41, 55,\ldots</m>.
@@ -175,8 +176,11 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="WGX">
     <webwork>
@@ -206,6 +210,7 @@
   </exercise>
       <!-- TODO: make multiple choice for webwork -->
   <exercise permid="COg">
+ 	 	<webwork>
     <statement>
       <p permid="HqV">
         Suppose the closed formula for a particular sequence is a degree 3 polynomial.
@@ -225,7 +230,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="wYU">
       <p permid="ARP">
         <ol permid="yOh">
@@ -244,9 +251,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="iVp">
+ 	 	<webwork>
     <statement>
       <p permid="nye">
         Consider the sequence given recursively by <m>a_1 = 4</m>,
@@ -267,7 +276,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="dgd">
       <p permid="gYY">
         <ol permid="eVq">
@@ -282,7 +293,8 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Pcy">
     <webwork>
@@ -312,6 +324,7 @@
   </exercise>
 
   <exercise permid="vjH">
+ 	 	<webwork>
     <statement>
       <p permid="zMw">
         The in song <em>The Twelve Days of Christmas</em>,
@@ -320,9 +333,12 @@
         and so on.
         How many gifts did my true love give me all together during the twelve days?
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
         <!-- TODO: needs solution -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="bqQ">
     <webwork>
@@ -420,6 +436,7 @@
   </exercise>
 
   <exercise permid="nFi">
+ 	 	<webwork>
     <statement>
       <p permid="shX">
         Your magic chocolate bunnies
@@ -450,7 +467,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="BIN">
       <p permid="lIR">
         <ol permid="XqR">
@@ -487,9 +506,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Consider the sequence of partial sums of <em>squares</em> of Fibonacci numbers: <m>F_1^2</m>, <m>F_1^2 + F_2^2</m>, <m>F_1^2 + F_2^2 + F_3^2, \ldots</m>.  The sequences starts <m>1, 2, 6, 15, 40,\ldots</m> 
@@ -520,11 +541,15 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 
   <exercise permid="TMr">
+ 	 	<webwork>
     <statement>
       <p permid="Ypg">
         Prove the following statements by mathematical induction:
@@ -554,7 +579,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="hPW">
       <p permid="RQa">
         <ol permid="Dya">
@@ -597,15 +624,19 @@
         </ol>
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zTA">
+ 	 	<webwork>
     <statement>
       <p permid="Ewp">
         Prove <m>1^3 + 2^3 + 3^3 + \cdots + n^3 = \left(\frac{n(n+1)}{2}\right)^2</m> holds for all <m>n \ge 1</m>,
         by mathematical induction.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="NXf">
       <p permid="xXj">
         This is a straight forward induction proof.
@@ -613,9 +644,11 @@
         <m>\left(\frac{n(n+1)}{2}\right)^2 + (n+1)^3</m> and get <m>\left(\frac{(n+1)(n+2)}{2}\right)^2</m>.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="gaJ">
+ 	 	<webwork>
     <statement>
       <p permid="kDy">
         Suppose <m>a_0 = 1</m>,
@@ -623,7 +656,9 @@
         Prove, using strong induction,
         that <m>a_n = 1</m> for all <m>n</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="ueo">
       <p permid="ees">
         There are two base cases <m>P(0)</m> and <m>P(1)</m>.
@@ -633,15 +668,19 @@
         Apply the recurrence relation.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
   <exercise permid="spb">
+ 	 	<webwork>
     <statement>
       <p permid="wRQ">
         Prove using induction that every set containing <m>n</m> elements has <m>2^n</m> different subsets for any <m>n \ge 1</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="GsG">
       <p permid="qsK">
         Let <m>P(n)</m> be the statement,
@@ -670,6 +709,7 @@
         <m>P(n)</m> is true for all <m>n \ge 1</m>.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 </exercises>

@@ -135,6 +135,7 @@
   
 
   <exercise permid="oIb">
+ 	 	<webwork>
     <statement>
       <p permid="cmF">
         Each of the counting problems below can be solved with stars and bars.
@@ -173,7 +174,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="eiW">
       <p permid="SST">
         <ol permid="nCI">
@@ -228,7 +231,8 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="UPk">
     <webwork>
@@ -467,6 +471,7 @@
   </exercise>
 
   <exercise permid="FGm">
+ 	 	<webwork>
     <statement>
       <p permid="lGr">
         Solve the three counting problems below.
@@ -495,8 +500,11 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="lNv">
     <webwork>

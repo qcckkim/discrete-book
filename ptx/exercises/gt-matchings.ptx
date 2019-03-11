@@ -2,6 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="dVb" xml:id="exercises_gt-matchings">
 
   <exercise permid="PhC">
+ 	 	<webwork>
     <statement>
       <p permid="XvV">
         Find a matching of the bipartite graphs below or explain why no matching exists.
@@ -63,7 +64,9 @@
         </image>
 
       </sidebyside>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="zYE">
       <p permid="roM">
         The first and third graphs have a matching, shown in bold
@@ -100,9 +103,11 @@
 
       </sidebyside>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="voL">
+ 	 	<webwork>
     <statement>
       <p permid="DDe">
         A bipartite graph that doesn't have a matching might still have a
@@ -143,10 +148,14 @@
         </image>
 
       </sidebyside>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="bvU">
+ 	 	<webwork>
     <statement>
       <p permid="PRw">
         One way you might check to see whether a partial matching is maximal is to construct an
@@ -220,10 +229,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="HDd">
+ 	 	<webwork>
     <statement>
       <p permid="vYF">
         The two richest families in Westeros have decided to enter into an alliance by marriage.
@@ -286,10 +299,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="nKm">
+ 	 	<webwork>
     <statement>
       <p permid="ImX">
         We say that a set of vertices
@@ -320,10 +337,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="TRv">
+ 	 	<webwork>
     <statement>
       <p permid="oug">
         For many applications of matchings,
@@ -355,7 +376,10 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 </exercises>

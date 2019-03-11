@@ -2,13 +2,16 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="sik" xml:id="exercises-sec-recurrence">
 
   <exercise permid="zyo">
+ 	 	<webwork>
     <statement>
       <p permid="RQn">
         Find the next two terms in <m>(a_n)_{n\ge 0}</m> beginning
         <m>3, 5, 11, 21, 43, 85\ldots</m>. Then give a recursive definition for the sequence.
         Finally, use the characteristic root technique to find a closed formula for the sequence.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="Vgs">
       <p permid="oDK">
         171 and 341. <m>a_n = a_{n-1} + 2a_{n-2}</m> with <m>a_0 = 3</m> and <m>a_1 = 5</m>.
@@ -22,9 +25,11 @@
         </md>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   <exercise permid="yeA">
+ 	 	<webwork>
     <statement>
       <p permid="qeC">
         Consider the sequences <m>2, 5, 12, 29, 70, 169, 408,\ldots</m>
@@ -60,8 +65,11 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="fFx">
     <webwork>
@@ -105,11 +113,14 @@
   </exercise>
 
   <exercise permid="LMG">
+ 	 	<webwork>
     <statement>
       <p permid="eeF">
         Show that <m>4^n</m> is a solution to the recurrence relation <m>a_n = 3a_{n-1} + 4a_{n-2}</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="NBT">
       <p permid="ASc">
         We claim <m>a_n = 4^n</m> works.
@@ -117,7 +128,8 @@
         This works - just simplify the right-hand side.
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="rTP">
     <webwork>
@@ -198,17 +210,22 @@
   </exercise>
 
   <exercise permid="Qwz">
+ 	 	<webwork>
     <statement>
       <p permid="OVH">
         Suppose that <m>r^n</m> and <m>q^n</m> are both solutions to a recurrence relation of the form <m>a_n = \alpha a_{n-1} + \beta a_{n-2}</m>.
         Prove that <m>c\cdot r^n + d \cdot q^n</m> is also a solution to the recurrence relation,
         for any constants <m>c, d</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <!-- TODO: Needs solution -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="wDI">
+ 	 	<webwork>
     <statement>
       <p permid="vcQ">
         Think back to the magical candy machine at your neighborhood grocery store.
@@ -231,11 +248,15 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
             <!-- TODO: needs solution -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="cKR">
+ 	 	<webwork>
     <statement>
       <p permid="bjZ">
         Let <m>a_n</m> be the number of
@@ -266,7 +287,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="SlM">
       <p permid="FBV">
         <ol permid="eAe">
@@ -293,9 +316,11 @@
       </p>
     </solution>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ISa">
+ 	 	<webwork>
     <statement>
       <p permid="Hri">
         You have access to <m>1 \times 1</m> tiles which come in 2 different colors and
@@ -317,10 +342,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
   
   <exercise permid="Eih">
+ 	 	<webwork>
     <statement>
       <p permid="WAg">
         Solve the recurrence relation <m>a_n = 2a_{n-1} - a_{n-2}</m>.
@@ -345,7 +374,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="FXu">
       <p permid="tnD">
         We have characteristic polynomial <m>x^2 - 2x + 1</m>,
@@ -371,9 +402,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="oZj">
+ 	 	<webwork>
     <statement>
       <p permid="nyr">
         Consider the recurrence relation <m>a_n = 4a_{n-1} - 4a_{n-2}</m>.
@@ -399,7 +432,10 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 </exercises>

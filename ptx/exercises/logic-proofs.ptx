@@ -2,6 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" permid="QYC" xml:id="exercises_logic-proofs">
 
   <exercise permid="MRm">
+ 	 	<webwork>
     <statement>
       <p permid="XTh">
         Consider the statement <q>for all integers <m>a</m> and <m>b</m>,
@@ -55,7 +56,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="fEK">
       <p permid="UoH">
         <ol permid="qNJ">
@@ -112,9 +115,11 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   <exercise permid="uNI">
+ 	 	<webwork>
     <statement>
       <p permid="yle">
         For each of the statements below,
@@ -144,7 +149,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="KGA">
       <p permid="ncf">
         <ol permid="Pqt">
@@ -179,10 +186,12 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
 
   <exercise permid="sYv">
+ 	 	<webwork>
     <statement>
       <p permid="Eaq">
         Consider the statement: for all integers <m>n</m>,
@@ -204,7 +213,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="LLT">
       <p permid="AvQ">
         <ol permid="WUS">
@@ -236,10 +247,12 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   
   <exercise permid="WkY">
+ 	 	<webwork>
     <statement>
       <p permid="ZIu">
         The game TENZI comes with 40 six-sided dice
@@ -259,7 +272,9 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <solution permid="BmO">
       <p permid="JPC">
         <ol permid="jjk">
@@ -302,39 +317,49 @@
         </ol>
       </p>
     </solution>
-  </exercise>
+  </webwork>
+ 	</exercise>
   
   
   <exercise>
+ 	 	<webwork>
     <statement>
       <p>
         Prove that for all integers <m>n</m>, it is the case that <m>n</m> is  even if and only if <m>3n</m> is even.  That is, prove both implications: if <m>n</m> is even, then <m>3n</m> is even, and if <m>3n</m> is even, then <m>n</m> is even. 
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         One of the implications will be a direct proof, the other will be a proof by contrapositive.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
 
   <exercise permid="RBf">
+ 	 	<webwork>
     <statement>
       <p permid="UYB">
         Prove that <m>\sqrt 3</m> is irrational.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         This is really an exercise in modifying the proof that <m>\sqrt{2}</m> is irrational.  There you proved things were even; here they will be multiples of 3.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="xIo">
+ 	 	<webwork>
     <statement>
       <p permid="BfK">
         Consider the statement: for all integers <m>a</m> and <m>b</m>,
@@ -357,42 +382,54 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Part (a) should be a relatively easy direct proof.  Look for a counterexample for part (b).
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="dPx">
+ 	 	<webwork>
     <statement>
       <p permid="hmT">
         Prove the statement: For all integers <m>n</m>,
         if <m>5n</m> is odd, then <m>n</m> is odd.
         Clearly state the style of proof you are using.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="JWG">
+ 	 	<webwork>
     <statement>
       <p permid="Nuc">
         Prove the statement: For all integers <m>a</m>, <m>b</m>,
         and <m>c</m>,
         if <m>a^2 + b^2 = c^2</m>, then <m>a</m> or <m>b</m> is even.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         A proof by contradiction would be reasonable here, because then you get to assume that both <m>a</m> <em>and</em> <m>b</m> are odd.  Deduce that <m>c^2</m> is even, and therefore a multiple of 4 (why? and why is that a contradiction?).
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="ltW">
+ 	 	<webwork>
     <statement>
       <p permid="cDa">
         Suppose that you would like to prove the following implication:
@@ -433,11 +470,15 @@
         (since you do not know what solitary means).
         However, make sure that you provide the first few and last few lines of the proofs so that we can see that logical structure you would follow.
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 
   <exercise permid="FmN">
+ 	 	<webwork>
     <statement>
       <p permid="wvR">
         Suppose you have a collection of 5-cent stamps and 8-cent stamps.
@@ -466,18 +507,22 @@
           </li>
         </ol>
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Use a different style of proof for each part.  The last part should remind you of the pigeonhole principle, so mimicking that proof might be helpful.
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
 
 
   <exercise permid="qdP">
+ 	 	<webwork>
     <statement>
       <p permid="tBl">
         Prove: <m>x=y</m> if and only if <m>xy=\dfrac{(x+y)^2}{4}</m>.
@@ -485,57 +530,73 @@
         <q>directions</q> here:
         the <q>if</q> and the <q>only if</q> part.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
       <!-- TODO: needs solution -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   
 
   <exercise permid="Csh">
+ 	 	<webwork>
     <statement>
       <p permid="FPD">
         Prove that <m>\log(7)</m> is irrational.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Note that if <m>\log(7) = \frac{a}{b}</m>, then <m>7 = 10^\frac{a}{b}</m>.  Can any power of 7 be the same as a power of 10?
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="izq">
+ 	 	<webwork>
     <statement>
       <p permid="lWM">
         Prove that there are no integer solutions to the equation <m>x^2 = 4y + 3</m>.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         What if there were?  Deduce that <m>x</m> must be odd, and continue towards a contradiction.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="OGz">
+ 	 	<webwork>
     <statement>
       <p permid="SdV">
         Prove that every prime number greater than 3 is either one more or one less than a multiple of 6.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint permid="ysi">
       <p permid="Tjo">
         Prove the contrapositive by cases.  There will be 4 cases to consider.
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
   
   <exercise permid="ZfE">
+ 	 	<webwork>
     <statement>
       <p permid="khz">
         Your <q>friend</q> has shown you a <q>proof</q>
@@ -560,18 +621,22 @@
         Is the argument a proof of the claim <m>1=3</m>?
         Carefully explain using what we know about logic.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Your friend's proof a proof, but of what?  What implication follows from the given proof?  Is that helpful?  
       </p>
     </hint>
     
-  </exercise>
+  </webwork>
+ 	</exercise>
 
 
 
   <exercise permid="aUR">
+ 	 	<webwork>
     <statement>
       <p permid="esn">
         A standard deck of 52 cards consists of 4 suites (hearts,
@@ -608,10 +673,14 @@
           </li>
         </ol>
       </p>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Hca">
+ 	 	<webwork>
     <statement>
       <p permid="Kzw">
         Suppose you are at a party with 19 of your closest friends
@@ -619,15 +688,19 @@
         Explain why there must be least two people at the party who are friends with the same number of people at the party.
         Assume friendship is always reciprocated.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         Consider the set of <em>numbers</em> of friends that everyone has.  If everyone had a different number of friends, this set must contain 20 elements.  Is that possible?  Why not?
       </p>
     </hint>
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="njj">
+ 	 	<webwork>
     <statement>
       <p permid="qGF">
         Your friend has given you his list of 115 best Doctor Who episodes
@@ -635,16 +708,20 @@
         It turns out that you have seen 60 of them.
         Prove that there are at least two episodes you have seen that are exactly four episodes apart on your friend's list.
       </p>
-    </statement>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
     <hint>
       <p>
         This feels like the pigeonhole principle, although a bit more complicated.  At least, you could try to replicate the style of proof used by the pigeonhole principle.  How would the episodes need to be spaced out so that no two of your sixty were exactly 4 apart?
       </p>
     </hint>
       <!-- TODO: needs instructor solution -->
-  </exercise>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="Tqs">
+ 	 	<webwork>
     <statement>
       <p permid="WNO">
         Suppose you have an <m>n\times n</m> chessboard but your dog has eaten one of the corner squares.
@@ -673,10 +750,14 @@
         </image>
 
       </sidebyside>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
   <exercise permid="zxB">
+ 	 	<webwork>
     <statement>
       <p permid="CUX">
         What if your <m>n\times n</m> chessboard is missing two opposite corners?
@@ -702,7 +783,10 @@
         </image>
 
       </sidebyside>
-    </statement>
-  </exercise>
+    
+ 	<p><var form="essay"/></p>
+ 	</statement>
+  </webwork>
+ 	</exercise>
 
 </exercises>
