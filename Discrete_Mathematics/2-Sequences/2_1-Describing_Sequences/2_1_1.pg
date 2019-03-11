@@ -1,0 +1,91 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:34-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.1.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context()->variables->are(n => "Real");
+$ans1 = Formula("n^2 + 1");
+$ans2 = Formula("(n*(n-1))/2 - 1");
+$ans3 = Formula("((n+2)*(n+3))/2 + 2");
+$ans4 = Formula("(n+1)! - 1");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the closed formula for each of the following sequences by relating them to a well known sequence. Assume the first term given is [`a_1\text{.}`]
+a.  [`2, 5, 10, 17, 26, \ldots`]
+
+    [@KeyboardInstructions(q?[`a_n = `] [__________]{$ans1}?)@]**
+
+a.  [`0, 2, 5, 9, 14, 20, \ldots`]
+
+    [@KeyboardInstructions(q?[`a_n = `] [__________]{$ans2}?)@]**
+
+a.  [`8, 12, 17, 23, 30,\ldots`]
+
+    [@KeyboardInstructions(q?[`a_n = `] [__________]{$ans3}?)@]**
+
+a.  [`1, 5, 23, 119, 719,\ldots`]
+
+    [@KeyboardInstructions(q?[`a_n = `] [__________]{$ans4}?)@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  Note that if we subtract 1 from each term, we get the familiar triangular numbers. Thus [`a_n = n^2 + 1\text{.}`]
+a.  These look like the triangular numbers, only shifted by 1. We get: [`a_n = \frac{n(n+1)}{2} - 1\text{.}`]
+a.  If you subtract 2 from each term, you get triangular numbers, only starting with 6 instead of 1. So we must shift vertically and horizontally. [`a_n = \frac{(n+2)(n+3)}{2} + 2\text{.}`]
+a.  These seem to grow very quickly. Further, if we add 1 to each term, we find the factorials, although starting with 2 instead of 1. This gives, [`a_n = (n+1)! - 1`] (where [`n! = 1 \cdot 2 \cdot 3 \cdots n`]).   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

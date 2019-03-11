@@ -1,0 +1,84 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.6.3.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans = Compute("C(10,7) - C(4,1)*C(6,3)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the equation [`x_1 + x_2 + x_3 + x_4 = 15\text{.}`] How many solutions are there with [`2 \le x_i \le 5`] for all [`i \in \{1,2,3,4\}\text{?}`]
+
+[__________]{$ans}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Instead, count the solutions to [`y_1 + y_2 + y_3 + y_4 = 7`] with [`0 \le y_i \le 3\text{.}`]  Why is this equivalent?
+
+END_PGML_HINT
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+There are [`
+              {10 \choose 7} - {4\choose 1} {6 \choose 3}
+            `] solutions.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

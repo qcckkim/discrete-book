@@ -1,0 +1,87 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.7.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("4^5");
+$ans2 = Compute("4^4*2");
+$ans3 = Compute("C(5,3)*2^3*2^2 + C(5,4)*2^4*2 + C(5,5)*2^5");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider five digit numbers [`\alpha = a_1a_2a_3a_4a_5\text{,}`] with each digit from the set [`\{1,2,3,4\}\text{.}`]
+a.  How many such numbers are there?
+
+    [_____]{$ans1}
+
+a.  How many such numbers are there for which the _sum_ of the digits is even?
+
+    [_____]{$ans2}
+
+a.  How many such numbers contain more even digits than odd digits?
+
+    [__________]{$ans3}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`4^5`] numbers.
+
+a.  [`4^4\cdot 2`] numbers (choose any digits for the first four digits \- then pick either an even or an odd last digit to make the sum even).
+
+a.  We need 3 or more even digits. 3 even digits: [`{5 \choose 3}2^3 2^2\text{.}`] 4 even digits: [`{5 \choose 4}2^4 2\text{.}`] 5 even digits: [`{5 \choose 5}2^5\text{.}`] So all together: [`{5 \choose 3}2^3 2^2 + {5 \choose 4}2^4 2 + {5 \choose 5}2^5`] numbers.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

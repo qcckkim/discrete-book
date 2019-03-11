@@ -73,7 +73,7 @@
  	</exercise>
 
   <exercise permid="qqx">
- 	 	<webwork>
+ 	 	<!-- <webwork> -->
     <statement>
       <p permid="nas">
         Are the two graphs below equal?
@@ -85,7 +85,6 @@
       <p permid="ThB">
         Graph 1: <m>V = \{a,b,c,d,e\}</m>,
         <m>E = \{\{a,b\}, \{a,c\}, \{a,e\}, \{b,d\}, \{b,e\}, \{c,d\}\}</m>.
-			<!-- <footnote>Corrected the last edge of graph 1 to make solution correct</footnote> -->
       </p>
 
       <p permid="zoK">
@@ -107,7 +106,7 @@
 
       </sidebyside>
     
- 	<p><var form="essay"/></p>
+ 	<!-- <p><var form="essay"/></p> -->
  	</statement>
     <solution permid="TDa">
       <p permid="dGG">
@@ -121,11 +120,11 @@
         <m>f(d) = b</m>, <m>f(e) = a</m>.
       </p>
     </solution>
-  </webwork>
+  <!-- </webwork> -->
  	</exercise>
 
   <exercise permid="WxG">
- 	 	<webwork>
+ 	 	<!-- <webwork> -->
     <statement>
       <p permid="fvT">
         Consider the following two graphs:
@@ -233,9 +232,9 @@
         </ol>
       </p>
     
- 	<p><var form="essay"/></p>
+ 	<!-- <p><var form="essay"/></p> -->
  	</statement>
-  </webwork>
+  <!-- </webwork> -->
  	</exercise>
 
   <exercise>
@@ -611,6 +610,8 @@
     </hint>
   </webwork>
  	</exercise>
+  
+  
 
   <exercise>
  	 	<webwork>
@@ -662,16 +663,17 @@
  	 	<webwork>
     <statement>
       <p>
-        Suppose <m>G</m> is a connected graph with <m>n &gt; 1</m> vertices and <m>n-1</m> edges.  Prove that <m>G</m> has a vertex of degree 1.
+        Suppose <m>G</m> is a connected graph with <m>n \gt 1</m> vertices and <m>n-1</m> edges.  Prove that <m>G</m> has a vertex of degree 1.
       </p>
     
- 	<p><var form="essay"/></p>
- 	</statement>
+ 	    <p><var form="essay"/></p>
+ 	  </statement>
     <hint>
       <p>
         Use the <xref ref="lem-handshake">handshake lemma</xref>.  What would happen if all the vertices had degree 2?
       </p>
     </hint>
-  </webwork>
+    </webwork>
  	</exercise>
+  
 </exercises>

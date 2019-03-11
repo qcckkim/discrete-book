@@ -1,0 +1,55 @@
+openDate          = 03/11/2019 at 12:00am
+dueDate           = 09/11/2019 at 10:00pm
+answerDate        = 09/11/2019 at 10:00pm
+paperHeaderFile   = Discrete_Mathematics/header/4_5-Euler_Paths_and_Circuits_Exercises.pg
+screenHeaderFile  = Discrete_Mathematics/header/4_5-Euler_Paths_and_Circuits_Exercises.pg
+description       = Euler Paths and Circuits
+problemListV2
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_1.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_2.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_8.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_11.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Discrete_Mathematics/4-Graph_Theory/4_5-Euler_Paths_and_Circuits/4_5_2_12.pg
+problem_id = 12
+problem_end

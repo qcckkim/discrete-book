@@ -1,0 +1,90 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:29-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(1.2.4.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+$atomic = PopUp(
+["?","atomic statement","molecular statement","not a statement"],
+"atomic statement", # correct answer
+);
+$molecular = PopUp(
+["?","atomic statement","molecular statement","not a statement"],
+"molecular statement",
+);
+$none = PopUp(
+["?","atomic statement","molecular statement","not a statement"],
+"not a statement",
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For each sentence below, decide whether it is an atomic statement, a molecular statement, or not a statement at all.
+a.  Customers must wear shoes. [_____]{$none}
+
+a.  The customers wore shoes. [_____]{$atomic}
+
+a.  The customers wore shoes and they wore socks. [_____]{$molecular}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  This is not a statement. It is an imperative sentence, but is not either true or false. It doesn't matter that this might actually be the rule or not. Note that "The rule is that all customers must wear shoes" _is_ a statement.
+
+a.  This is a statement, as it is either true or false. It is an atomic statement because it cannot be divided into smaller statements.
+
+a.  This is again a statement, but this time it is molecular. In fact, it is a conjunction, as we can write it as "The customers wore shoes and the customers wore socks."
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

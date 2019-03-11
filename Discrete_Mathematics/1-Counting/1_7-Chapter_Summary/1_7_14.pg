@@ -1,0 +1,79 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.7.14)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("6! - 4*3!");
+$ans2 = Compute("6! - C(6,3)*3!");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How many 6 letter words made from the letters [`a,b,c,d,e,f`] without repeats do not contain the sub-word "bad" in consecutive letters?
+
+[_____]{$ans1}
+
+How many don't to contain the subword "bad" in not-necessarily consecutive letters (but in order)?
+
+[_____]{$ans2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+There are 4 spots to start the word, and then there are [`3!`] ways to arrange the other letters in the remaining three spots. Thus the number of words avoiding the sub-word "bad" in consecutive letters is [`6! - 4\cdot 3!\text{.}`]
+
+If we now need to avoid words that put "b" before "a" before "d", we must choose which spots those letters go (in that order) and then arrange the remaining three letters. Thus, [`6! - {6 \choose 3}3!`] words.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

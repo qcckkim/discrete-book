@@ -239,7 +239,12 @@ tablet: latex-tablet
 viewtablet:
 	$(PDFVIEWER) $(PDFOUT)/dmoi-tablet.pdf &
 
+# WeBWorK pg files:
 
+pg:
+	install -d webwork
+	cd webwork
+	xsltproc --xinclude --stringparam chunk.level 2 --stringparam debug.chapter.start "0" $(PTXXSL)/pretext-ww-problem-sets.xsl $(MERGED);
 
 # Author's Draft
 #   Like electronic PDF version, but for:

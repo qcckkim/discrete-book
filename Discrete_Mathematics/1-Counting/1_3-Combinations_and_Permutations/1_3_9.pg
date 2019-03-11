@@ -1,0 +1,72 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:32-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.3.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans = Compute("C(7,3)*4!");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How many anagrams are there of "anagram"?
+
+[_____]{$ans}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+First, decide where to put the "a"s. There are 7 positions, and we must choose 3 of them to fill with an "a". This can be done in [`{7 \choose 3}`] ways. The remaining 4 spots all get a different letter, so there are [`4!`] ways to finish off the anagram. This gives a total of [`{7 \choose 3}\cdot 4!`] anagrams. Strangely enough, this is 840, which is also equal to [`P(7,4)\text{.}`] To get the answer that way, start by picking one of the 7 _positions_ to be filled by the "n", one of the remaining 6 positions to be filled by the "g", one of the remaining 5 positions to be filled by the "r", one of the remaining 4 positions to be filled by the "m" and then put "a"s in the remaining 3 positions.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

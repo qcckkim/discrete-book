@@ -1,0 +1,107 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:30-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(1.2.4.14)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+$foralltrue = RadioButtons(
+['Give an example of an element \(n\) in the domain for which \(P(n)\) is true.','Give an example of an element \(n\) in the domain for which \(P(n)\) is false.','Show for every element \(n\) in the domain, that \(P(n)\) is true.','Show for every element \(n\) in the domain, that \(P(n)\) is false.'],
+'Show for every element \(n\) in the domain, that \(P(n)\) is true.', # correct answer
+);
+$forallfalse = RadioButtons(
+['Give an example of an element \(n\) in the domain for which \(P(n)\) is true.','Give an example of an element \(n\) in the domain for which \(P(n)\) is false.','Show for every element \(n\) in the domain, that \(P(n)\) is true.','Show for every element \(n\) in the domain, that \(P(n)\) is false.'],
+'Give an example of an element \(n\) in the domain for which \(P(n)\) is false.', # correct answer
+);
+$existstrue = RadioButtons(
+['Give an example of an element \(n\) in the domain for which \(P(n)\) is true.','Give an example of an element \(n\) in the domain for which \(P(n)\) is false.','Show for every element \(n\) in the domain, that \(P(n)\) is true.','Show for every element \(n\) in the domain, that \(P(n)\) is false.'],
+'Give an example of an element \(n\) in the domain for which \(P(n)\) is true.', # correct answer
+);
+$existsfalse = RadioButtons(
+['Give an example of an element \(n\) in the domain for which \(P(n)\) is true.','Give an example of an element \(n\) in the domain for which \(P(n)\) is false.','Show for every element \(n\) in the domain, that \(P(n)\) is true.','Show for every element \(n\) in the domain, that \(P(n)\) is false.'],
+'Show for every element \(n\) in the domain, that \(P(n)\) is false.', # correct answer
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For a given predicate [`P(x)\text{,}`] you might believe that the statements [`\forall x P(x)`] or [`\exists x P(x)`] are either true or false. How would you decide if you were correct in each case?  You have four choices: you could give an example of an element [`n`] in the domain for which [`P(n)`] is true or for which [`P(n)`] if false, or you could argue that no matter what [`n`] is, [`P(n)`] is true or is false.
+a.  What would you need to do to prove [`\forall x P(x)`] is true?
+
+    [@KeyboardInstructions(q?[_____]{$foralltrue}?)@]**
+
+a.  What would you need to do to prove [`\forall x P(x)`] is false?
+
+    [@KeyboardInstructions(q?[_____]{$forallfalse}?)@]**
+
+a.  What would you need to do to prove [`\exists x P(x)`] is true?
+
+    [@KeyboardInstructions(q?[_____]{$existstrue}?)@]**
+
+a.  What would you need to do to prove [`\exists x P(x)`] is false?
+
+    [@KeyboardInstructions(q?[_____]{$existsfalse}?)@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The claim that [`\forall x P(x)`] means that [`P(n)`] is true no matter what [`n`] you consider in the domain of discourse. Thus the only way to prove that [`\forall x P(x)`] is true is to check or otherwise argue that [`P(n)`] is true for all [`n`] in the domain.
+
+a.  To prove [`\forall x P(x)`] is false all you need is one example of an element in the domain for which [`P(n)`] is false. This is often called a counterexample.
+
+a.  We are simply claiming that there is some element [`n`] in the domain of discourse for which [`P(n)`] is true. If you can find one such element, you have verified the claim.
+
+a.  Here we are claiming that no element we find will make [`P(n)`] true. The only way to be sure of this is to verify that _every_ element of the domain makes [`P(n)`] false. Note that the level of proof needed for this statement is the same as to prove that [`\forall x P(x)`] is true.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

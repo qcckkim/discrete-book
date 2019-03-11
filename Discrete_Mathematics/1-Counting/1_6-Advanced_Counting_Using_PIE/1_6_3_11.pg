@@ -1,0 +1,76 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.6.3.11)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("5*6^3 + 5*6^3 - 5^2*6^2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider functions [`f: \{1,2,3,4\} \to \{a,b,c,d,e,f\}\text{.}`] How many functions have the property that [`f(1) \ne a`] or [`f(2) \ne b\text{,}`] or both?
+
+[__________]{$ans}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+There are [`5 \cdot 6^3`] functions for which [`f(1) \ne a`] and another [`5 \cdot 6^3`] functions for which [`f(2) \ne b\text{.}`] There are [`5^2 \cdot 6^2`] functions for which both [`f(1) \ne a`] and [`f(2) \ne b\text{.}`] So the total number of functions for which [`f(1) \ne a`] or [`f(2) \ne b`] or both is
+
+[```
+              5 \cdot 6^3 + 5 \cdot 6^3 - 5^2 \cdot 6^2 = 1260
+            \text{.}```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
