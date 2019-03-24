@@ -622,7 +622,7 @@ fonttitle=\bfseries, attach boxed title to top left={xshift=4mm,yshift=-4mm,yshi
 %% configure hyperref's  \url  to match listings' inline verbatim
 \renewcommand\UrlFont{\small\ttfamily}
 %% Hyperlinking active in electronic PDFs, all links solid and blue
-\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue}
+\hypersetup{hidelinks=true,colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue}
 \hypersetup{pdftitle={Discrete Mathematics}}
 %% If you manually remove hyperref, leave in this next command
 \providecommand\phantomsection{}
@@ -2205,12 +2205,10 @@ For those of you reading this in a pdf or in print, I encourage you to also chec
 \par
 \hypertarget{p-97}{}%
 You can view the interactive version for free at \url{http://discrete.openmathbooks.org/} or by scanning the QR code below with your smart phone.%
-\begin{sidebyside}{1}{0.375}{0.375}{0}%
-\begin{sbspanel}{0.25}%
-\includegraphics[width=1\linewidth]{images/qrcode.png}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{paragraphs}%
+\begin{center}
+\includegraphics[width=1in]{images/qrcode.png}
+\end{center}
+\end{paragraphs}
 \end{preface}
 %% begin: table of contents
 %% Adjust Table of Contents
@@ -2236,9 +2234,10 @@ Welcome to Discrete Mathematics. If this is your first time encountering the sub
 \typeout{Section 0.1 What is Discrete Mathematics?}
 \typeout{************************************************}
 %
-\begin{sectionptx}{What is Discrete Mathematics?}{}{What is Discrete Mathematics?}{}{}{section-105}
-\begin{quote}\hypertarget{blockquote-107}{}
-\hypertarget{p-108}{}%
+\vskip -1ex
+\begin{sectionptx}{What is Discrete Mathematics?}{}{What is Discrete Mathematics?}{}{}{sec_intro-intro}
+\begin{quote}\hypertarget{blockquote-1}{}
+\hypertarget{p-27}{}%
 dis\textperiodcentered{}crete \slash{} dis'krët.%
 \par
 \hypertarget{p-110}{}%
@@ -2262,8 +2261,8 @@ One way to get a feel for the subject is to consider the types of problems you s
 \hypertarget{p-129}{}%
 \emph{Note: Throughout the text you will see \emph{Investigate!} activities like this one. Answer the questions in these as best you can to give yourself a feel for what is coming next.}%
 \par
-\hypertarget{p-132}{}%
-\leavevmode%
+\hypertarget{p-34}{}%
+% \leavevmode%
 \begin{enumerate}
 \item\hypertarget{li-134}{}\hypertarget{p-135}{}%
 The most popular mathematician in the world is throwing a party for all of his friends. As a way to kick things off, they decide that everyone should shake hands. Assuming all 10 people at the party each shake hands with every other person (but not themselves, obviously) exactly once, how many handshakes take place?%
@@ -2411,6 +2410,7 @@ Note that for us, \emph{or} is the \terminology{inclusive or} \index{inclusive o
 \end{subsectionptx}
 %
 %
+\clearpage
 \typeout{************************************************}
 \typeout{Subsection  Implications}
 \typeout{************************************************}
@@ -2646,6 +2646,7 @@ If I don't dream, then I'm not asleep.%
 \end{example}
 \hypertarget{p-719}{}%
 Hopefully you agree with the above example. We include the ``necessary and sufficient'' versions because those are common when discussing mathematics. In fact, let's agree once and for all what they mean.%
+\clearpage
 \begin{assemblage}{Necessary and Sufficient.}{assemblage-721}%
 \hypertarget{p-727}{}%
 \leavevmode%
@@ -2675,6 +2676,7 @@ Thinking about the necessity and sufficiency of conditions can also help when wr
 \end{subsectionptx}
 %
 %
+\clearpage
 \typeout{************************************************}
 \typeout{Subsection  Predicates and Quantifiers}
 \typeout{************************************************}
@@ -3261,7 +3263,7 @@ Another way we could have written this set, using more strict set builder notati
 We already have a lot of notation, and there is more yet. Below is a handy chart of symbols. Some of these will be discussed in greater detail as we move forward.%
 \begin{assemblage}{Special sets.}{assemblage-2530}%
 \hypertarget{p-2532}{}%
-\leavevmode%
+% \leavevmode%
 \begin{description}
 \item[{\(\emptyset\)}]\hypertarget{li-2534}{}\hypertarget{p-2537}{}%
 The \terminology{empty set} is the set which contains no elements. \label{notation-2539} \index{empty set}%
@@ -3282,7 +3284,7 @@ The \terminology{power set} of any set \(A\) is the set of all subsets of \(A\).
 \end{assemblage}
 \begin{assemblage}{Set Theory Notation.}{assemblage-2603}%
 \hypertarget{p-2605}{}%
-\leavevmode%
+% \leavevmode%
 \begin{description}
 \item[{\(\{, \}\)}]\hypertarget{li-2607}{}\hypertarget{p-2610}{}%
 We use these \terminology{braces} to enclose the elements of a set. So \(\{1,2,3\}\) is the set containing 1, 2, and 3. \label{notation-2613}%
@@ -3677,6 +3679,7 @@ Notice that the shaded regions above could also be arrived at in another way. We
 \typeout{Exercises  Exercises}
 \typeout{************************************************}
 %
+\vspace{-2em}
 \begin{exercises-subsection-numberless}{Exercises}{}{Exercises}{}{}{exercises-3210}
 \begin{divisionexercise}{\hyperlink{solution-3280-back}{1}}{}{}{exercise-3211}%
 \hypertarget{p-3256}{}%
@@ -5154,6 +5157,7 @@ To summarize:%
 \hypertarget{p-6339}{}%
 Again, we can easily extend this to any number of sets.%
 \end{subsectionptx}
+\clearpage
 %
 %
 \typeout{************************************************}
@@ -6206,6 +6210,7 @@ How many ways can you arrange 10 of the 17 books on the shelf if you insist they
 \begin{divisionexercise}{\hyperlink{solution-8616-back}{5}}{}{}{exercise-8552}%
 \hypertarget{p-8554}{}%
 Suppose you wanted to draw a quadrilateral using the dots below as vertices (corners). The dots are spaced one unit apart horizontally and two units apart vertically.%
+\vskip 1em
 \begin{sidebyside}{1}{0.23}{0.23}{0}%
 \begin{sbspanel}{0.54}%
 \resizebox{\linewidth}{!}{{
@@ -6240,6 +6245,7 @@ How many are trapezoids that are not parallelograms?%
 \begin{divisionexercise}{\hyperlink{hint-8643-back}{6}}{}{}{exercise-8637}%
 \hypertarget{p-8639}{}%
 How many triangles are there with vertices from the points shown below? Note, we are not allowing degenerate triangles - ones with all three vertices on the same line, but we do allow non-right triangles. Explain why your answer is correct.%
+\vskip 1em
 \begin{sidebyside}{1}{0.25}{0.25}{0}%
 \begin{sbspanel}{0.5}%
 \resizebox{\linewidth}{!}{{
@@ -6583,6 +6589,7 @@ Of course this simplifies to:%
 \hypertarget{p-9288}{}%
 Something fun to try: Let \(x = 1\) and \(y = 2\). Neat huh?%
 \end{subsectionptx}
+\clearpage
 %
 %
 \typeout{************************************************}
@@ -6651,8 +6658,8 @@ Prove the identity%
 \noindent\textbf{Solution}.\hypertarget{solution-9336}{}~~%
 \hypertarget{p-9337}{}%
 To give a combinatorial proof we need to think up a question we can answer in two ways: one way needs to give the left-hand-side of the identity, the other way needs to be the right-hand-side of the identity. Our clue to what question to ask comes from the right-hand side: \({n+2 \choose 3}\) counts the number of ways to select 3 things from a group of \(n+2\) things. Let's name those things \(1, 2, 3, \ldots, n+2\). In other words, we want to find 3-element subsets of those numbers (since order should not matter, subsets are exactly the right thing to think about). We will have to be a bit clever to explain why the left-hand-side also gives the number of these subsets. Here's the proof.%
-\begin{proofptx}{}{proof-9341}
-\hypertarget{p-9342}{}%
+\begin{proof}{}%{proof-5}
+\hypertarget{p-2198}{}%
 Consider the question ``How many 3-element subsets are there of the set \(\{1,2,3,\ldots,
 n+2\}\)?'' We answer this in two ways:%
 \par
@@ -6687,7 +6694,7 @@ Since Answer 1 and Answer 2 are answers to the same question, they must be equal
 1 n + 2 (n-1) + 3 (n-2) + \cdots + (n-1) 2 + n 1 = {n+2 \choose 3}\text{.}\qedhere
 \end{equation*}
 %
-\end{proofptx}
+\end{proof}
 \end{example}
 \begin{example}{}{example-9383}%
 \hypertarget{p-9385}{}%
@@ -6700,8 +6707,8 @@ Prove the binomial identity%
 \noindent\textbf{Solution}.\hypertarget{solution-9387}{}~~%
 \hypertarget{p-9388}{}%
 We will give two different proofs of this fact. The first will be very similar to the previous example (counting subsets). The second proof is a little slicker, using lattice paths.%
-\begin{proofptx}{}{proof-9389}
-\hypertarget{p-9390}{}%
+\begin{proof}{}%{proof-6}
+\hypertarget{p-2209}{}%
 Consider the question: ``How many pizzas can you make using \(n\) toppings when there are \(2n\) toppings to choose from?''%
 \par
 \hypertarget{p-9394}{}%
@@ -6742,11 +6749,11 @@ Since these two answers are answers to the same question, they must be equal, an
 {n \choose 0}^2 + {n \choose 1}^2 + {n \choose 2}^2 + \cdots + {n \choose n}^2 = {2n \choose n}\text{.}\qedhere
 \end{equation*}
 %
-\end{proofptx}
-\hypertarget{p-9430}{}%
+\end{proof}
+\hypertarget{p-2219}{}%
 For an alternative proof, we use lattice paths. This is reasonable to consider because the right-hand side of the identity reminds us of the number of paths from \((0,0)\) to \((n,n)\).%
-\begin{proofptx}{}{proof-9433}
-\hypertarget{p-9434}{}%
+\begin{proof}{}%{proof-7}
+\hypertarget{p-2220}{}%
 Consider the question: How many lattice paths are there from \((0,0)\) to \((n,n)\)?%
 \par
 \hypertarget{p-9437}{}%
@@ -6790,7 +6797,7 @@ Since these two answers are answers to the same question, they must be equal, an
 {n \choose 0}^2 + {n \choose 1}^2 + {n \choose 2}^2 + \cdots + {n \choose n}^2 = {2n \choose n}\text{.}\qedhere
 \end{equation*}
 %
-\end{proofptx}
+\end{proof}
 \end{example}
 \end{subsectionptx}
 %
@@ -6824,6 +6831,7 @@ Use your answers to parts (a) and (b) to give a combinatorial proof of the ident
 \begin{divisionexercise}{\hyperlink{hint-9554-back}{3}}{}{}{exercise-9538}%
 \hypertarget{p-9540}{}%
 How many triangles can you draw using the dots below as vertices?%
+\vskip 1ex
 \begin{sidebyside}{1}{0.3}{0.3}{0}%
 \begin{sbspanel}{0.4}%
 \resizebox{\linewidth}{!}{{
@@ -7133,11 +7141,9 @@ Your favorite mathematical ice-cream parlor offers 10 flavors. How many milkshak
 \hypertarget{p-9817}{}%
 We get six scoops, each of which could be one of ten possible flavors. Represent each scoop as a star. Think of going down the counter one flavor at a time: you see vanilla first, and skip to the next, chocolate. You say yes to chocolate three times (use three stars), then switch to the next flavor. You keep skipping until you get to cherry, which you say yes to twice. Another switch and you are at mint chocolate chip. You say yes once. Then you keep switching until you get past the last flavor, never saying yes again (since you already have said yes six times). There are ten flavors to choose from, so we must switch from considering one flavor to the next nine times. These are the nine bars.%
 \par
-\hypertarget{p-9818}{}%
-Now that we are confident that we have the right number of stars and bars, we answer the question simply: there are 6 stars and 9 bars, so 15 symbols. We need to pick 9 of them to be bars, so the number of milkshakes possible is%
-\begin{equation*}
-\binom{15}{9}\text{.}
-\end{equation*}
+\hypertarget{p-2328}{}%
+Now that we are confident that we have the right number of stars and bars, we answer the question simply: there are 6 stars and 9 bars, so 15 symbols. We need to pick 9 of them to be bars, so the number of milkshakes possible is 
+\(\binom{15}{9}\text{.}\)
 %
 \end{example}
 \begin{example}{}{example-9820}%
@@ -7152,11 +7158,11 @@ We need to decide on 7 digits so we will use 7 stars. The bars will represent a 
 \end{equation*}
 %
 \par
-\hypertarget{p-9826}{}%
-There are 10 choices for each digit (0-9) so we must switch between choices 9 times. We have 7 stars and 9 bars, so the total number of phone numbers is%
-\begin{equation*}
+\hypertarget{p-2331}{}%
+There are 10 choices for each digit (0-9) so we must switch between choices 9 times. We have 7 stars and 9 bars, so the total number of phone numbers is 
+\(
 {16 \choose 9}\text{.}
-\end{equation*}
+\)
 %
 \end{example}
 \begin{example}{}{example-9828}%
@@ -7741,6 +7747,7 @@ Now \(P(9,3)\) counts these as different outcomes correctly, but \({9\choose 3}\
 \hypertarget{p-10858}{}%
 While it is possible to interpret combinations as functions, perhaps the better advice is to instead use combinations (or stars and bars) when functions are not quite the right way to interpret the counting question.%
 \end{subsectionptx}
+\clearpage
 %
 %
 \typeout{************************************************}
@@ -7848,6 +7855,7 @@ Generalize this to find a nicer formula for \(d_n\). Bonus: For large \(n\), app
 \end{divisionexercise}%
 \end{exercises-subsection-numberless}
 \end{sectionptx}
+\cleardoublepage
 %
 %
 \typeout{************************************************}
@@ -8227,8 +8235,8 @@ That said, while keeping the rigorous mathematical definition in mind is helpful
 \hypertarget{p-12676}{}%
 Can you find the next term in the following sequences?%
 \par
-\hypertarget{p-12677}{}%
-\leavevmode%
+\hypertarget{p-3085}{}%
+% \leavevmode%
 \begin{enumerate}
 \item\hypertarget{li-12679}{}\(7,7,7,7,7, \ldots\)%
 \item\hypertarget{li-12681}{}\(3, -3, 3, -3, 3, \ldots\)%
@@ -8247,8 +8255,8 @@ Can you find the next term in the following sequences?%
 \hypertarget{p-12700}{}%
 No you cannot. You might guess that the next terms are:%
 \par
-\hypertarget{p-12701}{}%
-\leavevmode%
+\hypertarget{p-3087}{}%
+% \leavevmode%
 \begin{multicols}{4}
 \begin{enumerate}
 \item\hypertarget{li-12703}{}\(7\)%
@@ -8290,7 +8298,7 @@ A \terminology{recursive definition} \index{recursive definition} (sometimes cal
 It is easier to understand what is going on here with an example:%
 \begin{example}{}{example-12750}%
 \hypertarget{p-12752}{}%
-Here are a few closed formulas for sequences:\leavevmode%
+Here are a few closed formulas for sequences:%\leavevmode%
 \begin{itemize}[label=\textbullet]
 \item{}\(a_n = n^2\).%
 \item{}\(\d a_n = \frac{n(n+1)}{2}\).%
@@ -8349,8 +8357,8 @@ Note that now we can guess a closed formula for the \(n\)th term of the sequence
 \begin{align*}
 2a_{n-1} - a_{n-2} \amp = 2((n-1) + 3) - ((n-2) + 3)\\
 \amp = 2n + 4 - n - 1\\
-\amp = n + 3\\
-\amp = a_n\text{.}
+\amp = n + 3 = a_n\text{.}%\\
+% \amp = a_n\text{.}
 \end{align*}
 %
 \par
@@ -8490,6 +8498,7 @@ Use \(\sum\) notation to rewrite the sums:%
 \end{enumerate}
 %
 \par\smallskip%
+\clearpage
 \noindent\textbf{Solution}.\hypertarget{solution-13051}{}~~%
 \hypertarget{p-13052}{}%
 \leavevmode%
@@ -8671,6 +8680,7 @@ Describe what you have found above in terms of Pascal's Triangle. What pattern h
 \begin{divisionexercise}{\hyperlink{hint-13453-back}{18}}{}{}{exercise-13447}%
 \hypertarget{p-13449}{}%
 When bees play chess, they use a hexagonal board like the one shown below. The queen bee can move one space at a time either directly to the right or angled up-right or down-right (but can never move leftwards). How many different paths can the queen take from the top left hexagon to the bottom right hexagon? Explain your answer, and this relates to the previous question. (As an example, there are three paths to get to the second hexagon on the bottom row.)%
+\vskip 1em
 \begin{sidebyside}{1}{0.15}{0.15}{0}%
 \begin{sbspanel}{0.7}%
 \resizebox{\linewidth}{!}{{
@@ -9297,6 +9307,7 @@ Are the sequences arithmetic? Geometric? If not, are they \emph{close} to being 
 \end{enumerate}
 %
 \end{divisionexercise}%
+\clearpage
 \begin{divisionexercise}{13}{}{}{exercise-14597}%
 \hypertarget{p-14599}{}%
 If you have enough toothpicks, you can make a large triangular grid. Below, are the triangular grids of size 1 and of size 2. The size 1 grid requires 3 toothpicks, the size 2 grid requires 9 toothpicks.%
@@ -9552,7 +9563,7 @@ As we saw in \hyperref[example-14698]{Example~\ref{example-14698}}, this sequenc
 \item\hypertarget{li-14837}{}\hypertarget{p-14838}{}%
 The sequence of first differences is \(7, 43, 133, 301, 571,\ldots\). The second differences are: \(36, 90, 168, 270,\ldots\). Third difference: \(54, 78, 102,\ldots\). Fourth differences: \(24, 24, \ldots\). As far as we can tell, this sequence of differences is constant so the sequence is \(\Delta^4\)-constant and as such the closed formula is a degree 4 polynomial.%
 \item\hypertarget{li-14844}{}\hypertarget{p-14845}{}%
-This is the Fibonacci sequence. \index{Fibonacci sequence} The sequence of first differences is \(0, 1, 1, 2, 3, 5, 8, \ldots\), the second differences are \(1, 0, 1, 1, 2, 3, 5\ldots\). We notice that after the first few terms, we get the original sequence back. So there will never be constant differences, so the closed formula for the Fibonacci sequence is not a polynomial.%
+This is the Fibonacci sequence. \index{Fibonacci sequence} The sequence of first differences is \(0, 1, 1, 2, 3, 5, 8, \ldots\), the sequence of second differences are \(1, 0, 1, 1, 2, 3, 5\ldots\). We notice that after the first few terms, we get the original sequence back. So there will never be constant differences, so the closed formula for the Fibonacci sequence is not a polynomial.%
 \end{enumerate}
 %
 \end{example}
@@ -9649,6 +9660,7 @@ Will the \(n\)th sequence of differences of \(2, 6, 18, 54, 162, \ldots\) ever b
 \begin{divisionexercise}{12}{}{}{exercise-15087}%
 \hypertarget{p-15089}{}%
 In their down time, ghost pirates enjoy stacking cannonballs in triangular based pyramids (aka, tetrahedrons), like those pictured here:%
+\vskip 1ex
 \begin{sidebyside}{3}{0.08}{0.08}{0.16}%
 \begin{sbspanel}{0.08}[bottom]%
 \resizebox{\linewidth}{!}{{
@@ -10103,7 +10115,7 @@ First, find a recurrence relation to describe the problem. Explain why the recur
 \item\hypertarget{li-15661}{}\hypertarget{p-15662}{}%
 Write out the first 6 terms of the sequence \(a_1, a_2, \ldots\).%
 \item\hypertarget{li-15664}{}\hypertarget{p-15665}{}%
-Solve the recurrence relation. That is, find a closed formula for \(a_n\).%
+Solve the recurrence relation. That is, find a closed formula.%
 \end{enumerate}
 %
 \end{divisionexercise}%
@@ -10112,7 +10124,7 @@ Solve the recurrence relation. That is, find a closed formula for \(a_n\).%
 You have access to \(1 \times 1\) tiles which come in 2 different colors and \(1\times 2\) tiles which come in 3 different colors. We want to figure out how many different \(1 \times n\) path designs we can make out of these tiles.\leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-15685}{}\hypertarget{p-15686}{}%
-Find a recursive definition for the sequence \(a_n\) of paths of length \(n\).%
+Find a recursive definition for the number of paths of length \(n\).%
 \item\hypertarget{li-15689}{}\hypertarget{p-15690}{}%
 Solve the recurrence relation using the Characteristic Root technique.%
 \end{enumerate}
@@ -10283,8 +10295,8 @@ First, let's think inductively about this equation. In fact, we know this is tru
 \par
 \hypertarget{p-15921}{}%
 Now the formal proof:%
-\begin{proofptx}{}{proof-15922}
-\hypertarget{p-15923}{}%
+\begin{proof}{}%{proof-11}
+\hypertarget{p-3623}{}%
 Let \(P(n)\) be the statement \(1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}\). We will show that \(P(n)\) is true for all natural numbers \(n \ge 1\).%
 \par
 \hypertarget{p-15928}{}%
@@ -10308,7 +10320,7 @@ Now, simplifying the right side we get:%
 \par
 \hypertarget{p-15944}{}%
 Thus \(P(k+1)\) is true, so by the principle of mathematical induction \(P(n)\) is true for all natural numbers \(n \ge 1\).%
-\end{proofptx}
+\end{proof}
 \end{example}
 \hypertarget{p-15948}{}%
 Note that in the part of the proof in which we proved \(P(k+1)\) from \(P(k)\), we used the equation \(P(k)\). This was the inductive hypothesis. Seeing how to use the inductive hypotheses is usually straight forward when proving a fact about a sum like this. In other proofs, it can be less obvious where it fits in.%
@@ -10322,8 +10334,8 @@ Again, start by understanding the dynamics of the problem. What does increasing 
 \par
 \hypertarget{p-15969}{}%
 The point is, every time we multiply by just one more six, we still get a number with last digit 6, so subtracting 1 gives us a multiple of 5. Now the formal proof:%
-\begin{proofptx}{}{proof-15970}
-\hypertarget{p-15971}{}%
+\begin{proof}{}%{proof-12}
+\hypertarget{p-3632}{}%
 Let \(P(n)\) be the statement, ``\(6^n - 1\) is a multiple of 5.'' We will prove that \(P(n)\) is true for all \(n \in \N\).%
 \par
 \hypertarget{p-15977}{}%
@@ -10348,7 +10360,7 @@ Of course \(30j+5 = 5(6j+1)\), so is a multiple of 5.%
 \par
 \hypertarget{p-15995}{}%
 Therefore \(6^{k+1} - 1\) is a multiple of 5, or in other words, \(P(k+1)\) is true. Thus, by the principle of mathematical induction \(P(n)\) is true for all \(n \in \N\).%
-\end{proofptx}
+\end{proof}
 \end{example}
 \hypertarget{p-16000}{}%
 We had to be a little bit clever (i.e., use some algebra) to locate the \(6^k - 1\) inside of \(6^{k+1} - 1\) before we could apply the inductive hypothesis. This is what can make inductive proofs challenging.%
@@ -10372,8 +10384,8 @@ But doubling the right-hand side increases it by \(2^n\), since \(2^{n+1} = 2^n 
 \par
 \hypertarget{p-16021}{}%
 What we are saying here is that each time \(n\) increases, the left-hand side grows by less than the right-hand side. So if the left-hand side starts smaller (as it does when \(n = 5\)), it will never catch up. Now the formal proof:%
-\begin{proofptx}{}{proof-16024}
-\hypertarget{p-16025}{}%
+\begin{proof}{}%{proof-13}
+\hypertarget{p-3644}{}%
 Let \(P(n)\) be the statement \(n^2 \lt 2^n\). We will prove \(P(n)\) is true for all integers \(n \ge 5\).%
 \par
 \hypertarget{p-16030}{}%
@@ -10391,7 +10403,7 @@ Inductive case: Let \(k \ge 5\) be an arbitrary integer. Assume, for induction, 
 \par
 \hypertarget{p-16047}{}%
 Following the equalities and inequalities through, we get \((k+1)^2 \lt 2^{k+1}\), in other words, \(P(k+1)\). Therefore by the principle of mathematical induction, \(P(n)\) is true for all \(n \ge 5\).%
-\end{proofptx}
+\end{proof}
 \end{example}
 \hypertarget{p-16052}{}%
 The previous example might remind you of the \emph{racetrack principle} from calculus, which says that if \(f(a) \lt g(a)\), and \(f'(x) \lt g'(x)\) for \(x >
@@ -10407,6 +10419,7 @@ Still you might start to believe that you can prove anything with induction. Con
 Clearly something went wrong. The problem is that the proof that \(P(k)\) implies \(P(k+1)\) assumes that \(k \ge 2\). We have only shown \(P(1)\) is true. In fact, \(P(2)\) is false.%
 \end{paragraphs}%
 \end{subsectionptx}
+\clearpage
 %
 %
 \typeout{************************************************}
@@ -10593,10 +10606,10 @@ The proof in the previous problem does not work. But if we modify the ``fact,'' 
 \begin{divisionexercise}{\hyperlink{solution-16564-back}{14}}{}{}{exercise-16538}%
 \hypertarget{p-16540}{}%
 Find the flaw in the following ``proof'' of the ``fact'' that \(n \lt 100\) for every \(n \in \N\).%
-\begin{proofptx}{}{proof-16545}
-\hypertarget{p-16546}{}%
+\begin{proof}{}%{proof-23}
+\hypertarget{p-3721}{}%
 Let \(P(n)\) be the statement \(n \lt 100\). We will prove \(P(n)\) is true for all \(n \in \N\). First we establish the base case: when \(n = 0\), \(P(n)\) is true, because \(0 \lt 100\). Now for the inductive step, assume \(P(k)\) is true. That is, \(k \lt 100\). Now if \(k \lt 100\), then \(k\) is some number, like 80. Of course \(80+1 = 81\) which is still less than 100. So \(k +1 \lt 100\) as well. But this is what \(P(k+1)\) claims, so we have shown that \(P(k) \imp P(k+1)\). Thus by the principle of mathematical induction, \(P(n)\) is true for all \(n \in \N\).%
-\end{proofptx}
+\end{proof}
 \end{divisionexercise}%
 \begin{divisionexercise}{\hyperlink{hint-16583-back}{15}}{}{}{exercise-16574}%
 \hypertarget{p-16576}{}%
@@ -10896,7 +10909,7 @@ Explain what this problem has to do with the following picture:%
 \begin{sbspanel}{0.25}%
 \resizebox{\linewidth}{!}{{
 \begin{tikzpicture}
-  \draw (0,0) rectangle (13,8) rectangle (8,0) rectangle (13,5) rectangle (10,8) rectangle (8,6) rectangle (9,5);
+  \draw[thick] (0,0) rectangle (13,8) rectangle (8,0) rectangle (13,5) rectangle (10,8) rectangle (8,6) rectangle (9,5);
 \end{tikzpicture}
 }
 }
@@ -11809,16 +11822,20 @@ is a tautology.%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Proofs}{}{Proofs}{}{}{section-18875}
+
 \begin{introduction}{}%
+\vspace{-1em}
 \begin{investigation}{}{investigation-18878}%
-\hypertarget{p-18879}{}%
+  \hypertarget{p-18879}{}%
 Decide which of the following are valid proofs of the following statement:%
 \begin{quote}\hypertarget{blockquote-18880}{}
 \hypertarget{p-18881}{}%
 If \(a b\) is an even number, then \(a\) or \(b\) is even.%
 \end{quote}
-\hypertarget{p-18885}{}%
-\leavevmode%
+% \leavevmode%
+\vspace{-1em}
+\hypertarget{p-4061}{}%
+% \leavevmode%
 \begin{enumerate}
 \item\hypertarget{li-18887}{}\hypertarget{p-18888}{}%
 Suppose \(a\) and \(b\) are odd. That is, \(a=2k+1\) and \(b=2m+1\) for some integers \(k\) and \(m\). Then%
@@ -11828,17 +11845,17 @@ ab \amp =(2k+1)(2m+1)\\
 \amp =2(2km+k+m)+1\text{.}
 \end{align*}
 %
-\par
+
+\vspace{-1ex}
 \hypertarget{p-18899}{}%
 Therefore \(ab\) is odd.%
 \item\hypertarget{li-18901}{}\hypertarget{p-18902}{}%
-Assume that \(a\) or \(b\) is even - say it is \(a\) (the case where \(b\) is even will be identical). That is, \(a=2k\) for some integer \(k\). Then%
+Assume that \(a\) or \(b\) is even - say it is \(a\) (the case where \(b\) is even is identical). That is, \(a=2k\) for some integer \(k\). Then%
 \begin{align*}
 ab \amp =(2k)b\\
 \amp =2(kb)\text{.}
 \end{align*}
 %
-\par
 \hypertarget{p-18912}{}%
 Thus \(ab\) is even.%
 \item\hypertarget{li-18914}{}\hypertarget{p-18915}{}%
@@ -11846,10 +11863,10 @@ Suppose that \(ab\) is even but \(a\) and \(b\) are both odd. Namely, \(ab = 2n\
 \begin{align*}
 2n \amp =(2k+1)(2j+1)\\
 2n \amp =4kj+2k+2j+1\\
-n \amp = 2kj+k+j+\frac{1}{2}\text{.}
+n \amp = 2kj+k+j+0.5\text{.}
 \end{align*}
 %
-\par
+\vspace{-1ex}
 \hypertarget{p-18929}{}%
 But since \(2kj+k+j\) is an integer, this says that the integer \(n\) is equal to a non-integer, which is impossible.%
 \item\hypertarget{li-18932}{}\hypertarget{p-18933}{}%
@@ -11861,12 +11878,13 @@ ab \amp =(2k+1)b\\
 2(n-kb)\amp =b\text{.}
 \end{align*}
 %
-\par
+\vspace{-1ex}
 \hypertarget{p-18943}{}%
 Therefore \(b\) must be even.%
 \end{enumerate}
 %
 \end{investigation}
+\clearpage
 \hypertarget{p-18945}{}%
 Anyone who doesn't believe there is creativity in mathematics clearly has not tried to write proofs. Finding a way to convince the world that a particular statement is necessarily true is a mighty undertaking and can often be quite challenging. There is not a guaranteed path to success in the search for proofs. For example, in the summer of 1742, a German mathematician by the name of Christian Goldbach wondered whether every even integer greater than 2 could be written as the sum of two primes. Centuries later, we still don't have a proof of this apparent fact (computers have checked that ``Goldbach's Conjecture'' holds for all numbers less than \(4\times 10^{18}\), which leaves only infinitely many more numbers to check).%
 \par
@@ -12103,10 +12121,11 @@ We proceed by contradiction. So suppose there \emph{are} integers \(x\) and \(y\
 \hypertarget{p-19323}{}%
 The \terminology{Pigeonhole Principle}: \index{pigeonhole principle} If more than \(n\) pigeons fly into \(n\) pigeon holes, then at least one pigeon hole will contain at least two pigeons. Prove this!%
 \par\smallskip%
+\clearpage
 \noindent\textbf{Solution}.\hypertarget{solution-19329}{}~~%
 \begin{proofptx}{}{proof-19330}
 \hypertarget{p-19331}{}%
-Suppose, contrary to stipulation, that each of the pigeon holes contains at most one pigeon. Then at most there will be \(n\) pigeons. But we assumed that there are more than \(n\) pigeons, so this is impossible. Thus there must be a pigeonhole with more than one pigeon.%
+Suppose, contrary to stipulation, that each of the pigeon holes contain at most one pigeon. Then at most, there will be \(n\) pigeons. But we assumed that there are more than \(n\) pigeons, so this is impossible. Thus there must be a pigeonhole with more than one pigeon.%
 \end{proofptx}
 \hypertarget{p-19334}{}%
 While we phrased this proof as a proof by contradiction, we could have also used a proof by contrapositive since our contradiction was simply the negation of the hypothesis. Sometimes this will happen, in which case you can use either style of proof. There are examples however where the contradiction occurs ``far away'' from the original statement.%
@@ -12227,6 +12246,7 @@ Since \(n^3 - n\) is even in both exhaustive cases, we see that \(n^3 - n\) is i
 \typeout{Exercises  Exercises}
 \typeout{************************************************}
 %
+\clearpage
 \begin{exercises-subsection-numberless}{Exercises}{}{Exercises}{}{}{exercises-19483}
 \begin{divisionexercise}{\hyperlink{solution-19508-back}{1}}{}{}{exercise-19484}%
 \hypertarget{p-19486}{}%
@@ -12691,7 +12711,8 @@ The problem above, known as the \emph{Seven Bridges of Königsberg}, \index{Kön
 \par
 \hypertarget{p-20375}{}%
 There is an obvious connection between these two problems. Any path in the dot and line drawing corresponds exactly to a path over the bridges of Königsberg.%
-\par
+% \par
+\clearpage
 \hypertarget{p-20376}{}%
 Pictures like the dot and line drawing are called \terminology{graphs}. Graphs are made up of a collection of dots called \terminology{vertices} \index{vertices} and lines connecting those dots called \terminology{edges}. \index{edges} When two vertices are connected by an edge, we say they are \terminology{adjacent}. \index{adjacent} The nice thing about looking at graphs instead of pictures of rivers, islands and bridges is that we now have a mathematical object to study. We have distilled the ``important'' parts of the bridge picture for the purposes of the problem. It does not matter how big the islands are, what the bridges are made out of, if the river contains alligators, etc. All that matters is which land masses are connected to which other land masses, and how many times. %
 \par
@@ -13196,6 +13217,7 @@ Notice that every induced subgraph is also an ordinary subgraph, but not convers
 \begin{example}{}{example-20664}%
 \hypertarget{p-20666}{}%
 Consider the graphs:%
+\vskip 1ex
 \begin{sidebyside}{4}{0.035}{0.035}{0.07}%
 \begin{sbspanel}{0.18}[bottom]%
 \resizebox{\linewidth}{!}{{
@@ -13384,6 +13406,7 @@ The path on \(n+1\) vertices (so \(n\) edges), just one long path. \label{notati
 \end{sbspanel}%
 \end{sidebyside}%
 \end{paragraphs}%
+\clearpage
 \begin{paragraphs}{Graph Theory Definitions.}{paragraphs-20856}%
 \hypertarget{p-20858}{}%
 There are a lot of definitions to keep track of in graph theory. Here is a glossary of the terms we have already used and will soon encounter.\leavevmode%
@@ -13451,7 +13474,8 @@ Is it possible for two \emph{different} (non-isomorphic) graphs to have the same
 Are the two graphs below equal? Are they isomorphic? If they are isomorphic, give the isomorphism. If not, explain.%
 \par
 \hypertarget{p-21002}{}%
-Graph 1: \(V = \{a,b,c,d,e\}\), \(E = \{\{a,b\}, \{a,c\}, \{a,e\}, \{b,d\}, \{b,e\}, \{c,d\}\}\). %
+Graph 1: \\
+\centerline{\(V = \{a,b,c,d,e\}\), \(E = \{\{a,b\}, \{a,c\}, \{a,e\}, \{b,d\}, \{b,e\}, \{c,d\}\}\)} %
 \par
 \hypertarget{p-21005}{}%
 Graph 2:%
@@ -13622,7 +13646,7 @@ N(v) = \{u \in V \st \{v,u\} \in E\}\text{.}
 We define \(N[v] = N(v) \cup \{v\}\).  The goal of this problem is to figure out what all this means.\leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-21206}{}\hypertarget{p-21207}{}%
-Let \(G\) be the graph with \(V = \{a,b,c,d,e,f\}\) and \(E = \{\{a,b\}, \{a,e\},\{b, c\}, \{b,e\}, \{c,d\}, \{c, f\}, \{d, f\}, \{e,f\}\}\).  Find \(N(a)\), \(N[a]\), \(N(c)\), and \(N[c]\).%
+Let \(G\) be the graph with \(V = \{a,b,c,d,e,f\}\) and \\ \(E = \{\{a,b\}, \{a,e\},\{b, c\}, \{b,e\}, \{c,d\}, \{c, f\}, \{d, f\}, \{e,f\}\}\).  Find \(N(a)\), \(N[a]\), \(N(c)\), and \(N[c]\).%
 \item\hypertarget{li-21215}{}\hypertarget{p-21216}{}%
 What is the largest and smallest possible values for \(|N(v)|\) and \(|N[v]|\) for the graph in part (a)?  Explain.%
 \item\hypertarget{li-21219}{}\hypertarget{p-21220}{}%
@@ -13868,6 +13892,7 @@ So far, we have thought of trees only as a particular kind of graph. However, it
 \begin{example}{}{example-21534}%
 \hypertarget{p-21536}{}%
 Consider the tree below.%
+\vskip 1ex
 \begin{sidebyside}{1}{0.325}{0.325}{0}%
 \begin{sbspanel}{0.35}%
 \resizebox{\linewidth}{!}{{
@@ -13987,6 +14012,7 @@ Here are two spanning trees.%
 \hypertarget{p-21651}{}%
 Although we will not consider this in detail, these algorithms are usually applied to \emph{weighted} graphs.  Here every edge has some weight or cost assigned to it.  The goal is to find a spanning tree that has the smallest possible combined weight.  Such a tree is called a \terminology{minimum spanning tree}.  Finding the minimum spanning tree uses basically the same algorithms as we described above, but when picking an edge to add, you always pick the smallest (or when removing an edge, you always remove the largest).\footnote{If you add the smallest edge adjacent to edges you have already added, you are doing \emph{Prim's algorithm}.  If you add the smallest edge in the entire graph, you are following \emph{Kruskal's algorithm}.\label{fn-21654}}%
 \end{subsectionptx}
+\clearpage
 %
 %
 \typeout{************************************************}
@@ -13998,13 +14024,13 @@ Although we will not consider this in detail, these algorithms are usually appli
 \hypertarget{p-21660}{}%
 Which of the following graphs are trees?\leavevmode%
 \begin{enumerate}[label=(\alph*)]
-\item\hypertarget{li-21662}{}\hypertarget{p-21663}{}%
-\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{a,e\}, \{b, c\}, \{c,d\}, \{d,e\} \}\)%
-\item\hypertarget{li-21667}{}\hypertarget{p-21668}{}%
-\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{b, c\}, \{c,d\}, \{d,e\}\}\)%
-\item\hypertarget{li-21672}{}\hypertarget{p-21673}{}%
-\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{a, c\}, \{a,d\}, \{a,e\}\}\)%
-\item\hypertarget{li-21677}{}\hypertarget{p-21678}{}%
+\item\hypertarget{li-2049}{}\hypertarget{p-4573}{}%
+\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and\\ \(E = \{\{a, b\}, \{a,e\}, \{b, c\}, \{c,d\}, \{d,e\} \}\)%
+\item\hypertarget{li-2050}{}\hypertarget{p-4574}{}%
+\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and\\ \(E = \{\{a, b\}, \{b, c\}, \{c,d\}, \{d,e\}\}\)%
+\item\hypertarget{li-2051}{}\hypertarget{p-4575}{}%
+\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and\\ \(E = \{\{a, b\}, \{a, c\}, \{a,d\}, \{a,e\}\}\)%
+\item\hypertarget{li-2052}{}\hypertarget{p-4576}{}%
 \(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{a, c\}, \{d,e\}\}\)%
 \end{enumerate}
 %
@@ -14075,6 +14101,7 @@ Give a careful proof by induction on the number of vertices, that every tree is 
 \begin{divisionexercise}{\hyperlink{hint-21826-back}{10}}{}{}{exercise-21804}%
 \hypertarget{p-21806}{}%
 Consider the tree drawn below.%
+\par
 \begin{sidebyside}{1}{0.35}{0.35}{0}%
 \begin{sbspanel}{0.3}%
 \resizebox{\linewidth}{!}{{
@@ -14092,6 +14119,7 @@ Consider the tree drawn below.%
     \draw (a) -- (b) -- (c) (b) -- (d) (b) -- (e) -- (f) -- (g) (f) -- (h) (f) -- (i);
     \foreach \x in {a,...,i}{
     \draw (\x) \vb{\footnotesize $\x$};
+    \draw[white] (0,2) node{};
     }
   }
 \end{tikzpicture}
@@ -14134,6 +14162,7 @@ Must all spanning trees of a graph have the same number of leaves (vertices of d
 \begin{divisionexercise}{13}{}{}{exercise-21875}%
 \hypertarget{p-21877}{}%
 Find all spanning trees of the graph below. How many different spanning trees are there? How many different spanning trees are there \emph{up to isomorphism} (that is, if you grouped all the spanning trees by which are isomorphic, how many groups would you have)?%
+\vskip 1ex
 \begin{sidebyside}{1}{0.35}{0.35}{0}%
 \begin{sbspanel}{0.3}%
 \resizebox{\linewidth}{!}{{
@@ -14666,6 +14695,7 @@ Actual map makers usually use around seven colors. For one thing, they require w
 \hypertarget{p-22338}{}%
 How is this related to graph theory? Well, if we place a vertex in the center of each region (say in the capital of each state) and then connect two vertices if their states share a border, we get a graph. Coloring regions on the map corresponds to coloring the vertices of the graph. Since neighboring regions cannot be colored the same, our graph cannot have vertices colored the same when those vertices are adjacent.%
 \par
+\clearpage
 \hypertarget{p-22339}{}%
 In general, given any graph \(G\), a coloring of the vertices is called (not surprisingly) a \terminology{vertex coloring}. \index{vertex coloring} \index{coloring} If the vertex coloring has the property that adjacent vertices are colored differently, then the coloring is called \terminology{proper}. Every graph has a proper vertex coloring. For example, you could color every vertex with a different color. But often you can do better. The smallest number of colors needed to get a proper vertex coloring is called the \terminology{chromatic number} \index{chromatic number} of the graph, written \(\chi(G)\) \label{notation-22351} .%
 \begin{example}{}{example-22355}%
@@ -15025,6 +15055,7 @@ Because a number of these friends dated there are also conflicts between friends
 \begin{sidebyside}{1}{0.05}{0.05}{0}%
 \begin{sbspanel}{0.9}%
 {\centering%
+\footnotesize
 \begin{tabular}{lllllllllll}
 \multicolumn{1}{lA}{Friend}&A&B&C&D&E&F&G&H&I&J\tabularnewline\hrulethin
 \multicolumn{1}{lA}{Conflicts}&CFJ&J&AEF&H&CFG&ACEGI&EFI&D&AFG&B
@@ -15076,16 +15107,15 @@ The two problems below can be solved using graph coloring. For each problem, rep
 Your Quidditch league has 5 teams. You will play a tournament next week in which every team will play every other team once. Each team can play at most one match each day, but there is plenty of time in the day for multiple matches. What is the fewest number of days over which the tournament can take place?%
 \item\hypertarget{li-22687}{}\hypertarget{p-22688}{}%
 Ten members of Math Club are driving to a math conference in a neighboring state. However, some of these students have dated in the past, and things are still a little awkward. Each student lists which other students they refuse to share a car with; these conflicts are recored in the table below. What is the fewest number of cars the club needs to make the trip? Do not worry about running out of seats, just avoid the conflicts.%
-\begin{sidebyside}{1}{0.1}{0.1}{0}%
-\begin{sbspanel}{0.8}%
-{\centering%
+
+{\flushleft%
+\footnotesize
 \begin{tabular}{ccccccccccc}
-\multicolumn{1}{lB}{Student:}&A&B&C&D&E&F&G&H&I&J\tabularnewline\hrulemedium
-\multicolumn{1}{lB}{Conflicts:}&BEJ&ADG&HJ&BF&AI&DJ&B&CI&EHJ&ACFI
+\multicolumn{1}{lB}{Student}&A&B&C&D&E&F&G&H&I&J\tabularnewline\hrulemedium
+\multicolumn{1}{lB}{Conflicts}&BEJ&ADG&HJ&BF&AI&DJ&B&CI&EHJ&ACFI
 \end{tabular}
-\par}
-\end{sbspanel}%
-\end{sidebyside}%
+}
+
 \end{enumerate}
 %
 \end{divisionexercise}%
@@ -15339,6 +15369,7 @@ It appears that finding Hamilton paths would be easier because graphs often have
 \begin{divisionexercise}{\hyperlink{solution-22869-back}{1}}{}{}{exercise-22863}%
 \hypertarget{p-22865}{}%
 You and your friends want to tour the southwest by car. You will visit the nine states below, with the following rather odd rule: you must cross each border between neighboring states exactly once (so, for example, you must cross the Colorado-Utah border exactly once). Can you do it? If so, does it matter where you start your road trip? What fact about graph theory solves this problem?%
+\vskip 1ex
 \begin{sidebyside}{1}{0.3}{0.3}{0}%
 \begin{sbspanel}{0.4}%
 \resizebox{\linewidth}{!}{{
@@ -15437,6 +15468,7 @@ Below is a graph representing friendships between a group of students (each vert
 \begin{divisionexercise}{\hyperlink{hint-22978-back}{10}}{}{}{exercise-22958}%
 \hypertarget{p-22960}{}%
 On the table rest 8 dominoes, as shown below. If you were to line them up in a single row, so that any two sides touching had matching numbers, what would the sum of the two end numbers be?%
+\vskip 1ex
 \begin{sidebyside}{8}{0.0125}{0.0125}{0.025}%
 \begin{sbspanel}{0.1}%
 \resizebox{\linewidth}{!}{{
@@ -16286,7 +16318,7 @@ We have seen how to find generating functions from \(\frac{1}{1-x}\) using multi
 For example, consider the sequence \(2, 4, 10, 28, 82, \ldots\). How could we move to the sequence of first differences: \(2, 6, 18, 54,\ldots\)? We want to subtract 2 from the 4, 4 from the 10, 10 from the 28, and so on. So if we subtract (term by term) the sequence \(0, 2, 4, 10, 28,\ldots\) from \(2, 4, 10, 28\ldots\), we will be set. We can get the generating function for \(0,2,4,10,28,\ldots\) from the generating function for \(2,4,10,28\ldots\) by multiplying by \(x\). Use \(A\) to represent the generating function for \(2, 4, 10, 28, 82, \ldots\) Then:%
 \begin{align*}
 A \amp  = 2 + 4x + 10x^2 +28x^3 + 82x^4 + \cdots\\
-\underline{-xA} \amp  \underline{\,\,= 0 + 2x + 4x^2 + 10x^3 + 28 x^4 + 82x^5 + \cdots}\\
+\underline{-\qquad xA} \amp  \underline{\,\,= 0 + 2x + 4x^2 + 10x^3 + 28 x^4 + 82x^5 + \cdots}\\
 (1-x)A \amp  = 2 + 2x + 6x^2 + 18x^3 + 54x^4 + \cdots
 \end{align*}
 %
@@ -16300,9 +16332,10 @@ Find a generating function for \(1, 3, 5, 7, 9,\ldots\).%
 \noindent\textbf{Solution}.\hypertarget{solution-23863}{}~~%
 \hypertarget{p-23864}{}%
 Notice that the sequence of differences is constant. We know how to find the generating function for any constant sequence. So denote the generating function for \(1, 3, 5, 7, 9, \ldots\) by \(A\). We have%
+\clearpage
 \begin{align*}
 A \amp  = 1 + 3x + 5x^2 + 7x^3 + 9x^4 + \cdots\\
-\underline{-xA} \amp  \underline{\,\,= 0 + x + 3x^2 +  5x^3 + 7x^4 + 9x^5 + \cdots}\\
+\underline{- \qquad xA} \amp  \underline{\,\,= 0 + x + 3x^2 +  5x^3 + 7x^4 + 9x^5 + \cdots}\\
 (1-x)A \amp  = 1 + 2x + 2x^2 + 2x^3 + 2x^4 + \cdots
 \end{align*}
 %
@@ -16335,7 +16368,7 @@ Find the generating function for \(1, 4, 9, 16, \ldots\). Note we take \(1 = a_0
 Again we call the generating function for the sequence \(A\). Using differencing:%
 \begin{align*}
 A \amp  = 1 + 4x + 9x^2 + 16x^3 + \cdots\\
-\underline{- xA} \amp  \underline{\,\, = 0 + x + 4x^2 + 9x^3 + 16x^4 + \cdots}\\
+\underline{-\qquad xA} \amp  \underline{\,\, = 0 + x + 4x^2 + 9x^3 + 16x^4 + \cdots}\\
 (1-x)A \amp  = 1 + 3x + 5x^2 + 7x^3 + \cdots
 \end{align*}
 %
@@ -17318,7 +17351,7 @@ This says that one way to make \textdollar{}6.37 is to take 121 of the 5-cent st
 0&(121, 4)&125\tabularnewline[0pt]
 1&(113, 9)&122\tabularnewline[0pt]
 2&(105, 13)&119\tabularnewline[0pt]
-\textbackslash{}vdots&\textbackslash{}vdots&\textbackslash{}vdots
+\vdots&\vdots&\vdots
 \end{tabular}
 \par}
 \end{sbspanel}%
@@ -17659,6 +17692,7 @@ This one might remind you of \hyperref[example-9332]{Example~\ref{example-9332}}
 \hypertarget{p-9741}{}%
 For the lattice paths, think about what sort of paths \(2^n\) would count.  Not all the paths will end at the same point, but you could describe the set of end points as a line.%
 \end{divisionsolution}%
+\clearpage
 \vskip 2ex \centerline{\bfseries\scshape\large 1.6\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{1.6.4}{}{exercise-10970}%
@@ -18399,7 +18433,7 @@ Note that if we didn't specify \(n \ge 0\) then any integer less than \(-3\) wou
 \item\hypertarget{li-3397}{}\hypertarget{p-3398}{}%
 This is the set \(\{1, 2, 5, 10, \ldots\}\text{,}\) namely the set of numbers that are the \emph{result} of squaring and adding 1 to a natural number. (\(0^2 + 1 = 1\text{,}\) \(1^2 + 1 = 2\text{,}\) \(2^2 + 1 = 5\) and so on.) Thus the least element of the set is 1.%
 \item\hypertarget{li-3404}{}\hypertarget{p-3405}{}%
-Now we are looking for natural numbers that are equal to taking some natural number, squaring it and adding 1. That is, \(\{1, 2, 5, 10, \ldots\}\text{,}\) the same set as the previous part. So again, the least element is 1.%
+Now we are looking for natural numbers that are equal to taking some natural number, squaring it and adding 1. That is,\\ \(\{1, 2, 5, 10, \ldots\}\text{,}\) the same set as the previous part. So again, the least element is 1.%
 \end{enumerate}
 %
 \end{divisionsolution}%
@@ -18622,7 +18656,9 @@ We need to be a little careful here.  If \(B\) contains 3 elements, then \(A\) c
 \hypertarget{p-4178}{}%
 Therefore it must be that \(A = \{2,3\}\) and \(B = \{1, 2\}\)%
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 0.4\space{} Exercises}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 0.4\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{0.4.1}{}{exercise-4836}%
 \hypertarget{solution-4915-back}~~%
@@ -19012,7 +19048,9 @@ We need \(6 \cdot 64 = 384\) coins (192 of each).%
 \end{enumerate}
 %
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 1.3\space{} Exercises}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 1.3\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{1.3.1}{}{exercise-8359}%
 \hypertarget{solution-8407-back}~~%
@@ -19064,7 +19102,7 @@ There are \({7 \choose 2}\) rectangles.%
 There are \({7 \choose 2} + ({7 \choose 2}-1) + ({7 \choose 2} - 3) + ({7 \choose 2} - 6) + ({7 \choose 2} - 10) + ({7 \choose 2} - 15) = 91\) parallelograms.%
 \par
 \hypertarget{p-8624}{}%
-All of the quadrilaterals are trapezoids. To count the non-parallelogram trapezoids, compute \({7\choose 2}{7\choose 2} - \left[ {7 \choose 2} + ({7 \choose 2}-1) + ({7 \choose 2} - 3) + ({7 \choose 2} - 6) + ({7 \choose 2} - 10) + ({7 \choose 2} - 15) \right]\text{.}\)%
+All of the quadrilaterals are trapezoids. To count the non-parallelogram trapezoids, compute \(441-91=350\text{.}\)%
 \end{divisionsolution}%
 \begin{divisionsolution}{1.3.6}{}{exercise-8637}%
 \hypertarget{solution-8647-back}~~%
@@ -19129,7 +19167,9 @@ First, decide where to put the ``a''s. There are 7 positions, and we must choose
 \end{enumerate}
 %
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 1.4\space{} Exercises}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 1.4\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{1.4.1}{}{exercise-9500}%
 \hypertarget{solution-9504-back}~~%
@@ -19239,6 +19279,7 @@ representing that \(x_1 = 1\), \(x_2 = 2\), \(x_3 = 0\), and \(x_4 = 3\).%
 \end{enumerate}
 %
 \end{divisionsolution}%
+\clearpage
 \begin{divisionsolution}{1.5.5}{}{exercise-10089}%
 \hypertarget{solution-10169-back}~~%
 \hypertarget{p-10170}{}%
@@ -19967,7 +20008,9 @@ For every \(x\). Take \(a_0 = x-9\) and \(a_1 = x-8\).%
 \end{enumerate}
 %
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 2.5\space{} Exercises}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 2.5\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{2.5.1}{}{exercise-16273}%
 \hypertarget{solution-16287-back}~~%
@@ -20002,6 +20045,7 @@ We must prove that \(1 + 2 + 2^2 + 2^3 + \cdots +2^n = 2^{n+1} - 1\) for all \(n
 Thus \(P(k+1)\) is true so by the principle of mathematical induction, \(P(n)\) is true for all \(n \in \N\).%
 \end{proofptx}
 \end{divisionsolution}%
+\clearpage
 \begin{divisionsolution}{2.5.3}{}{exercise-16333}%
 \hypertarget{solution-16338-back}~~%
 \begin{proofptx}{}{proof-16339}
@@ -20093,8 +20137,8 @@ We once again failed to establish the base case: when \(n = 0\), \(n^2 + n = 0\)
 \hypertarget{solution-16641-back}~~%
 \hypertarget{p-16642}{}%
 The proof will by by strong induction.%
-\begin{proofptx}{}{proof-16643}
-\hypertarget{p-16644}{}%
+\begin{proof}{}%{proof-25}
+\hypertarget{p-3734}{}%
 Let \(P(n)\) be the statement ``\(n\) is either a power of 2 or can be written as the sum of distinct powers of 2.'' We will show that \(P(n)\) is true for all \(n \ge 1\).%
 \par
 \hypertarget{p-16650}{}%
@@ -20105,7 +20149,7 @@ Inductive case: Suppose \(P(k)\) is true for all \(k \lt n\). Now if \(n\) is a 
 \par
 \hypertarget{p-16666}{}%
 Therefore, by the principle of (strong) mathematical induction, \(P(n)\) is true for all \(n \ge 1\).%
-\end{proofptx}
+\end{proof}
 \end{divisionsolution}%
 \begin{divisionsolution}{2.5.25}{}{exercise-16718}%
 \hypertarget{solution-16725-back}~~%
@@ -20229,7 +20273,8 @@ Using the characteristic root technique, we find \(a_n = a2^n + b(-1)^n\), and w
 Let \(P(n)\) be the statement, ``every set containing \(n\) elements has \(2^n\) different subsets.'' We will show \(P(n)\) is true for all \(n \ge 1\). Base case: Any set with 1 element \(\{a\}\) has exactly 2 subsets: the empty set and the set itself. Thus the number of subsets is \(2= 2^1\). Thus \(P(1)\) is true. Inductive case: Suppose \(P(k)\) is true for some arbitrary \(k \ge 1\). Thus every set containing exactly \(k\) elements has \(2^k\) different subsets. Now consider a set containing \(k+1\) elements: \(A = \{a_1, a_2, \ldots, a_k, a_{k+1}\}\). Any subset of \(A\) must either contain \(a_{k+1}\) or not. In other words, a subset of \(A\) is just a subset of \(\{a_1, a_2,\ldots,
 a_k\}\) with or without \(a_{k+1}\). Thus there are \(2^k\) subsets of \(A\) which contain \(a_{k+1}\) and another \(2^{k+1}\) subsets of \(A\) which do not contain \(a^{k+1}\). This gives a total of \(2^k + 2^k = 2\cdot 2^k = 2^{k+1}\) subsets of \(A\). But our choice of \(A\) was arbitrary, so this works for any subset containing \(k+1\) elements, so \(P(k+1)\) is true. Therefore, by the principle of mathematical induction, \(P(n)\) is true for all \(n \ge 1\).%
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 3.1\space{} Exercises}
+\clearpage
+\centerline{\bfseries\scshape\large 3.1\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{3.1.1}{}{exercise-18445}%
 \hypertarget{solution-18462-back}~~%
@@ -20397,7 +20442,9 @@ Suppose you roll 10 dice, but that there are NOT four matching rolls. This means
 \end{enumerate}
 %
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 3.3\space{} Chapter Review}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 3.3\space{} Chapter Review}
 \par\smallskip
 \begin{divisionsolution}{3.3.1}{}{exercise-19860}%
 \hypertarget{solution-19864-back}~~%
@@ -20789,7 +20836,7 @@ Therefore, by the principle of mathematical induction, Euler's formula holds for
 \end{divisionsolution}%
 \begin{divisionsolution}{4.3.12}{}{exercise-22291}%
 \hypertarget{solution-22297-back}~~%
-\begin{proofptx}{}{proof-22298}
+\begin{proof}{}%{proof-51}
 \hypertarget{p-22299}{}%
 We know in any planar graph the number of faces \(f\) satisfies \(3f \le 2e\) since each face is bounded by at least three edges, but each edge borders two faces. Combine this with Euler's formula:%
 \begin{equation*}
@@ -20808,7 +20855,7 @@ v - e + \frac{2e}{3} \ge 2
 3v - 6 \ge e\text{.}\qedhere
 \end{equation*}
 %
-\end{proofptx}
+\end{proof}
 \end{divisionsolution}%
 \vskip 2ex \centerline{\bfseries\scshape\large 4.4\space{} Exercises}
 \par\smallskip
