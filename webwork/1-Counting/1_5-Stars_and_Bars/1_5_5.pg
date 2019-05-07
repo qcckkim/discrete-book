@@ -1,0 +1,87 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.5.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("C(7,2)");
+$ans2 = Compute("C(10,2)");
+$ans3 = Compute("C(19,2)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How many integer solutions are there to the equation [`x + y + z = 8`] for which
+a.  [`x\text{,}`] [`y\text{,}`] and [`z`] are all positive?
+
+    [_____]{$ans1}
+
+a.  [`x\text{,}`] [`y\text{,}`] and [`z`] are all non-negative?
+
+    [_____]{$ans2}
+
+a.  [`x\text{,}`] [`y\text{,}`] and [`z`] are all greater than or equal to [`-3\text{.}`]
+
+    [_____]{$ans3}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`{7 \choose 2}`] solutions. After each variable gets 1 star for free, we are left with 5 stars and 2 bars.
+
+a.  [`{10 \choose 2}`] solutions. We have 8 stars and 2 bars.
+
+a.  [`{19 \choose 2}`] solutions. This problem is equivalent to finding the number of solutions to [`x' + y' + z' = 17`] where [`x'\text{,}`] [`y'`] and [`z'`] are non-negative. (In fact, we really just do a substitution. Let [`x = x'- 3\text{,}`] [`y = y' - 3`] and [`z = z' - 3`]).
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

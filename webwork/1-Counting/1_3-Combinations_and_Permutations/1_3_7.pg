@@ -1,0 +1,72 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:32-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.3.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans = Compute("15!");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+An _anagram_ of a word is just a rearrangement of its letters. How many different anagrams of "uncopyrightable" are there? (This happens to be the longest common English word without any repeated letters.)
+
+[_____]{$ans}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since there are 15 different letters, we have 15 choices for the first letter, 14 for the next, and so on. Thus there are [`15!`] anagrams.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

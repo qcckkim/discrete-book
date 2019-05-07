@@ -1,0 +1,92 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:32-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.1.3.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider all 5 letter "words" made from the letters [`a`] through [`h\text{.}`] (Recall, words are just strings of letters, not necessarily actual English words.)
+a.  How many of these words are there total?
+
+    [_______]{32768}
+
+a.  How many of these words contain no repeated letters?
+
+    [_______]{6720}
+
+a.  How many of these words start with the sub-word "aha"?
+
+    [_______]{64}
+
+a.  How many of these words either start with "aha" or end with "bah" or both?
+
+    [_______]{128}
+
+a.  How many of the words containing no repeats also do not contain the sub-word "bad"?
+
+    [_______]{6660}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`8^5 = 32768`] words.
+a.  [`8\cdot 7\cdot 6\cdot 5\cdot 4 = 6720`] words.
+a.  [`8 \cdot 8 =64`] words.
+
+a.  [`64 + 64 - 0 = 128`] words.
+a.  [`(8\cdot 7\cdot 6\cdot 5\cdot 4) - 3\cdot (5\cdot 4) = 6660`] words.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

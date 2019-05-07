@@ -1,0 +1,85 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.6.3.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("C(9,6)");
+$ans2 = Compute("C(16,6)");
+$ans3 = Compute("C(16,6)- (C(7,1)*C(13,6) - C(7,2)*C(10,6) + C(7,3)*C(7,6))");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The dollar menu at your favorite tax-free fast food restaurant has 7 items. You have $10 to spend. How many different meals can you buy if you spend all your money and:
+a.  Purchase at least one of each item.
+
+    [_____]{$ans1}
+
+a.  Possibly skip some items.
+
+    [_____]{$ans2}
+
+a.  Don't get more than 2 of any particular item.
+
+    [__]{$ans3}{width => 15}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`{9 \choose 3}`] meals. First spend $7 to buy one of each item, then use 3 stars to select items between 6 bars.
+a.  [`{16 \choose 6}`] meals. Here you have 10 stars and 6 bars (separating the 7 items).
+a.  [`{16 \choose 6} - \left[{7 \choose 1}{13 \choose 6} - {7 \choose 2}{10 \choose 6} + {7 \choose 3}{7 \choose 6}\right]`] meals. Use PIE to subtract all the meals in which you get 3 or more of a particular item.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

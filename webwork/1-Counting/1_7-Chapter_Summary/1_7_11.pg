@@ -1,0 +1,72 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.7.11)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("C(18,8)*(C(18,8) - 1)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+You live in Grid-Town on the corner of 2nd and 3rd, and work in a building on the corner of 10th and 13th. How many routes are there which take you from home to work and then back home, but by a different route?
+
+[__________]{$ans1}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`{18 \choose 8}\left({18 \choose 8} - 1\right)`] routes. For each of the [`\binom{18}{8}`] routes to work there is exactly one less route back.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

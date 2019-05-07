@@ -1,0 +1,92 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:29-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(1.2.4.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+$converse = PopUp(
+["?","Converse","Contrapositive","Neither"],
+"Converse", # correct answer
+);
+$contrapositive = PopUp(
+["?","Converse","Contrapositive","Neither"],
+"Contrapositive", # correct answer
+);
+$neither = PopUp(
+["?","Converse","Contrapositive","Neither"],
+"Neither", # correct answer
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the statement, "If you will give me a cow, then I will give you magic beans." Decide whether each statement below is the converse, the contrapositive, or neither.
+a.  If you will give me a cow, then I will not give you magic beans. [_____]{$neither}
+
+a.  If I will not give you magic beans, then you will not give me a cow. [_____]{$contrapositive}
+
+a.  If I will give you magic beans, then you will give me a cow. [_____]{$converse}
+
+a.  If you will not give me a cow, then I will not give you magic beans. [_____]{$neither}
+
+a.  You will give me a cow and I will not give you magic beans. [_____]{$neither}
+
+a.  If I will give you magic beans, then you will not give me a cow. [_____]{$neither}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The converse is "If I will give you magic beans, then you will give me a cow." The contrapositive is "If I will not give you magic beans, then you will not give me a cow." All the other statements are neither the converse nor contrapositive.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

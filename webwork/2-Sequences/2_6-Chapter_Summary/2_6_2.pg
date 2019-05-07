@@ -1,0 +1,84 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:36-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.6.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context()->variables->are(n => "Real");
+$ans1 = Formula("n+2");
+$ans2 = Formula("4n+2");
+$ans3 = Formula("((4n+8)*(n+2))/2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the sequence [`2, 6, 10, 14, \ldots, 4n + 6\text{.}`]
+a.  How many terms are there in the sequence?
+
+    [__________]{$ans1}
+
+a.  What is the second-to-last term?
+
+    [__________]{$ans2}
+
+a.  Find the sum of all the terms in the sequence.
+
+    [__________]{$ans3}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`n+2`] terms.
+a.  [`4n+2\text{.}`]
+a.  [`\frac{(4n+8)(n+2)}{2}\text{.}`]   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

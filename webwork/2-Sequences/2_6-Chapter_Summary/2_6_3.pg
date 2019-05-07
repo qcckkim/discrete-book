@@ -1,0 +1,87 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:36-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.6.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context()->variables->are(n => "Real");
+$geometric = PopUp(
+["?","arithmetic","geometric","neither"],
+"geometric", # correct answer
+);
+$sum = Compute("(2-2*5^25)/(-4)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the sequence given by [`a_n = 2\cdot 5^{n-1}\text{.}`]
+a.  Find the first 4 terms of the sequence.
+
+    [@KeyboardInstructions(q?[`a_1 = `] [___]{2}, [`a_2 = `] [___]{10}, [`a_3 = `] [___]{50}, [`a_4 = `] [___]{250} ....?)@]**
+
+    What sort of sequence is this?
+
+    [_____]{$geometric}
+
+a.  Find the _sum_ of the first 25 terms. That is, compute [`\sum_{k=1}^{25}a_k\text{.}`]
+
+    [__________]{$sum}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`2, 10, 50, 250, \ldots`] The sequence is geometric.
+a.  [`\frac{2 - 2\cdot 5^{25}}{-4}\text{.}`]   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

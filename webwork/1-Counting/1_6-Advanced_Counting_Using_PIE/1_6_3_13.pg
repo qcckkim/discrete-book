@@ -1,0 +1,82 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.6.3.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans = Compute("5! - (C(5,1)*4! - C(5,2)*3! + C(5,3)*2! - C(5,4)*1! + C(5,5)*0!)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`A = \{1,2,3,4,5\}\text{.}`] How many injective functions [`f:A \to A`] have the property that for each [`x \in A\text{,}`] [`f(x) \ne x\text{?}`]
+
+[__]{$ans}{width => 15}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+This is a sneaky way to ask for the number of derangements on 5 elements.  Do you see why?
+
+END_PGML_HINT
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`5! - \left[{5 \choose 1}4! - {5 \choose 2}3! + {5 \choose 3}2! - {5 \choose 4}1! + {5 \choose 5}0!\right]`] functions.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

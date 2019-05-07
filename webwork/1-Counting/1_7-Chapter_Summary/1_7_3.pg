@@ -1,0 +1,94 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.7.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("2^8");
+$ans2 = Compute("7*31");
+$ans3 = Compute("C(3,2)*C(5,3)");
+$ans4 = Compute("3*4!");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Recall, you own 3 regular ties and 5 bow ties. bow ties You realize that it would be okay to wear more than two ties to your clown college interview.
+a.  You must select some of your ties to wear. Everything is okay, from no ties up to all ties. How many choices do you have?
+
+    [_____]{$ans1}
+
+a.  If you want to wear at least one regular tie and one bow tie, but are willing to wear up to all your ties, how many choices do you have for which ties to wear?
+
+    [_____]{$ans2}
+
+a.  How many choices of which ties to wear do you have if you wear exactly 2 of the 3 regular ties and 3 of the 5 bow ties?
+
+    [_____]{$ans3}
+
+a.  Once you have selected 2 regular and 3 bow ties, in how many orders could you put the ties on, assuming you must have one of the three bow ties on top?
+
+    [_____]{$ans4}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`2^8 = 256`] choices. You have two choices for each tie: wear it or don't.
+
+a.  You have 7 choices for regular ties (the 8 choices less the "no regular tie" option) and 31 choices for bow ties (32 total minus the "no bow tie" option). Thus total you have [`7 \cdot 31 = 217`] choices.
+
+a.  [`{3\choose 2}{5\choose 3} = 30`] choices.
+
+a.  Select one of the 3 bow ties to go on top. There are then 4 choices for the next tie, 3 for the tie after that, and so on. Thus [`3\cdot 4! = 72`] choices.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

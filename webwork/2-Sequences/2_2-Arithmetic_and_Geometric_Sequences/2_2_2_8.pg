@@ -1,0 +1,78 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:34-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.2.2.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find [`x`] and [`y`] such that [`27,
+            x, y, 1`] is part of an arithmetic sequence.
+
+[@KeyboardInstructions(q?[`x = `] [_____]{'55/3'}, [`y = `] [_____]{'29/3'}?)@]**
+
+Then find [`x`] and [`y`] so that the sequence is part of a geometric sequence.
+
+[@KeyboardInstructions(q?[`x = `] [_____]{9}, [`y = `] [_____]{3}?)@]**
+
+(Warning: [`x`] and [`y`] might not be integers.)
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+For arithmetic: [`x = 55/3\text{,}`] [`y = 29/3\text{.}`] For geometric: [`x = 9`] and [`y = 3\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

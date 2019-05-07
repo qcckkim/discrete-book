@@ -1,0 +1,80 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.6.3.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans = Compute("C(13,7)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose you planned on giving 7 gold stars to some of the 13 star students in your class. Each student can receive at most one star. How many ways can you do this?
+
+[_____]{$ans}
+
+Use PIE. Then, find the numeric answer in Pascal's triangle and explain why that makes sense.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Without any restriction, there would be [`{19\choose 7}`] ways to distribute the stars. Now we must use PIE to eliminate all distributions in which one or more student gets more than one star:
+
+[```
+              {19 \choose 7} - \left[{13 \choose 1}{17 \choose 5} - {13\choose 2}{15 \choose 3} + {13\choose 3}{13 \choose 1}\right] = 1716
+            \text{.}```]
+
+Interestingly enough, this number is also the value of [`{13 \choose 7}\text{,}`] which makes sense: if each student can have at most one star, we must just pick the 7 out of 13 students to receive them.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
