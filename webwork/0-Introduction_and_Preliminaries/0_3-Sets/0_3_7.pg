@@ -11,10 +11,10 @@
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(0.3.7)
+## Section1(0.3)
+## Problem1(7)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -35,19 +35,21 @@ loadMacros(
 ####################
 # Header
 ####################
-COMMENT('Authored in PreTeXt');
+COMMENT('Randomized; Authored in PreTeXt');
 TEXT(beginproblem());
 
 ####################
 # PG Setup
 ####################
 Context('Numeric');
-$a1 = random(1,10,1);
-$a2 = random(1,10,1);
-$a3 = random(1,10,1);
-$a4 = random(1,10,1);
-$a5 = random(1,10,1);
+do {
+$a1 = random(0,15,1);
+$a2 = random(0,15,1);
+$a3 = random(0,15,1);
+$a4 = random(0,15,1);
+$a5 = random(0,15,1);
 $A = Set($a1, $a2, $a3, $a4, $a5);
+} until ($A->length == 5);
 $B = Set($a1, $a3, $a5);
 #define subsets that could work for C, in order to make sure they display in order in the answer
 $C2 = Set($a1, $a2, $a3,  $a5);
@@ -57,7 +59,7 @@ $C4 = Set($a1, $a4, $a3,  $a5);
 # Body
 ####################
 BEGIN_PGML
-Let [`A = [$A]`] and [`B = [$B]\text{.}`]  How many set [`C`] have the property that [`C \subseteq A`] and [`B \subseteq C\text{.}`]
+Let [`A = [$A]`] and [`B = [$B]\text{.}`]  How many set [`C`] have the property that [`C \subseteq A`] and [`B \subseteq C\text{.}`] 
 
 [_____]{4}
 

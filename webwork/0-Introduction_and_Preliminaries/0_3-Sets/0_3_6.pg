@@ -11,10 +11,10 @@
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(0.3.6)
+## Section1(0.3)
+## Problem1(6)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -35,7 +35,7 @@ loadMacros(
 ####################
 # Header
 ####################
-COMMENT('Authored in PreTeXt');
+COMMENT('Randomized; Authored in PreTeXt');
 TEXT(beginproblem());
 
 ####################
@@ -53,7 +53,7 @@ $size = $bmax - $amin;
 # Body
 ####################
 BEGIN_PGML
-Let [`\renewcommand{\d}{\displaystyle}\newcommand{\N}{\mathbb N}\newcommand{\st}{:}\renewcommand{\v}{\vtx{above}{}}\newcommand{\lt}{<}A = \{n \in \N \st [$amin] \le n \lt [$amax]\}`] and [`\renewcommand{\d}{\displaystyle}\newcommand{\N}{\mathbb N}\newcommand{\st}{:}\renewcommand{\v}{\vtx{above}{}}\newcommand{\lt}{<}B = \{n \in \N \st [$bmin] \lt n \le [$bmax]\}\text{.}`] Suppose [`C`] is a set such that [`C \subseteq A`] and [`C \subseteq B\text{.}`]  What is the largest possible cardinality of [`C\text{?}`]
+Let [`\newcommand{\N}{\mathbb N}\newcommand{\st}{:}\renewcommand{\v}{\vtx{above}{}}\newcommand{\lt}{<}A = \{n \in \N \st [$amin] \le n \lt [$amax]\}`] and [`\newcommand{\N}{\mathbb N}\newcommand{\st}{:}\renewcommand{\v}{\vtx{above}{}}\newcommand{\lt}{<}B = \{n \in \N \st [$bmin] \lt n \le [$bmax]\}\text{.}`] Suppose [`C`] is a set such that [`C \subseteq A`] and [`C \subseteq B\text{.}`]  What is the largest possible cardinality of [`C\text{?}`]
 
 [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{C} \le `][______]{$size}
 
@@ -64,7 +64,7 @@ END_PGML
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-For [`C \subseteq A`] and [`C \subseteq B\text{,}`] we must have that [`C \subseteq A \cap B\text{.}`]  This means that the largest [`C`] could be would be to _equal_ [`\renewcommand{\d}{\displaystyle}\newcommand{\N}{\mathbb N}\newcommand{\st}{:}A \cap B = \{n \in \N \st [$amin] \le n \le [$bmax]\}\text{,}`] which contains [$size] elements.
+For [`C \subseteq A`] and [`C \subseteq B\text{,}`] we must have that [`C \subseteq A \cap B\text{.}`]  This means that the largest [`C`] could be would be to _equal_ [`\newcommand{\N}{\mathbb N}\newcommand{\st}{:}A \cap B = \{n \in \N \st [$amin] \le n \le [$bmax]\}\text{,}`] which contains [$size] elements.
 
 
 END_PGML_SOLUTION

@@ -11,10 +11,10 @@
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(0.3.9)
+## Section1(0.3)
+## Problem1(9)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -35,7 +35,7 @@ loadMacros(
 ####################
 # Header
 ####################
-COMMENT('Authored in PreTeXt');
+COMMENT('Randomized; Authored in PreTeXt');
 TEXT(beginproblem());
 
 ####################
@@ -83,7 +83,7 @@ a.  [`A \cap B`] will be the set of natural numbers that are both at least [$ami
 
 a.  [`A \setminus B`] is the set of all elements that are in [`A`] but not [`B\text{.}`]  So this is [`\renewcommand{\d}{\displaystyle}\newcommand{\N}{\mathbb N}\newcommand{\st}{:}\renewcommand{\v}{\vtx{above}{}}\newcommand{\lt}{<}\{x \in \N \st [$amin] \le x \lt [$amax] \wedge x \text{ is odd}\} = [$C]\text{.}`]
 
-    Note this is the same set as [`A \cap \bar{B}\text{.}`]   
+    Note this is the same set as [`A \cap \overline{B}\text{.}`]   
 
 
 
