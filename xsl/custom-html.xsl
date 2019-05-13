@@ -129,12 +129,23 @@
 <!-- or to specify the particular CSS file, which may have   -->
 <!-- different color schemes.  The defaults should work      -->
 <!-- fine and will not need changes on initial or casual use -->
-<!-- #0 to #5 on mathbook-modern for different color schemes -->
-<!-- We just like #3 as the default                          -->
-<!-- N.B.:  This scheme is transitional and may change             -->
-<!-- N.B.:  without warning and without any deprecation indicators -->
-<xsl:param name="html.css.server" select="'https://aimath.org'" />
-<xsl:param name="html.css.file"   select="'mathbook-5.css'" />
+<!-- Files with name colors_*.css set the colors.            -->
+<!-- colors_default is similar to the old mathbook-3.css     -->
+<xsl:param name="html.css.server" select="'https://pretextbook.org'" />
+<xsl:param name="html.css.version" select="'0.2'" />
+<xsl:param name="html.js.server" select="'https://pretextbook.org'" />
+<xsl:param name="html.js.version" select="'0.11'" />
+<xsl:param name="html.css.colorfile" select="''" />
+<xsl:variable name="html-css-colorfile">
+    <xsl:choose>
+        <xsl:when test="$html.css.colorfile = ''">
+            <xsl:text>colors_default.css</xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$html.css.colorfile"/>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:variable>
 <!-- A space-separated list of CSS URLs (points to servers or local files) -->
 <xsl:param name="html.css.extra"  select="'custom-styles.css'" />
 
