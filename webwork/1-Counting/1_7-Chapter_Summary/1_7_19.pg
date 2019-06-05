@@ -1,0 +1,97 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:34-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.7.19)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("C(12,4)");
+$ans2 = Compute("P(12,4)");
+$ans3 = Compute("C(21,12)");
+$ans4 = Compute("10^12");
+$ans5 = Compute("6187104000");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+To thank your math professor for doing such an amazing job all semester, you decide to bake Oscar cookies. You know how to make 10 different types of cookies.
+a.  If you want to give your professor 4 different types of cookies, how many different combinations of cookie type can you select? Explain your answer.
+
+    [_____]{$ans1}
+
+a.  To keep things interesting, you decide to make a different number of each type of cookie. If again you want to select 4 cookie types, how many ways can you select the cookie types and decide for which there will be the most, second most, etc. Explain your answer.
+
+    [_____]{$ans2}
+
+a.  You change your mind again. This time you decide you will make a total of 12 cookies. Each cookie could be any one of the 10 types of cookies you know how to bake (and it's okay if you leave some types out). How many choices do you have? Explain.
+
+    [_____]{$ans3}
+
+a.  You realize that the previous plan did not account for presentation. This time, you once again want to make 12 cookies, each one could be any one of the 10 types of cookies. However, now you plan to shape the cookies into the numerals 1, 2, ..., 12 (and probably arrange them to make a giant clock, but you haven't decided on that yet). How many choices do you have for which types of cookies to bake into which numerals? Explain.
+
+    [_____]{$ans4}
+
+a.  The only flaw with the last plan is that your professor might not get to sample all 10 different varieties of cookies. How many choices do you have for which types of cookies to make into which numerals, given that each type of cookie should be present at least once? Explain.
+
+    [__]{$ans5}{width => 15}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`{10 \choose 4}`] combinations. You need to choose 4 of the 10 cookie types. Order doesn't matter.
+a.  [`P(10, 4) = 10 \cdot 9 \cdot 8 \cdot 7`] ways. You are choosing and arranging 4 out of 10 cookies. Order matters now.
+a.  [`{21 \choose 12}`] choices. You must switch between cookie type 9 times as you make your 12 cookies. The cookies are the stars, the switches between cookie types are the bars.
+a.  [`10^{12}`] choices. You have 10 choices for the "1" cookie, 10 choices for the "2" cookie, and so on.
+a.  [`10^{12} - \left[{10 \choose 1}9^{12} - {10 \choose 2}8^{12} + \cdots - {10 \choose 10}0^{12} \right]`] choices. We must use PIE to remove all the ways in which one or more cookie type is not selected.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

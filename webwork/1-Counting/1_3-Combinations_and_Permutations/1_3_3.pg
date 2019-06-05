@@ -1,0 +1,91 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:32-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.3.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("7^5");
+$ans2 = Compute("P(7,5)");
+$ans3 = Compute("C(7,5)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Using the digits 2 through 8, find the number of different 5-digit numbers such that:
+a.  Digits can be used more than once.
+
+    [_____]{$ans1}
+
+a.  Digits cannot be repeated, but can come in any order.
+
+    [_____]{$ans2}
+
+a.  Digits cannot be repeated and must be written in increasing order.
+
+    [_____]{$ans3}
+
+a.  Which of the above counting questions is a combination and which is a permutation? Explain why this makes sense.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  This is just the multiplicative principle. There are 7 digits which we can select for each of the 5 positions, so we have [`7^5 = 16807`] such numbers.
+
+a.  Now we have 7 choices for the first number, 6 for the second, etc. So there are [`7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 = P(7,5) = 2520`] such numbers.
+
+a.  To build such a number we simply must select 5 different digits. After doing so, there will only be one way to arrange them into a 5-digit number. Thus there are [`{7 \choose 5} = 21`] such numbers.
+
+a.  The permutation is in part (b), while the combination is in part (c). At first this seems backwards, since usually we use combinations for when order does not matter. Here it looks like in part (c) that order does matter. The better way to distinguish between combinations and permutations is to ask whether we are counting different arrangements as different outcomes. In part (c), there is only one arrangement of any set of 5 digits, while in part (b) each set of 5 digits gives [`5!`] different outcomes.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

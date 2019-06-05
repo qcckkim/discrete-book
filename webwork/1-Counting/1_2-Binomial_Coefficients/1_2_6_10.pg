@@ -1,0 +1,85 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:32-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.2.6.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("C(14,7)");
+$ans2 = Compute("C(6,2)*C(8,5)");
+$ans3 = Compute("C(14,7) - C(6,2)*C(8,5)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How many lattice paths start at (3,3) and
+a.  end at (10,10)?
+
+    [_____]{$ans1}
+
+a.  end at (10,10) and pass through (5,7)?
+
+    [_______]{$ans2}
+
+a.  end at (10,10) and avoid (5,7)?
+
+    [_______]{$ans3}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`{14 \choose 7} = 3432`] paths.
+a.  [`{6 \choose 2}{8\choose 5} = 840`] paths.
+a.  [`{14 \choose 7} - {6\choose 2}{8 \choose 5}`] paths.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

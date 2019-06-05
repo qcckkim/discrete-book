@@ -1,0 +1,82 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:31-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.1.3.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose you have sets [`A`] and [`B`] with [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A} = 10`] and [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{B} = 15\text{.}`]
+a.  What is the largest possible value for [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cap B}\text{?}`]
+
+    [_____]{10}
+
+a.  What is the smallest possible value for [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cap B}\text{?}`]
+
+    [_____]{0}
+
+a.  What are the possible values for [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cup B}\text{?}`]
+
+    [@KeyboardInstructions(q?[_____]{10}[`\le \card{A \cup B} \le`] [_____]{25}?)@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  To maximize the number of elements in common between [`A`] and [`B\text{,}`] make [`A \subset B\text{.}`] This would give [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cap B} = 10\text{.}`]
+a.  [`A`] and [`B`] might have no elements in common, giving [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A\cap B} = 0\text{.}`]
+a.  [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}15 \le \card{A \cup B} \le 25\text{.}`] In fact, when [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cap B} = 0`] then [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cup B} = 25`] and when [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cap B} = 10`] then [`\renewcommand{\bar}{\overline}\newcommand{\card}[1]{\left| #1 \right|}\card{A \cup B} = 15\text{.}`]   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

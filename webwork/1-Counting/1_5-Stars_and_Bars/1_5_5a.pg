@@ -1,0 +1,88 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2018-05-17T08:45:04-06:00    
+###                                    
+###   http://mathbook.pugetsound.edu   
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics: an Open Introduction)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(1.5.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+####################
+# Load Macros
+####################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+####################
+# Header
+####################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+####################
+# PG Setup
+####################
+Context("IntegerFunctions");
+$n = random(7,9);
+do {$a = random(4,7);} until ($a < $n-1);
+$m = $n-1; #total number of digits available
+$j = $m-1; #number of bars we have for part b
+$p = $j + $a; #total number of stars and bars for part b
+$ans1 = Compute("C([$m],[$a])");
+$ans2 = Compute("C([$p],[$a])");
+
+####################
+# Body
+####################
+BEGIN_PGML
+Using the digits 2 through [$n], find the number of different [$a]-digit numbers such that: 
+a.  Digits cannot be repeated and must be written in increasing order. For example, 234678 is okay, but 324678 is not.
+
+    [_____]{$ans1}
+
+
+a.  Digits _can_ be repeated and must be written in _non-decreasing_ order. For example, 24448 is okay, but 24484 is not.
+
+    [_____]{$ans2}   
+
+
+
+END_PGML
+
+####################
+# Solution
+####################
+BEGIN_PGML_SOLUTION
+a.  There are  [`{[$m] \choose [$a]}`] numbers. We simply choose [$a] of the [$m] digits and once chosen put them in increasing order.
+
+
+a.  This requires stars and bars. Use a star to represent each of the [$a] digits in the number, and use their position relative to the bars to say what numeral fills that spot. So we will have [$a] stars and [$j] bars, giving [`{[$p] \choose [$j]}`] numbers.   
+
+
+
+END_PGML_SOLUTION
+
+####################
+# End Problem
+####################
+ENDDOCUMENT();

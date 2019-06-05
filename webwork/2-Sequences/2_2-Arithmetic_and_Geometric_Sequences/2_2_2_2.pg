@@ -1,0 +1,86 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:34-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.2.2.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context()->variables->are(n => "Real");
+$ans1 = 32;
+$ans2 = Formula("8+6n");
+$ans3 = 30500;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the sequence [`(a_n)_{n \ge 0}`] which starts [`8, 14, 20, 26, \ldots\text{.}`]
+a.  What is the next term in the sequence?
+
+    [_____]{$ans1}
+
+a.  Find a formula for the [`n`]th term of this sequence.
+
+    [@KeyboardInstructions(q?[`a_n = `] [__________]{$ans2}?)@]**
+
+a.  Find the sum of the first 100 terms of the sequence: [`\sum_{k=0}^{99}a_k\text{.}`]
+
+    [_____]{$ans3}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`32\text{,}`] which is [`26+6\text{.}`]
+
+a.  The sequence is arithmetic, with [`a_0 = 8`] and constant difference 6, so [`a_n = 8 + 6n\text{.}`]
+a.  [`30500\text{.}`] We want [`8 + 14 + \cdots + 602\text{.}`] Reverse and add to get 100 sums of 610, a total of 61000, which is twice the sum we are looking for.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,92 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:35-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.4.2.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context()->variables->are(n => "Real");
+$ans = Formula("3 + 2^{n+1}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the recurrence relation [`a_n = a_{n-1} + 2^n`] with [`a_0 = 5\text{.}`]
+
+[@KeyboardInstructions(q?[`a_n = `] [__________]{$ans}?)@]**
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Use telescoping or iteration.
+
+END_PGML_HINT
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`a_n = 3 + 2^{n+1}\text{.}`] We should use telescoping or iteration here. For example, telescoping gives
+
+[```\newcommand{\amp}{&}\begin{aligned}
+a_1 - a_0 \amp = 2^1\\
+a_2 - a_1 \amp = 2^2\\
+a_3 - a_2 \amp = 2^3\\
+\vdots\amp \vdots\\
+a_n - a_{n-1} \amp = 2^n
+\end{aligned}```]
+
+which sums to [`a_n - a_0 = 2^{n+1} - 2`] (using the multiply-shift-subtract technique from Section[$NBSP]*3.2 in Discrete Mathematics for the right-hand side). Substituting [`a_0 = 5`] and solving for [`a_n`] completes the solution.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

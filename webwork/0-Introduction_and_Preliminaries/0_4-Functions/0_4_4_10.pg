@@ -1,0 +1,91 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:31-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(1.4.4.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose [`\renewcommand{\d}{\displaystyle}\newcommand{\N}{\mathbb N}f:\N \to \N`] satisfies the recurrence [`f(n+1) = f(n) + 3\text{.}`] Note that this is not enough information to define the function, since we don't have an initial condition. For each of the initial conditions below, find the value of [`f(5)\text{.}`]
+a.  [`f(0) = 0\text{.}`]
+
+    [@KeyboardInstructions(q?[`f(5) = `] [_____]{15}?)@]**
+
+a.  [`f(0) = 1\text{.}`]
+
+    [@KeyboardInstructions(q?[`f(5) = `] [_____]{16}?)@]**
+
+a.  [`f(0) = 2\text{.}`]
+
+    [@KeyboardInstructions(q?[`f(5) = `] [_____]{17}?)@]**
+
+a.  [`f(0) = 100\text{.}`]
+
+    [@KeyboardInstructions(q?[`f(5) = `] [_____]{115}?)@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+For each case, you must use the recurrence to find [`f(1)\text{,}`] [`f(2)`] ... [`f(5)\text{.}`] But notice each time you just add three to the previous. We do this 5 times.
+a.  [`f(5) = 15\text{.}`]
+
+a.  [`f(5) = 16\text{.}`]
+
+a.  [`f(5) = 17\text{.}`]
+
+a.  [`f(5) = 115\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

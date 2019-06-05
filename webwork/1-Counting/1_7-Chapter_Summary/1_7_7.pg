@@ -1,0 +1,90 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.7.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("2^8");
+$ans2 = Compute("C(8,5)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Recall, by [`8`]-bit strings, we mean strings of binary digits, of length 8.
+a.  How many [`8`]-bit strings are there total?
+
+    [_____]{$ans1}
+
+a.  How many [`8`]-bit strings have weight 5?
+
+    [_____]{$ans2}
+
+a.  How many subsets of the set [`\{a,b,c,d,e,f,g,h\}`] contain exactly 5 elements?
+
+    [_____]{$ans2}
+
+a.  Explain why your answers to parts (b) and (c) are the same. Why are these questions equivalent?
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`2^8`] strings.
+
+a.  [`{8 \choose 5}`] strings.
+
+a.  [`{8 \choose 5}`] strings.
+
+a.  There is a bijection between subsets and bit strings: a 1 means that element in is the subset, a 0 means that element is not in the subset. To get a subset of an 8 element set we have a 8-bit string. To make sure the subset contains exactly 5 elements, there must be 5 1's, so the weight must be 5.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

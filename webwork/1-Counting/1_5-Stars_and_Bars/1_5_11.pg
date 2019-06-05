@@ -1,0 +1,94 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:33-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.5.11)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("C(20,4)");
+$ans2 = Compute("P(20,4)");
+$ans3 = Compute("C(23,4)");
+$ans4 = Compute("20^4");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+_Conic_, your favorite math themed fast food drive-in offers 20 flavors which can be added to your soda. You have enough money to buy a large soda with 4 added flavors. How many different soda concoctions can you order if:
+a.  You refuse to use any of the flavors more than once?
+
+    [_____]{$ans1}
+
+a.  You refuse repeats but care about the order the flavors are added?
+
+    [_____]{$ans2}
+
+a.  You allow yourself multiple shots of the same flavor?
+
+    [_____]{$ans3}
+
+a.  You allow yourself multiple shots, and care about the order the flavors are added?
+
+    [_____]{$ans4}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`{20 \choose 4}`] sodas (order does not matter and repeats are not allowed).
+
+a.  [`P(20, 4) = 20\cdot 19\cdot 18 \cdot 17`] sodas (order matters and repeats are not allowed).
+
+a.  [`{23 \choose 4}`] sodas (order does not matter and repeats are allowed; 4 stars and 19 bars).
+
+a.  [`20^4`] sodas (order matters and repeats are allowed; 20 choices 4 times).
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

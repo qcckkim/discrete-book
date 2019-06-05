@@ -1,0 +1,105 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:32-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.3.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$quads = Compute("C(7,2)*C(7,2)");
+$squares = Compute("5");
+$rects = Compute("C(7,2)");
+$parals = Compute("91");
+$alltraps = $quads;
+$nonparals = Compute("$quads - $parals");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How many quadrilaterals are possible?
+
+[__________]{$quads}
+
+How many are squares?
+
+[__________]{$squares}
+
+How many are rectangles?
+
+[__________]{$rects}
+
+How many are parallelograms?
+
+[__________]{$parals}
+
+How many are trapezoids? (Here, as in calculus, a trapezoid is defined as a quadrilateral with _at least_ one pair of parallel sides. In particular, parallelograms are trapezoids.)
+
+[__________]{$alltraps}
+
+How many are trapezoids that are not parallelograms?
+
+[__________]{$nonparals}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+You can make [`{7\choose 2}{7\choose 2} = 441`] quadrilaterals.
+
+There are 5 squares.
+
+There are [`{7 \choose 2}`] rectangles.
+
+There are [`{7 \choose 2} + ({7 \choose 2}-1) + ({7 \choose 2} - 3) + ({7 \choose 2} - 6) + ({7 \choose 2} - 10) + ({7 \choose 2} - 15) = 91`] parallelograms.
+
+All of the quadrilaterals are trapezoids. To count the non-parallelogram trapezoids, compute [`{7\choose 2}{7\choose 2} - \left[ {7 \choose 2} + ({7 \choose 2}-1) + ({7 \choose 2} - 3) + ({7 \choose 2} - 6) + ({7 \choose 2} - 10) + ({7 \choose 2} - 15) \right]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

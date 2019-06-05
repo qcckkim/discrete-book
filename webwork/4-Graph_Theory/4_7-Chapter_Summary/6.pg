@@ -1,0 +1,27 @@
+<html><body><div style="text-align:left">
+ <h2>WeBWorK error</h2>
+ <p>An error occured while processing your request. For help, please send mail
+ to this site's webmaster  (<a href="mailto:root@localhost">root@localhost</a>), including all of the following information as
+ well as what what you were doing when the error occured.</p>
+ <p>Mon Mar 11 14:50:20 2019</p>
+ <h3>Warning messages</h3>
+ <ul></ul>
+ <h3>Error messages</h3>
+ <blockquote style="color:red"><code>mpxs_Apache2__RequestRec_sendfile: $r-&gt;rflush can't be called before the response phase at /opt/webwork/webwork2/lib/WeBWorK/ContentGenerator.pm line 283.
+</code></blockquote>
+ <h3>Call stack</h3>
+   <p>The information below can help locate the source of the problem.</p>
+   <ul><li><code>in WeBWorK::ContentGenerator::do_reply_with_file called at line 217 of /opt/webwork/webwork2/lib/WeBWorK/ContentGenerator.pm</code></li>
+<li><code>in WeBWorK::ContentGenerator::go called at line 382 of /opt/webwork/webwork2/lib/WeBWorK.pm</code></li></ul>
+ <h3>Request information</h3>
+ <table border="1">
+  <tr><td>Method</td><td>POST</td></tr>
+  <tr><td>URI</td><td>/webwork2/math228/instructor/file_manager/</td></tr>
+  <tr><td>HTTP Headers</td><td>
+   <table width="90%">
+    <tr><td><small>User-Agent</small></td><td><small>Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36 </small></td></tr><tr><td><small>Upgrade-Insecure-Requests</small></td><td><small>1 </small></td></tr><tr><td><small>Accept</small></td><td><small>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8 </small></td></tr><tr><td><small>Connection</small></td><td><small>keep-alive </small></td></tr><tr><td><small>Referer</small></td><td><small>https://mathit.unco.edu/webwork2/math228/instructor/file_manager/ </small></td></tr><tr><td><small>Content-Length</small></td><td><small>2002 </small></td></tr><tr><td><small>Accept-Encoding</small></td><td><small>gzip, deflate, br </small></td></tr><tr><td><small>Cache-Control</small></td><td><small>max-age=0 </small></td></tr><tr><td><small>Origin</small></td><td><small>https://mathit.unco.edu </small></td></tr><tr><td><small>Content-Type</small></td><td><small>multipart/form-data; boundary=----WebKitFormBoundaryqTEmfTa57NPCwSjk </small></td></tr><tr><td><small>Cookie</small></td><td><small>WeBWorKCourseAuthen.math228=oscar.levin%09rmmuxv2lYqbN8y4KONE3kI1Ote1RaAsG%091552337417; _ga=GA1.2.172013412.1463420045; __utma=66024817.172013412.1463420045.1526664476.1543699570.3; __utmz=66024817.1543699570.3.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none) </small></td></tr><tr><td><small>Accept-Language</small></td><td><small>en-US,en;q=0.9,la;q=0.8 </small></td></tr><tr><td><small>Host</small></td><td><small>mathit.unco.edu </small></td></tr>
+   </table>
+  </td></tr>
+ </table>
+</div>
+</body></html>

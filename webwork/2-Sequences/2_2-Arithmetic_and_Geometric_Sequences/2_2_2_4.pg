@@ -1,0 +1,84 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:34-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.2.2.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context()->variables->are(n => "Real");
+$ans1 = Formula("n+2");
+$ans2 = Formula("6n+1");
+$ans3 = Formula("((6*n+8)*(n+2))/2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the sequence [`1, 7, 13, 19, \ldots, 6n + 7\text{.}`]
+a.  How many terms are there in the sequence? Your answer will be in terms of [`n\text{.}`]
+
+    [__________]{$ans1}
+
+a.  What is the second-to-last term?
+
+    [__________]{$ans2}
+
+a.  Find the sum of all the terms in the sequence, in terms of [`n\text{.}`]
+
+    [__________]{$ans3}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`n+2`] terms, since to get 1 using the formula [`6n+7`] we must use [`n=-1\text{.}`] Thus we have [`n`] terms, plus two, when [`n=0`] and [`n=-1\text{.}`]
+a.  [`6n+1\text{,}`] which is 6 less than [`6n+7`] (or plug in [`n-1`] for [`n`]).
+a.  [`\frac{(6n+8)(n+2)}{2}\text{.}`] Reverse and add. Each sum gives the constant [`6n+8`] and there are [`n+2`] terms.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

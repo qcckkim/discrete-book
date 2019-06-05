@@ -1,0 +1,106 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:29-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(1.2.4.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context('Numeric');
+$true = PopUp(
+["?","True","False","Not enough information"],
+"True",
+);
+$false = PopUp(
+["?","True","False","Not enough information"],
+"False",
+);
+$na = PopUp(
+["?","True","False","Not enough information"],
+"Not enough information",
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Determine whether each molecular statement below is true or false, or whether it is impossible to determine. Assume you do not know what my favorite number is (but you do know that 13 is prime).
+a.  If 13 is prime, then 13 is my favorite number. [_____]{$na}
+
+a.  If 13 is my favorite number, then 13 is prime. [_____]{$true}
+
+a.  If 13 is not prime, then 13 is my favorite number. [_____]{$true}
+
+a.  13 is my favorite number or 13 is prime. [_____]{$true}
+
+a.  13 is my favorite number and 13 is prime. [_____]{$na}
+
+a.  7 is my favorite number and 13 is not prime. [_____]{$false}
+
+a.  13 is my favorite number or 13 is not my favorite number. [_____]{$true}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  It is impossible to tell. The hypothesis of the implication is true. Thus the implication will be true if the conclusion is true (if 13 _is_ my favorite number) and false otherwise.
+
+a.  This is true, no matter whether 13 is my favorite number or not. Any implication with a true conclusion is true.
+
+a.  This is true, again, no matter whether 13 is my favorite number or not. Any implication with a false hypothesis is true.
+
+a.  For a disjunction to be true, we just need one or the other (or both) of the parts to be true. Thus this is a true statement.
+
+a.  We cannot tell. The statement would be true if 13 is my favorite number, and false if not (since a conjunction needs both parts to be true to be true).
+
+a.  This is definitely false. 13 is prime, so its negation (13 is not prime) is false. At least one part of the conjunction is false, so the whole statement is false.
+
+a.  This is true. Either 13 is my favorite number or it is not, but whichever it is, at least one part of the disjunction is true, so the whole statement is true.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

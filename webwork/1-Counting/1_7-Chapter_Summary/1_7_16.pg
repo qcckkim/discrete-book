@@ -1,0 +1,97 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:34-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(2.7.16)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegerFunctions.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context("IntegerFunctions");
+$ans1 = Compute("C(19,15)");
+$ans2 = Compute("C(24,20)");
+$ans3 = Compute("C(19,15) - (C(5,1)*C(12,8) - C(5,2)*C(5,1))");
+$showHint = 0;
+$showSolution = 3;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose you have 20 one-dollar bills to give out as prizes to your top 5 discrete math students. How many ways can you do this if:
+a.  Each of the 5 students gets at least 1 dollar?
+
+    [_____]{$ans1}
+
+a.  Some students might get nothing?
+
+    [_____]{$ans2}
+
+a.  Each student gets at least 1 dollar but no more than 7 dollars?
+
+    [__]{$ans3}{width => 15}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Stars and bars.
+
+END_PGML_HINT
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`{19 \choose 15}`] ways.
+a.  [`{24 \choose 20}`] ways.
+a.  [`{19 \choose 15} - \left[{5 \choose 1}{12 \choose 8} - {5 \choose 2}{5 \choose 1} \right]`] ways.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

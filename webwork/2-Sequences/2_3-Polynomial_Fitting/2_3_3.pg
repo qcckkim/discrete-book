@@ -1,0 +1,76 @@
+#######################################
+###    Generated from PreTeXt source   
+###    on 2019-03-11T13:50:35-06:00    
+###                                    
+###      https://pretextbook.org       
+###                                    
+#######################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1(Discrete Mathematics)
+## EditionText1()
+## AuthorText1(Oscar Levin)
+## Section1(not reported)
+## Problem1(3.3.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+COMMENT('Authored in PreTeXt');
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+Context()->variables->are(n => "Real");
+$ans = Formula("(1/6)*(12+11*n+6*n^2+n^3)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use polynomial fitting to find the formula for the [`n`]th term of the sequence [`(a_n)_{n \ge 0}`] which starts,
+
+[```
+              2,5,11,21,36, \ldots 
+            \text{.}```]
+
+[@KeyboardInstructions(q?[`a_n = `] [_]{$ans}{width=>15}?)@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`a_n = \frac{1}{6} (n^3 + 6n^2 + 11n + 12)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
