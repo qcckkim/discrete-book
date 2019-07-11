@@ -5,9 +5,9 @@
 ###      https://pretextbook.org       
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Principles (addition, subtraction, multiplication))
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics)

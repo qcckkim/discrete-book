@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject(Combinatorics)
-## DBchapter(Counting)
-## DBsection(Principles (addition, subtraction, multiplication))
+## DBsubject()
+## DBchapter()
+## DBsection()
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(1.1)
-## Problem1(1)
+## Section1(0.3)
+## Problem1(8)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -41,20 +41,41 @@ TEXT(beginproblem());
 ####################
 # PG Setup
 ####################
-Context('Numeric');
-
-do {$a = random(2,6);} until ($a !=5) and ($a !=3); #make sure problem is different from textbook problem
-do {$b = random(2,6);} until ($b != $a);
-do {$c = random(14,20);} until ($c !=17);
-$ans = Compute(" $a*$b*$c");
+Context("Interval");
+$a1 = random(1,7,1);
+$A = Set($a1, $a1 + 1, $a1 + 2, $a1 + 3, $a1 + 4);
+$B = Set($a1 + 2, $a1 + 3, $a1 + 4,$a1 + 5,$a1 + 6);
+$C = Set($a1 + 1, $a1 + 4, $a1 + 6);
+$ans1 = $A->intersect($B);
+$ans2 = $A + $B; 
+$ans3 = $A-$B;
+$ans4 = $A -$B - $C;
 
 ####################
 # Body
 ####################
 BEGIN_PGML
-Your wardrobe consists of [$a] shirts, [$b] pairs of pants, and [$c] bow ties. How many different outfits can you make?
+Let [`A = [$A]\text{,}`] [`B = [$B]\text{,}`] and [`C = [$C]\text{.}`]
 
-You can make [_____]{$ans} outfits.
+a.  Find [`A \cap B\text{.}`]
+
+    [__________]{$ans1}
+
+
+a.  Find [`A \cup B\text{.}`]
+
+    [__________]{$ans2}
+
+
+a.  Find [`A \setminus B\text{.}`]
+
+    [__________]{$ans3}
+
+
+a.  Find [`A \cap \overline{(B \cup C)}\text{.}`]
+
+    [__________]{$ans4}   
+
 
 
 END_PGML
@@ -63,7 +84,11 @@ END_PGML
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-There are [` [$a] \cdot [$b] \cdot [$c] = [$ans] `] outfits. Use the multiplicative principle.
+a.  [`A \cap B = [$ans1]\text{.}`] 
+a.  [`A \cup B = [$ans2]\text{.}`] 
+a.  [`A \setminus B =[$ans3]\text{.}`]
+a.  [`A \cap \overline{(B \cup C)} = [$ans4]\text{.}`]   
+
 
 
 END_PGML_SOLUTION

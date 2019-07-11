@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Combinations)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.2.7)
+## Section1(1.2)
+## Problem1(7)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -52,7 +52,7 @@ do {$a = random(2,8);} until ($a !=6);
 for ($i=0; $i <= 10-$a; $i ++)
 {$ans = Compute("$ans + C(10,($a+$i))");
 } 
-
+$ans = Compute("$ans");
 $b = 10-($a -1);
 
 ####################
@@ -80,7 +80,7 @@ END_PGML_HINT
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-This is the same as a question about [$a]-bit strings, since we can think of each subset as a [$a]-bit string with a 1 representing that we include that element in the subset.  [`{10 \choose [$a]} + {10\choose [$a] +1} + {10\choose [$a] + 2} + \dots + {10\choose 10} = [$ans]`] subsets. 
+This is the same as a question about [$a]-bit strings, since we can think of each subset as a [$a]-bit string with a 1 representing that we include that element in the subset.  [`{10 \choose [$a]} + {10\choose [$a+1]} + \cdots + {10\choose 10} = [$ans]`] subsets. 
 
 
 END_PGML_SOLUTION
