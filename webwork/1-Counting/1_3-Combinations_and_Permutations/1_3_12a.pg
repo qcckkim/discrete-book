@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Permutations)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.3.12)
+## Section1(1.3)
+## Problem1(12)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -43,15 +43,28 @@ TEXT(beginproblem());
 # PG Setup
 ####################
 Context("IntegerFunctions");
-$ans = Compute("10!/10");
+do {$A = random(8,15);} until ($A !=10);
+do {$B = random(15,24);} until ($B > $A); 
+$ans1 = Compute("$B^$A");
+$ans2 = Compute("P($B,$A)");
+$B2=$B-1;
+$B3=$B2-1;
+$ba=$B-$A;
 
 ####################
 # Body
 ####################
 BEGIN_PGML
-How many different seating arrangements are possible for King Arthur and his 9 knights around their round table?
+Consider sets [`A`] and [`B`] with [`|A| = [$A]`] and [`|B| = [$B]\text{.}`] 
+a.  How many functions [`f: A \to B`] are there?
 
-[_____]{$ans}
+    [_____]{$ans1}
+
+
+a.  How many functions [`f: A \to B`] are injective?
+
+    [_____]{$ans2}   
+
 
 
 END_PGML
@@ -60,7 +73,11 @@ END_PGML
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-[`9!\text{.}`] There are 10 people seated around the table, but it does not matter where King Arthur sits, only who sits to his left, two seats to his left, and so on.
+a.  [`[$B]^{[$A]}`] functions.  There are [$B] choices for the image of each element in the domain.
+
+
+a.  [`P([$B], [$A])=[$B]\cdot[$B2]\cdot[$B3]\cdot \dots \cdot [$ba]`] injective functions.  There are [$B]  choices for image of the first element of the domain, then only [$B2] choices for the second, [$B3] for the third, and so on.   
+
 
 
 END_PGML_SOLUTION

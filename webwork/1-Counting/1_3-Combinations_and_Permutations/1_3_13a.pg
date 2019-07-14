@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Multiple techniques)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.3.13)
+## Section1(1.3)
+## Problem1(13)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -43,27 +43,35 @@ TEXT(beginproblem());
 # PG Setup
 ####################
 Context("IntegerFunctions");
-do {$A = random(8,15);} until ($A !=10);
-do {$B = random(15,24);} until ($B > $A); 
-$ans1 = Compute("$B^$A");
-$ans2 = Compute("P($B,$A)");
-$B2=$B-1;
-$B3=$B2-1;
-$ba=$B-$A;
+do {$a = random(3,6);} until ($a != 4);
+do{ $b = random(4,10);} until ($b > $a);
+
+$A = Set(1..$a);
+$B = Set(1..$b);
+
+
+$ans1 = Compute("$b^$a");
+$ans2 = Compute("P($b,$a)");
+$ans3 = Compute("C($b,$a)");
 
 ####################
 # Body
 ####################
 BEGIN_PGML
-Consider sets [`A`] and [`B`] with [`|A| = [$A]`] and [`|B| = [$B]\text{.}`] 
-a.  How many functions [`f: A \to B`] are there?
+Consider functions [`f: [$A]\to [$B]\text{.}`] 
+a.  How many functions are there total?
 
     [_____]{$ans1}
 
 
-a.  How many functions [`f: A \to B`] are injective?
+a.  How many functions are injective?
 
-    [_____]{$ans2}   
+    [_____]{$ans2}
+
+
+a.  How many of the injective functions are                 _increasing_? To be increasing means that if [`\renewcommand{\v}{\vtx{above}{}}\newcommand{\lt}{<}a \lt b`] then [`\renewcommand{\v}{\vtx{above}{}}\newcommand{\lt}{<}f(a) \lt f(b)\text{,}`] or in other words, the outputs get larger as the inputs get larger.
+
+    [_____]{$ans3}   
 
 
 
@@ -73,12 +81,13 @@ END_PGML
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-a.  [`[$B]^{[$A]}`] functions.  There are [$B] choices for the image of each element in the domain.
+a.  [`[$b]^{[$a]} = [$ans1]`] functions, since there are [$b] choices of where to send each of the [$a] elements of the domain.
 
 
-a.  [`P([$B], [$A])=[$B]\cdot[$B2]\cdot[$B3]\cdot \dots \cdot [$ba]`] injective functions.  There are [$B]  choices for image of the first element of the domain, then only [$B2] choices for the second, [$B3] for the third, and so on.   
+a.  [`P([$b], [$a]) = [$b]\cdot [$b-1] \cdot \cdots \cdot [$b-$a +1] = [$ans2]`] functions, since outputs cannot be repeated.
 
 
+a.  [`{[$b] \choose [$a]} = [$ans3]`] functions. Since the function must be injective and increasing, we just need to select the [$a] distinct elements of the range from the [$b] elements of the codomain.  Once selected, we must put the smallest as the image of 1, the next smallest as  the image of 2, and so on (doing this does not increase the number of functions, since there is one choice for how this event can occur).   
 
 END_PGML_SOLUTION
 

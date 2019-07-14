@@ -1,8 +1,6 @@
 #Todo list
 
-#1.2:
-* make 11 into ww (donut shop).
-* 
+
 
 #2.1:
 
