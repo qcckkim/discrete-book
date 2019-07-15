@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Stars and bars)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.5.1)
+## Section1(1.5)
+## Problem1(1)
 ## Author()
 ## Institution()
 ## Language(en-US)

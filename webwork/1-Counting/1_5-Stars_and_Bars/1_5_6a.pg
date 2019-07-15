@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Stars and bars)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.5.6)
+## Section1(1.5)
+## Problem1(6)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -44,21 +44,26 @@ TEXT(beginproblem());
 ####################
 Context("IntegerFunctions");
 do {$n = random(3,7);} until ($n !=5); #choose number of dice
-$s = random(6,12); #choose number of sides on the dice
+do {$s = random(4,12);} until ($s !=6); #choose number of sides on the dice
 
 $t = $s+$n-1; #total stars and bars
 $b = $s - 1; #total bars (switches between numbers on the dice)
 
+$ans1 = Compute("C(10,5)");
 
-$ans = Compute("C($t,$b)");
+$ans2 = Compute("C($t,$b)");
 
 ####################
 # Body
 ####################
 BEGIN_PGML
-When playing Super-Yahtzee, you roll [$n] regular [$s]-sided dice. How many different outcomes are possible from a single roll? The order of the dice does not matter.
+When playing Yahtzee, you roll five regular 6-sided dice. How many different outcomes are possible from a single roll? The order of the dice does not matter.
 
-[_____]{$ans}
+[_____]{$ans1}
+
+When playing Super-Yahtzee, you roll [$n] regular [$s]-sided dice. Now how any different outcomes are possible from a single roll? 
+
+[_____]{$ans2}
 
 
 END_PGML
@@ -67,7 +72,9 @@ END_PGML
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-[`{[$t] \choose [$b]}`] outcomes. We have [$n] stars (the [$n] dice) and [$b] bars (the [$b] switches between the numbers 1-[$s]).
+[`{10 \choose 5}`] outcomes are possible in traditional Yahtzee.  Each die is a star, its value is determined by where it is put relative to the bars.
+
+For Super-Yahtzee, [`{[$t] \choose [$b]}`] outcomes. We have [$n] stars (the [$n] dice) and [$b] bars (the [$b] switches between the numbers 1-[$s]).
 
 
 END_PGML_SOLUTION

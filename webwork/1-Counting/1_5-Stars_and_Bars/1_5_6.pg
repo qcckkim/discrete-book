@@ -43,7 +43,7 @@ TEXT(beginproblem());
 # PG Setup
 ############################################################
 Context("IntegerFunctions");
-$ans = Compute("C(10,5)");
+$ans1 = Compute("C(10,5)");
 
 ############################################################
 # Body
@@ -52,7 +52,7 @@ $ans = Compute("C(10,5)");
 BEGIN_PGML
 When playing Yahtzee, you roll five regular 6-sided dice. How many different outcomes are possible from a single roll? The order of the dice does not matter.
 
-[_____]{$ans}
+[_____]{$ans1}
 
 END_PGML
 
