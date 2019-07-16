@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Inclusion/exclusion)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.6.3)
+## Section1(1.6)
+## Problem1(3)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -72,7 +72,7 @@ END_PGML
 ####################
 BEGIN_PGML_SOLUTION
 
-[`{[$a] \choose [$d]} - \left[{[$i] \choose 1}{([$a]-7) \choose ([$d]-7)} - {[$i] \choose 2}{([$a]-14) \choose ([$d]-14)} + {[$i] \choose 3}{([$a]-21) \choose ([$d]-21)}\dots\right]`]  Subtract all the distributions for which one or more bins contain 7 or more balls.
+[`{[$a] \choose [$d]} - \left[{[$i] \choose 1}{[$a-7] \choose [$d-7]} - {[$i] \choose 2}{[$a-14] \choose [$d-14]} + \cdots\right]`]  Subtract all the distributions for which one or more bins contain 7 or more balls.
 
 
 END_PGML_SOLUTION

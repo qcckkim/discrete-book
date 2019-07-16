@@ -1,0 +1,912 @@
+﻿Objectives for Discrete Mathematics: an Open Introduction
+http://math.oscarlevin.com/dmoi-instructor/html/dmoi.html
+Chapter 0: Preliminaries
+Big Question: How does careful use of mathematical language and vocabulary help us understand discrete mathematics?
+
+
+0.2 Use the logical structure of statements to determine truth values and relationships between statements.  
+1. Identify statements as conjunctions, disjunctions, or implications.
+2. Determine the truth value of a molecular statement from the truth values of its components.
+3. Find the converse and contrapositive of an implication and relate the truth values of each to that of the implication.
+4. Identify a statement written in many forms as an implication.
+5. Write the negation of an implication and the conditions under which it is true.
+6. Determine the truth value of simple quantified statements.
+7. Express the negation of quantified statements.
+0.3 Describe and classify finite sets of integers. 
+1. Write a set of numbers by listing elements or using set builder notation.
+2. Find the union and intersection of two sets and express a set as the union or intersection of other sets.  
+3. Determine whether one set is a subset of another.
+4. Use Venn diagrams to illustrate the relationship between sets.
+0.4 Describe and classify functions between finite sets of integers.
+1. Describe and interpret functions between finite sets using a variety of formats: formulas, tables, two-line notation, graphs.
+2. Classify functions as injective, surjective, bijective or neither.
+3. Find the image and inverse image of sets under given functions.
+
+
+________________
+Chapter 1: Counting
+Big Question: Why is counting so challenging?
+
+
+1.1: Justify the use of the sum and product principles to answer simple counting problems. 
+1. Find the number of outcomes of an event by expressing the event as a combination of simpler events.
+2. Find the size of a set by representing it as the disjoint union or cartesian product of other sets.
+3. Justify the product principle using the sum principle in reference to specific examples.
+4. Find the size of a set which is the union of two or three not necessarily disjoint sets using the Principle of Inclusion and Exclusion.
+5. Explain how the Principle of Inclusion and Exclusion counts each element of a union exactly once.
+1.2: Represent the solutions to a variety of counting problems as binomial coefficients.
+1. Represent the number of subsets, bit strings, and lattice paths as binomial coefficients.
+2. Illustrate the relationship between subsets, bit strings, and lattice paths by describing bijections between these.
+3. Find coefficients of an expanded binomial using binomial coefficients.        
+4. Justify the Pascal recurrence in terms of subsets, bit strings, lattice paths and binomial coefficients.
+5. Solve counting problems using binomial coefficients and the sum and product principles.
+1.3: Explain the relationship between combinations and permutations, both in terms of what each counts and their algebraic formulas.  Adapt combinations and permutations to a variety of counting problems.
+1. Explain the algebraic formula for permutations using the product principle.
+2. Explain the algebraic formula for combinations using the product principle and the formula for permutations.
+3. Compare and contrast counting problems for which combinations are appropriate to those for which permutations are appropriate.
+4. Solve counting problems using combinations and permutations.
+1.4: Justify simple binomial identities and related combinatorial results using combinatorial reasoning.
+1. Identify patterns in Pascal’s triangle and represent these as a binomial identity.
+2. Establish a binomial identity using a combinatorial proof.
+3. Determine the validity of a combinatorial proof.
+1.5: Represent the size of a multiset and the number of ways to distribute identical objects to distinct recipients as a binomial coefficient.
+1. Illustrate the bijections between multisets, distributions, and “stars and bars” diagrams for a given context. 
+2. Use stars and bars diagrams to enumerate the number of ways to distribute identical objects to distinct recipients.
+3. Solve counting problems by using multisets to representing the context.
+1.6: Apply the Principle of Inclusion and Exclusion to count surjections, derrangments and limited distribution problems (needs work!).
+1. Use PIE to count the number of surjections.
+2. Use PIE to count the number of of derangements of a set both abstractly and in applications.
+3. Use PIE to count the number of ways to distribute identical objects to distinct recipients in which the number of items going to any recipient is capped.
+4. Explain the role of components of a formula using PIE to count in the above contexts
+5. Explain how the formulas used in the above contexts relate to the formulas for PIE for two or three sets.
+Chapter 2: Sequences
+Big Question: How can I use sequences and recursive reasoning to solve counting problems.
+
+
+2.1. Use a variety of representations to describe a sequence and their terms.
+1. Create a rule that agrees with initial terms of a sequence and use it to predict future terms.
+2. Compute terms of a sequence from closed formulas and recursive definitions.
+3. Find a closed formula that agrees with initial terms by relating the sequence to known sequences,
+4. Find a recursive definition that agrees with initial terms by relating the sequence to known sequences,
+5. Use notation to represent sequences, including summation and product notation.
+2.2. Classify sequences as arithmetic, geometric, or sequences of partial sums of these, and find formulas to describe them.
+1. Find formulas that model arithmetic and geometric sequences.
+2. Find formulas that model the sequence of partial sums of arithmetic sequences.
+3. Find formulas that model the sequence of partials sums of geometric sequences.
+2.3. Determine whether a sequence is polynomial and find formulas to describe such sequences.
+1. Use differencing to find the degree of a polynomial sequence or identify a sequence as not polynomial.
+2. Find a closed formula for a polynomial sequence
+2.4. Solve simple recurrence relations
+1. Verify a closed formula is a solution to a recurrence relation.
+2. Use iteration and telescoping when appropriate.
+3. Use the characteristic root technique.
+2.5. Prove combinatorial statements using mathematical induction.
+1. Evaluate the correctness of an induction proof and identify any flaws.
+2. Write proofs using (weak) induction.
+3. Write proofs using strong induction when appropriate.
+4. Justify the validity of induction as a proof technique in reference to an example.
+Chapter 3: Logic and Proofs
+Big Question: How does logical structure help us prove mathematical statements?
+
+
+3.1 Use truth tables to determine the relationship between statements.
+1. Construct the truth table for a proposition
+2. Use a truth table to determine whether two statements are logically equivalent or whether a statement is a tautology.
+3. Use truth tables to determine whether a deduction rule is valid.
+4. Use a truth table to deduce the truth value of statements from the truth values of other statements.
+5. Use standard logical equivalences, such as de Morgan’s Laws, to simplify mathematical statements written symbolically.
+3.2 Use standard proof techniques to justify simple combinatorial theorems.  Determine which proof technique is appropriate to prove a given statement.
+1. Prove statements using a direct proof.
+2. Prove statements using a proof by contrapositive.
+3. Prove statements using a proof by contradiction.
+4. Determine the correctness and style of a given proof.
+5. Explain the logical structure of different proof techniques to justify their validity.
+
+
+
+
+
+
+Chapter 4: Graph Theory
+Big Question: How can graphs and their properties be used to answer questions about real world problems?
+
+
+4.1 Definitions
+1. Represent and interpret a graph as a set of vertices and edges.
+2. Determine whether two graphs are isomorphic.
+3. Use consistent terminology to describe properties of graphs.
+4.2 Planar graphs
+1. Determine whether a graph is planar
+2. Calculate the number of faces of a planar graph
+3. Apply Euler’s formula for planar graphs to calculate the number of vertices, edges, or faces of a graph.
+4.3 Coloring
+4.4 Walks
+4.5 Trees
+4.6 Matching
+________________
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+David's attempt to fit the new Chapter 2 objectives into a complete tree
+(note: still need to reconcile with the previous Chapter 2 full list)
+
+
+Sequences
+
+
+    High-level objectives
+
+
+        Use a variety of representations to describe a sequence and their terms.
+
+
+        Classify sequences as arithmetic, geometric, or sequences of partial sums of these, and find formulas to describe them.
+
+
+        Determine whether a sequence is polynomial, and find formulas to model such sequences.
+
+
+        Solve simple recurrence relations
+
+
+    Terminology and operations on sequences
+
+       Definition of sequence
+
+           State the definition of a sequence
+
+       Definition of initial terms of a sequence
+
+           Given formula for a sequence, write out the initial terms
+
+           Given a sequence defined combinatorially (in pictures), write out the initial terms
+
+       Definition of the sequence of partial sums of a sequence
+
+           Given the initial terms of a sequence, find the initial terms on the sequence of partial sums
+
+           Express the sequence of partial sums using sigma notation
+
+       Definition of sequence of differences
+
+           Given the initial terms of a sequence, find the initial terms of the sequence of differences
+
+       Definition of sequence of nth differences
+
+           Given the initial terms of a sequence, find the initial terms of the sequence of nth differences for small n
+
+   Find a model which fits the initial terms of a sequence, and use the model to predict the next few terms
+
+
+    Find a model which fits the initial terms of a sequence, and use the model to write a recursive formula for the sequence
+
+   Recognize the initial terms of a sequence as a modification or combination of a known sequence(s)
+
+   Special types of sequences
+
+       Arithmetic
+
+           Definition of arithmetic sequence
+
+           Given the initial terms of a sequence, determine if the sequence appears to be arithmetic
+
+           Given the initial terms of an arithmetic sequence, find a closed formula that models the sequence
+
+           Given an arithmetic sequence, find a closed formula that models the sequence of partial sums
+
+       Polynomial
+
+           Definition of polynomial sequence
+
+           Given the initial terms of a sequence, determine if the sequence appears to be polynomial, and determine the degree of the polynomial
+
+           Given the initial terms of a polynomial sequence, find a closed formula that models the sequence
+
+       Geometric
+
+           Definition of geometric sequence
+
+           Given the initial terms of a geometric sequence, find a closed formula that models the sequence
+
+           Given a geometric sequence, find a closed formula that models the sequence of partial sums
+
+       Telescoping
+
+           Definition of telescoping sequence
+
+           Identify series that telescope, and determine the sum
+
+           Identify sequences whose partial sums telescope
+
+   Recursively defined sequences
+
+       Definition of recursively defined sequence
+
+       Given a recursively defined sequence and initial terms, write out several more terms
+
+       Verify that a formula satisfies a recursively defined sequence
+
+       Use characteristic roots to find a closed formula for a recursively defined sequence
+
+       Use telescoping to find a closed formula for a recursively defined sequence
+
+       Use iteration to find a closed formula for a recursively defined sequence
+
+Induction
+
+    High-level objectives
+
+
+        Prove combinatorial statements using mathematical induction.
+
+
+    Definitions and terminology
+
+[[not done yet]]
+
+--------
+
+In the "basic math" tree
+
+Sums and products
+
+   Definition of sigma notation
+
+       Expand an expression written in sigma notation
+
+       Write a simple expanded sum in sigma notation
+       
+   Definition of product notation
+
+       Expand an expression written in product notation
+
+       Write a simple expanded product in product notation
+________________
+Chapter 1 (1.1–1.4) by Keller:
+
+
+math.DM.enum.add2: I can use the additive principle to calculate the total number of ways two disjoint events can occur.
+
+
+math.DM.enum.add: I can use the additive principle to calculate the total number of ways multiple disjoint events can occur.
+
+
+math.DM.enum.mult2: I can use the multiplicative principle to calculate the total number of ways two events can both occur.
+
+
+math.DM.enum.mult: I can use the multiplicative principle to calculate the total number of ways multiple events can occur simultaneously.
+
+
+math.DM.enum.addSet2: I can use the additive principle to calculate the number of elements in the union of two disjoint sets.
+
+
+math.DM.enum.addSet: I can use the additive principle to calculate the number of elements in the union of a collection of pairwise disjoint sets.
+
+
+math.DM.struct.cartesian: I can construct the Cartesian product of two sets.
+
+
+math.DM.enum.cartisian2: I can use the multiplicative principle to calculate the number of elements in the Cartesian product of two sets.
+
+
+math.DM.enum.set.union2: I can calculate the cardinality of the union of two finite sets.
+
+
+math.DM.enum.set.union3: I can calculate the cardinality of the union of three finite sets.
+
+
+math.DM.enum.addMult: I can solve counting problems requiring the combination of the additive and multiplicative principles.
+
+
+math.DM.struct.bitSet: I can translate an n-bit string of weight k into a k-element subset of {1,2,\dots,n}.
+
+
+math.DM.struct.setBit: I can translate a k-element subset of {1,2,\dots,n} into an n-bit string of weight k.
+
+
+math.DM.struct.bitLattice: I can explain the correspondence between bit strings and lattice paths.
+
+
+math.DM.enum.subset: I can count the number of k-element subsets of an n-element set.
+
+
+math.DM.enum.bitString: I can count the number of n-bit strings of weight k.
+
+
+math.DM.enum.bitString.restrict: I can count the number of n-bit strings of weight k in which certain positions of the string are fixed.
+
+
+math.DM.enum.binomialCoeff: I can find the coefficient on a term in the expansion of (x+y)^n.
+
+
+math.DM.enum.latticePath: I can count the number of shortest lattice paths from a given starting point to a given ending point.
+
+
+math.DM.enum.latticePath.restrict: I can count the number of shortest lattice paths from a given starting point to a given ending point that pass through a given point.
+
+
+math.DM.enum.latticePath.avoid: I can count the number of shortest lattice paths from a given starting point to a given ending point that do not pass through a given point.
+
+
+math.DM.enum.permutation: I can count the number of ways to arrange k objects from n distinct objects.
+
+
+math.DM.enum.functions.bijective: I can count the number of bijective functions from an n-element set to an n-element set.
+
+
+math.DM.enum.functions: I can count the number of functions from an n-element set to an m-element set.
+
+
+math.DM.enum.functions.injective: I can count the number of injective functions from a k-element set to an n-element set.
+
+
+math.DM.enum.combinations: I can calculate \binom{n}{k} exactly given values of n and k.
+
+
+math.DM.enum.permutationsCombinations: I can solve counting problems requiring the use of both combinations and permutations.
+
+
+math.DM.enum.combProof: I can give an argument to prove an identity by counting the same set in two different ways.
+
+
+
+
+
+
+
+
+Chapter 2 by Clontz:
+
+
+At the end of this course, each student will be able to...
+
+
+2. Sequences
+* Definitions
+   * D1: Use closed formulas to compute terms of a sequence.
+   * D2: Use recursive definitions (aka recurrence relations) to compute terms of a sequence.
+* Arithmetic and Geometric Sequences
+   * A1: Identify closed formulas and recurrence relations for arithmetic sequences.
+      * Req D1
+   * A2: Identify closed formulas and recurrence relations for geometric sequences.
+      * Req D1
+   * A3: Identify closed formulas for sums of arithmetic sequences.
+      * Req A1
+   * A4: Identify closed formulas for sums of geometric sequences.
+      * Req A2
+   * A5: Use Sigma and Pi Notation to express sums and products.
+* Polynomial fitting
+   * P1: Identify closed formulas for Delta^k-constant sequences.
+      * Req D1
+* Solving Recurrence Relations
+   * S1: Verify that a recurrence relation and closed formula coincide.
+      * Req D1,D2
+   * S2: Use telescoping to identify closed formulas for recurrence relations.
+      * Req S1
+   * S3: Use iteration to identify closed formulas for recurrence relations.
+      * Req S1
+   * S4: Use the characteristic polynomial of a recurrence relation to find its closed formula.
+      * Req S1
+* Induction
+   * I1: Use induction to prove simple algebraic statements.
+   * I2: Use strong induction to prove simple algebraic statements.
+      * Req I1
+* Chapter Summary
+   * (Theory/Application Exercises)
+________________
+Chapter 2 (partial) by David Farmer:
+
+
+Needs to be more tree-like.
+
+
+math.dm.c.sequence
+Sequences
+
+
+  math.dm.d.sequence
+  Define sequence
+
+
+  math.dm.sequence.formula
+  Identify sequences which are defined by a closed formula
+
+
+  math.dm.sequence.recurrence
+  Identify sequences which are defined by a recurrence relation
+
+
+  math.dm.sequence.initial
+  Defined the initial condition(s) of a sequence
+
+
+  math.dm.sequence.inital.ex
+  Write down the initial terms of a sequence described in words
+
+
+  math.dm.sequence.recurrence.ex
+  Write down the initial terms of a sequence described by recurrence relation with initial conditions
+
+
+  math.dm.sequence.formula.eval
+  Write down the initial terms of a sequence described by a formula
+
+
+Ex1, Ex2
+  math.dm.sequence.formula.perturbation
+  Identify sequences which are small modifications of standard sequences
+
+
+  math.dm.sequence.transform
+  Transform a sequence into a new sequence
+
+
+        math.dm.sequence.transform.partial_sum
+        Transform a sequence into a new sequence by extracting the partial sums
+
+
+  math.dm.sequence.recurrence.check
+  Check that a sequence given by a formula satisfies a given recurrence relation
+
+
+  math.dm.sequence.recurrence.formula
+  Determine a formula that satisfies a given recurrence relation
+
+
+  math.dm.sequence.formula.recurrence
+  Determine a recurrence relation that satisfies a given formula
+
+
+(2.2)
+  math.dm.sequence.visual_pattern.ex
+  Write down the next terms of a sequence described by a visual pattern
+
+
+  math.dm.sequence.arithmetic.d
+  Define the term arithmetic sequence
+
+
+  math.dm.sequence.arithmetic.ex.formula
+  Determine a formula for an arithmetic sequence given a few initial terms
+
+
+  math.dm.sequence.geometric.d
+  Define the terms geometric sequence and common ratio
+
+
+  math.dm.sequence.geometric.ex.formula
+  Determine a formula for a geometric sequence given a few initial terms
+
+
+  math.dm.sequence.triangular
+  Define the triangular numbers
+
+
+(compare to math.dm.sequence.transform.partial_sum)
+  math.dm.sequence.partial_sum
+  Define the partial sums of a sequence
+
+
+  math.dm.sequence.arithemtic.partial_sum
+  Find the partial sums of an arithmetic sequence
+
+
+  math.dm.sequence.geometric.partial_sum
+  Find the partial sums of a geometric sequence
+
+
+  math.dm.sequence.partial_sum.sigma
+  Write the partial sums of a sequence using sigma notation
+
+
+(next two should be general math, not math.dm)
+  math.dm.sigma_notation.ex
+  Expand an expression written in sigma notation
+
+
+  math.dm.product_notation.ex
+  Expand an expression written in product notation
+
+
+  math.dm.sequence.nth_difference
+  Form the sequence of nth differences of a given sequence
+
+
+  math.dm.sequence.polynomial.nth_difference
+  Characterize polynomial sequences in terms of nth differences
+               (maybe not specific enough)
+
+
+(Ex 2.4.1 is difficult to characterize)
+
+
+  math.dm.sequence.recursive.iteration
+  Use iteration to find a closed formula for a sequence defined recursively
+         (does everyone know what iteration means?)
+
+
+  math.dm.sequence.recursive.characteristic_equation.degree2
+  Write down the characteristic equaiton of a 2nd order linear recurrence
+
+
+  math.dm.sequence.recursive.characteristic.degree2.formula
+  Use the roots of the characteristic polynomial of a 2nd order linear recurrence to find a formula for the sequence
+
+
+  math.dm.sequence.recursive.characteristic.degree2.formula.repeated
+  Use the roots of the characteristic polynomial of a 2nd order linear recurrence to find a formula for the sequence, in the case of repeated roots
+
+
+________________
+
+
+Chapter 3 by Jeremy S:
+
+
+math.dm.proplogic
+Use propositional logic to formalize logical statements and arguments, and then analyze those formal structures.
+
+
+  math.dm.proplogic.language
+  Understand the relationship between formal logical statements and statements in natural language
+  
+      math.dm.proplogic.stat
+      Represent logical statements in English using propositional symbolism.
+
+
+  math.dm.proplogic.stat.table
+  Create the truth table of a proposition.
+
+
+  math.dm.proplogic.stat.combine
+  Combine logical statements using connectives.
+
+
+  math.dm.proplogic.relationships
+    Understand the relationships between logical statements
+
+
+    math.dm.proplogic.stat.taut
+    Recognize when a statement is a tautology.
+
+
+    math.dm.proplogic.stat.taut.table
+    Analyze whether a statement is a tautology using a truth table.
+
+
+    math.dm.proplogic.stat.equiv
+    Recognize when two statements are logically equivalent.
+
+
+    math.dm.proplogic.stat.equiv.table
+    Analyze whether two statements are logically equivalent using a truth table.
+
+
+    math.dm.proplogic.stat.equiv.algebra
+    Use standard logical equivalences (DeMorgan, double negation, etc.) to simplify statements via propositional calculus.
+
+
+math.dm.proplogic.stat.arg
+Represent logical arguments in English as a collection of symbolically-expressed formal
+propositions arranged into a collection of premises and a conclusion.
+
+
+math.dm.proplogic.stat.arg.valid
+Recognize when an argument is valid.
+
+
+math.dm.proplogic.stat.arg.valid.table
+Analyze whether an argument is valid using a truth table.
+
+
+math.dm.preplogic
+Be able to use prepositional logic to formalize logical statements and arguments involving quantified predicate variables.
+
+
+math.dm.preplogic.prop
+Investigate the basic properties of quantified predicate statements.
+
+
+math.dm.prfs
+Recognize different structures of proofs.
+
+
+  math.dm.prfs.prove
+  Prove a statement using one (or more) of a variety of methods.
+
+
+  math.dm.prfs.direct
+  Recognize the structure of a proof or proof snippet as "direct."
+
+
+  math.dm.prfs.direct.prove
+  Prove a statement directly.
+
+
+  math.dm.prfs.contrapos
+  Recognize the structure of a proof or proof snippet as "by the contrapositive."
+
+
+  math.dm.prfs.contrapos.prove
+  Prove a statement by proving the contrapositive.
+
+
+  math.dm.prfs.contradict
+  Recognize the structure of a proof or proof snippet as "by contradiction."
+
+
+  math.dm.prfs.contradict.prove
+  Prove a statement by contradiction.
+
+
+  math.dm.prfs.counter
+  Recognize the structure of a proof that a universally quantified statement is false by appealing to a counter example.
+
+
+  math.dm.prfs.counter.prove
+  Prove that a universally quantified statement is false by appealing to a counter example.
+
+
+  math.dm.prfs.cases
+  Recognize the structure of a proof or proof snippet as "by cases."
+
+
+  math.dm.prfs.cases.prove
+  Prove that a statement is true by splitting into cases, with care to ensure that the union of cases is the full domain of the predicate variable.
+
+
+________________
+
+
+Chapter 4 plus bits of 1 and 2 by Oscar Levin: 
+
+
+math.dm
+Discrete Mathematics
+
+
+  math.dm.count
+  Counting (Combinatorics)
+
+
+    math.dm.count.principles
+    Basic combinatorial principles
+
+
+      math.dm.count.principles.sum
+      Justify the sum principle; determine when to apply it correctly to the correct problems
+
+
+      math.dm.count.principles.sum.sets
+      Use unions of sets to justify the sum principle and in justifiying its use.
+
+
+      math.dm.count.prinicples.prod
+      Justify and apply the product principle.
+
+
+      math.dm.count.principles.prod.sets
+      Interpret the product principle as counting the cardinality of a cartesian product of sets.
+
+
+      math.dm.count.principles.pie.twosets
+      Find the cardinality of the union of two non-disjoint sets.
+
+
+      math.dm.count.principles.pie.twosets.gen
+      Express the principle of inclusion and exclusion for two sets in terms of sets.
+
+
+      math.dm.count.principles.pie.threesets
+      Find the cardinality of the union of three sets using Venn diagrams or PIE.
+
+
+      math.dm.count.principles.pie.gen
+      Explain the principle of inclusion and exclusion as a general technique to count elements of union of sets.
+
+
+      math.dm.count.principles.bij
+      State and apply the bijection principle to demonstrate two sets have the same size.
+
+
+  math.dm.seq
+  Integer sequences
+
+
+    math.dm.seq.desc
+    Descriptions of sequences
+
+
+      math.dm.seq.desc.closedvrec
+      Distinguish between a closed formula and a recursive formula for a sequence.  Verify that the sequences described by each are equal.
+
+
+      math.dm.seq.desc.closed
+      Compute any term of a sequence from a closed formula
+
+
+      math.dm.seq.desc.rec
+      Compute specific terms from a recusive definition of a sequence.
+
+
+  math.dm.gt
+  Graph theory
+
+
+    math.dm.gt.basic
+    Read an interpret basic definitions of graph and use graph theory vocabulary correctly.
+
+
+      math.dm.gt.basic.defs
+      Understand the abstract definition of a graph and its relationship to the drawing of a graph.
+
+
+      math.dm.gt.basic.isom
+      Apply the definition of graph isomophism to determine whether two graphs are isomorphic.
+
+
+      math.dm.gt.basic.subgraph
+      Determine whether a graph is a subgraph of induced subgraph of another graph.
+
+
+      math.dm.gt.basic.degree
+      Infer information about a graph from its degree sequence (e.g. the handshake lemma).
+
+
+      math.dm.gt.basic.bipartite
+      Determine whether a graph is bipartite.
+
+
+    math.dm.gt.planarity
+    Planarity of graphs.
+
+
+      math.dm.gt.planarity.drawing
+      Distinguish between planar graphs and planar drawings of graphs
+
+
+      math.dm.gt.planarity.faces
+      Identify the number of faces of a planar graph
+
+
+      math.dm.gt.planarity.euler
+      Explain the significance of Euler's formula for planar graphs.
+
+
+      math.dm.gt.planarity.nonplanar
+      Prove a graph is not planar using Euler's formula
+
+
+      math.dm.gt.planarity.polyhedra
+      Represent a convex polyhedron as a planar graph.
+
+
+      math.dm.gt.planarity.polyhedra.stats
+      Use reasoning about graphs to deduce information about a polyhedron.
+
+
+    math.dm.gt.chrom
+    Chromatic number and colorings of graphs
+
+
+      math.dm.gt.chrom.find
+      Find the chromatic number of a graph.
+
+
+      math.dm.gt.chrom.upper
+      Find a reasonable upper bound for the chromatic number of a graph (using 4 color theorem or Brooks theorem).
+
+
+      math.dm.gt.chrom.lower
+      Find a lower bound for the chromatic number.
+
+
+      math.dm.gt.chrom.apps
+      Use proper vertex coloring in applications.
+
+
+      math.dm.gt.chrom.edges
+      Find the chromatic index of graph.
+
+
+      math.dm.gt.chrom.edges.apps
+      Use proper edge coloring in applications.
+
+
+      math.dm.gt.chrom.edges.ramsey
+      Disguish between coloring edges for Ramsey theory versus chromatic index.
+
+
+      math.dm.gt.chrom.other
+      Apply new definitions of coloring in graphs.
+
+
+    math.dm.gt.walks
+    Euler and Hamilton paths (walks).
+
+
+      math.dm.gt.walks.eulerpath
+      Apply the definition to determine whether a graph contains an Euler path/circuit.
+
+
+      math.dm.gt.walks.eulerpath.thm
+      Apply the Euler path theorem to determine whether a graph has an Euler path.
+
+
+      math.dm.gt.walks.eulerpath.proof
+      Justify the easy direction of the Euelr path theorem.
+
+
+      math.dm.gt.walks.hamilton
+      Distinguish between Euler and Hamilton paths.  Identify whether a graph has a Hamilton path by inspection.
+
+
+      math.dm.gt.walks.apps
+      Use Euler and Hamilton paths to solve applications.
+
+
+    math.dm.gt.trees
+    Trees
+
+
+      math.dm.gt.trees.defs
+      Apply the definition to determine whether a graph is a tree.
+
+
+      math.dm.gt.trees.stats
+      Explain the relationship between the number of vertices and edges in a tree.
+
+
+      math.dm.gt.trees.span
+      Find multiple spanning tree of a graph; determine whether a subgraph is a spanning tree.
+
+
+      math.dm.gt.trees.rooted
+      Distinguish between rooted and non-rooted trees.  Use vocabulary related to rooted trees correctly.
+
+
+    math.dm.gt.matchings
+    Matchings
+
+
+      math.dm.gt.matchings.defs
+      Apply the definition to find matchings and perfect matchings of graphs.
+
+
+      math.dm.gt.matchings.hall
+      Apply Hall's theorem to determine whether a graph has a perfect matching.
+
+
+      math.dm.gt.matchings.apps
+      Use matchings to solve applications.

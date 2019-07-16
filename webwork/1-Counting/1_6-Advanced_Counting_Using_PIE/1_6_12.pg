@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Inclusion/exclusion)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.6.12)
+## Section1(1.6)
+## Problem1(12)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -68,7 +68,7 @@ END_PGML
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-[`[$b]^{[$a]} - \left[{[$b] \choose 1}([$b]-1)^{[$a]} - {[$b] \choose 2}([$b]-2)^{[$a]} + {[$b] \choose 3}([$b]-3)^{[$a]} - \dots +{[$b] \choose ([$b]-1)}1^{[$a]}\right]`] functions.  The [`[$b]^{[$a]}`] is all the functions from [`A`] to [`B\text{.}`]  We subtract those that aren't surjective.  Pick one of the elements in [`B`] to not be in the range (in [`{[$b] \choose 1}`] ways) and count all those functions ([`([$b]-1)^{[$a]}`]).  But this overcounts the functions where two elements from [`B`] are excluded from the range, so subtract those.  And so on, using PIE.
+[`[$b]^{[$a]} - \left[{[$b] \choose 1}[$b-1]^{[$a]} - {[$b] \choose 2}[$b-2]^{[$a]} + {[$b] \choose 3}[$b-3]^{[$a]} - \dots +{[$b] \choose [$b-1]}1^{[$a]}\right]`] functions.  The [`[$b]^{[$a]}`] is all the functions from [`A`] to [`B\text{.}`]  We subtract those that aren't surjective.  Pick one of the elements in [`B`] to not be in the range (in [`{[$b] \choose 1}`] ways) and count all those functions ([`[$b-1]^{[$a]}`]).  But this overcounts the functions where two elements from [`B`] are excluded from the range, so subtract those.  And so on, using PIE.
 
 
 END_PGML_SOLUTION

@@ -5,16 +5,16 @@
 ###   http://mathbook.pugetsound.edu   
 ###                                    
 #######################################
-## DBsubject()
-## DBchapter()
-## DBsection()
+## DBsubject(Combinatorics)
+## DBchapter(Counting)
+## DBsection(Inclusion/exclusion)
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(1.6.10)
+## Section1(1.6)
+## Problem1(10)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -92,7 +92,7 @@ a.  [$NBSP]*
 
 
     >> [``
-                      [$n]! - \left[{[$n] \choose 1}([$n]-1)! - {[$n] \choose 2}([$n]-2)! \dots  {[$n] \choose [$n]}0! \right] = [$ans1]
+                      [$n]! - \left[{[$n] \choose 1}[$n-1]! - {[$n] \choose 2}[$n-2]! \dots  {[$n] \choose [$n]}0! \right] = [$ans1]
                     ``] <<
 
 
@@ -102,7 +102,7 @@ a.  [$NBSP]*
 
 
     >> [``
-                      {[$n] \choose [$g]}\left([$ng]! - \left[{[$ng]\choose 1}([$ng]-1)! - {[$ng] \choose 2}([$ng]-2)! + \dots {[$ng] \choose [$ng]}0!\right]\right) = [$ans2]
+                      {[$n] \choose [$g]}\left([$ng]! - \left[{[$ng]\choose 1}[$ng-1]! - {[$ng] \choose 2}[$ng-2]! + \dots {[$ng] \choose [$ng]}0!\right]\right) = [$ans2]
                     ``] <<
 
 
