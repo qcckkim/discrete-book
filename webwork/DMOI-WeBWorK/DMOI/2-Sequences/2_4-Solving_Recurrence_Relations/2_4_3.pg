@@ -7,18 +7,17 @@
 #######################################
 ## DBsubject(Combinatorics)
 ## DBchapter(Recurrence relations)
-## DBsection(Solving homogeneous)
+## DBsection(Solving nonhomogeneous)
 ## Level()
-## KEYWORDS(discrete, characteristic roots, recurrence relations)
+## KEYWORDS(discrete, telescoping, iteration, recurrence relations)
 ## TitleText1(Discrete Mathematics: an Open Introduction)
 ## EditionText1(3)
 ## AuthorText1(Oscar Levin)
 ## Section1(2.4)
-## Problem1(2)
+## Problem1(3)
 ## Author(Oscar Levin)
 ## Institution(University of Northern Colorado)
 ## Language(en-US)
-
 DOCUMENT();
 
 ####################
@@ -82,7 +81,7 @@ a_3 - a_2 \amp = 2^3\\
 a_n - a_{n-1} \amp = 2^n
 \end{aligned}``] <<
 
-which sums to [`a_n - a_0 = 2^{n+1} - 2`] (using the multiply-shift-subtract technique from Section[$NBSP]*3.2 for the right-hand side).  Substituting [`a_0 = [$a0]`] and solving for [`a_n`] completes the solution.
+which sums to [`a_n - a_0 = 2^{n+1} - 2`] (using the multiply-shift-subtract technique for the geometric series on the right-hand side).  Substituting [`a_0 = [$a0]`] and solving for [`a_n`] completes the solution.
 
 
 END_PGML_SOLUTION
