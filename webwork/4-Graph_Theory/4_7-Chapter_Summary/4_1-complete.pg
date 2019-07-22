@@ -44,7 +44,7 @@ How many edges does [@ $k @]* have?
 
 [__________]{"$ap2"}
 
-Assuming [@ $k @]* is planar, how many faces does it have?
+If we assumed [@ $k @]* were planar, how many faces would it have?
 
 [__________]{"$ap3"}
 

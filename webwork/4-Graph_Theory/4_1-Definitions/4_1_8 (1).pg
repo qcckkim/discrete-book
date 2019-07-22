@@ -53,7 +53,8 @@ $pic = GRpic_graph_labels($graph,$labels);
 ####################
 BEGIN_PGML
 
-What is the max degree of the following vertex and edge sets?
+For the graph [`G`] given by its vertex and edge set below, what is [`\Delta(G)`], the max degree of [`G`]?
+
 
      V = {a, b, c, d, e, f}
 

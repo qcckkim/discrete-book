@@ -53,7 +53,7 @@ $pic = GRpic_graph_labels($graph,$labels);
 ####################
 BEGIN_PGML
 
-What is the max degree of this graph?
+For the graph [`G`] below, what is [`\Delta(G)`], the max degree of [`G`]?
 
 [@ Plot($pic)@]*
 

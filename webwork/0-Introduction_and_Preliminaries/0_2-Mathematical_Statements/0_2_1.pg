@@ -26,6 +26,7 @@ DOCUMENT();
 ####################
 loadMacros(
   "PGstandard.pl",
+  "PGchoicemacros.pl",
   "MathObjects.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
@@ -36,13 +37,13 @@ loadMacros(
 ####################
 # Header
 ####################
-COMMENT('Authored in PreTeXt');
+COMMENT('Randomized');
 TEXT(beginproblem());
 
 ####################
 # PG Setup
 ####################
-Context('Numeric');
+
 $atomic = PopUp(
   ["?","atomic statement","molecular statement","not a statement"],
   "atomic statement", # correct answer

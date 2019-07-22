@@ -5,10 +5,10 @@
 ## Level()
 ## KEYWORDS()
 ## TitleText1(Discrete Mathematics: an Open Introduction)
-## EditionText1()
+## EditionText1(3)
 ## AuthorText1(Oscar Levin)
-## Section1(not reported)
-## Problem1(0.2.8)
+## Section1(4.x)
+## Problem1()
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -68,7 +68,7 @@ $pic = GRpic_graph_labels($graph,$labels);
 ####################
 BEGIN_PGML
 
-What is the max degree of this graph?
+For the graph [`G`] below, what is [`\Delta(G)`], the max degree of [`G`]?
 
 [@ Plot($pic)@]*
 
