@@ -1,5 +1,11 @@
 # Todo list
 
+## 0.3:
+* Randomize 23.
+
+## 0.4:
+* Randomize 1.
+
 ## 2.1:
 
 * Problem 2 can be made into ww easily.
