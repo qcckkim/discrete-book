@@ -8,8 +8,7 @@
 
 ## 2.1:
 
-* Problem 2 can be made into ww easily.
-* Problem 3 as well (maybe not as easy).
+* Problem 3 as ww?.
 * And 4.  Webwork can do sequences.  Look at 2.2.2 as example.
 * None of these appear to be randomized/different.  Do some!
 
