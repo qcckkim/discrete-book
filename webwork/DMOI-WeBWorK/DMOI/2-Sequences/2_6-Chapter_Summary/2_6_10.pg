@@ -7,8 +7,8 @@
 ## TitleText1('Discrete Mathematics: an Open Introduction')
 ## EditionText1('3')
 ## AuthorText1('Oscar Levin')
-## Section1('2.4')
-## Problem1('7')
+## Section1('2.6')
+## Problem1('10')
 ## Author('Oscar Levin')
 ## Institution('University of Northern Colorado')
 ## Language('en-US')
@@ -40,10 +40,6 @@ TEXT(beginproblem());
 Context("Fraction");
 Context()->variables->are(n => "Real");
 
-# Make this problem randomize differently than the previous:
-$dummy = random(0,1);
-$dummy2 = random(0,1);
-
 #  a and be are characteristic roots:
 $a = list_random(-5, -4, -3, -2, -1, 2, 3, 4, 5, 6);
 do { $b = list_random(-5, -4, -3, -2, -1, 2, 3, 5, 6, 7); } until (($b != $a) and ($a*$b < 0) and ($a+$b != 0));
@@ -64,19 +60,26 @@ $alpha = Compute("$a0 - $beta");
 $closed = Formula("$alpha*($a)^n + $beta*($b)^n")->reduce();
 $closed->{test_points} = [[0],[1],[2],[3],[4],[5]];
 
-# Initial terms:
+# next terms terms:
 
-# # Initial terms:
-# $c0 = $closed->eval(n=>0);
-# $c1 = $closed->eval(n=>1);
+$a2 = $closed->eval(n=>2);
+$a3 = $closed->eval(n=>3);
+$a4 = $closed->eval(n=>4);
 
 ####################
 # Body
 ####################
 BEGIN_PGML
-Find the solution to the recurrence relation [`a_n = [$ra]a_{n-1} + [$rb]a_{n-2}`] with initial terms [`a_0 = [$a0]`] and [`a_1 = [$a1]\text{.}`]
 
-[`a_n = `] [__________]{$closed}
+Consider the recurrence relation [`a_n = [$ra]a_{n-1} + [$rb]a_{n-2}`] with first two terms [`a_0 = [$a0]`] and [`a_1 = [$a1]\text{.}`]
+a.  Write out the first 5 terms of the sequence defined by this recurrence relation.
+
+    [`a_2 = `] [___]{$a2}, [`a_3 = `] [___]{$a3}, [`a_4 = `] [___]{$a4}, ...
+
+a.  Solve the recurrence relation. That is, find a closed formula for [`a_n\text{.}`]
+
+   [`a_n = `] [__________]{$closed}
+
 
 
 END_PGML
@@ -85,7 +88,7 @@ END_PGML
 # Solution
 ####################
 BEGIN_PGML_SOLUTION
-By the Characteristic Root Technique. [`a_n = [$closed]\text{.}`]
+The sequence is [`[$a0], [$a1], [$a2], [$a3], [$a4], \ldots`].  It has closed formula [`a_n = [$closed]`], using the characteristic root technique.
 
 
 END_PGML_SOLUTION

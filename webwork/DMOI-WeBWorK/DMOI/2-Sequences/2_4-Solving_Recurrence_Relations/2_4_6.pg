@@ -47,6 +47,9 @@ Context("Fraction");
 Context()->variables->are(n => "Real");
 # Context()->variables->set(n =>{limits=>[0,10]});
 
+# Make this problem randomize differently than the previous:
+$dummy = random(0,1);
+
 #  a and be are characteristic roots:
 $a = list_random(-5, -4, -3, -2, -1, 2, 3, 4, 5, 6);
 do { $b = list_random(-5, -4, -3, -2, -1, 2, 3, 5, 6, 7); } until (($b != $a) and ($a*$b < 0) and ($a+$b != 0));

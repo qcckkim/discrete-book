@@ -41,8 +41,8 @@ Context("Fraction");
 Context()->variables->are(n => "Real");
 #define sequence
 $a = random(1,3);
-$b = list_random(-5,-4,-3, -2, -1, 2, 3, 4, 5, 6, 7, 8);
-$c = non_zero_random(-5,8);
+# Try to make sequence increasing.
+do {$b = list_random(-5,-4,-3, -2, -1, 2, 3, 4, 5, 6, 7, 8); $c = non_zero_random(-5,8);} until ($c > (-1)*$b);
 
 $closed = Formula("$a*n^3 + $b*n + $c");
 $gcd = gcd($c,gcd($closed->eval(n=>1),gcd($closed->eval(n=>2),gcd($closed->eval(n=>3),$closed->eval(n=>4)))));
