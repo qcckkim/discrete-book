@@ -150,13 +150,13 @@
       And in this case we are happy.
     </p>
 
-    <assemblage permid="bKC">
+    <theorem permid="bKC">
       <title><m>1,1,1,\ldots</m></title>
       <p permid="ejJ">
         The generating function for
         <m>1,1,1,1,1,1,\ldots</m> is <m>\dfrac{1}{1-x}</m>
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="PaL">
       Let's use this basic generating function to find generating functions for more sequences.
@@ -259,13 +259,13 @@
       This says
     </p>
 
-    <assemblage permid="HRL">
+    <theorem permid="HRL">
       <title><m>1,2,3,\ldots</m></title>
       <p permid="KqS">
         The generating function for
         <m>1, 2, 3, 4, 5, \ldots</m> is <m>\d\frac{1}{(1-x)^2}</m>.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="sno">
       Take a second derivative:

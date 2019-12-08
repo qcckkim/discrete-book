@@ -147,7 +147,7 @@
       This relationship is called Euler's formula.
     </p>
 
-    <assemblage permid="lPi">
+    <theorem permid="lPi">
       <title>Euler's Formula for Planar Graphs</title>
       <idx><h>Euler's formula</h></idx>
       <p permid="izd">
@@ -157,7 +157,7 @@
           v-e + f = 2
         </me>.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="OGm">
       Why is Euler's formula true?
@@ -296,13 +296,13 @@
       <m>K_5</m> will always have edges crossing.
     </p>
 
-    <theorem permid="RWr">
+    <proposition permid="RWr">
       <statement>
         <p permid="gJQ">
           <m>K_5</m> is not planar.
         </p>
       </statement>
-    </theorem>
+    </proposition>
 
     <proof permid="Yvx">
       <p permid="mzc">
@@ -359,13 +359,13 @@
       it is not possible to connect each of three houses to each of three utilities without the lines crossing.
     </p>
 
-    <theorem permid="ydA">
+    <proposition permid="ydA">
       <statement>
         <p permid="MQZ">
           <m>K_{3,3}</m> is not planar.
         </p>
       </statement>
-    </theorem>
+    </proposition>
 
     <proof permid="ECG">
       <p permid="eUD">
@@ -543,13 +543,13 @@
       We can prove it using graph theory.
     </p>
 
-    <theorem permid="WGk">
+    <proposition permid="WGk">
       <statement>
         <p permid="sYi">
           There are exactly five regular polyhedra.
         </p>
       </statement>
-    </theorem>
+    </proposition>
 
     <proof permid="kJP">
       <p permid="Xqe">

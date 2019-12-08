@@ -133,10 +133,10 @@
 <!-- html.knowl.example.solution: always "yes", could be implemented -->
 
 <!-- CSS and Javascript Servers -->
-<xsl:param name="html.css.colorfile" select="''" />
-<xsl:param name="debug.colorgs" select="'blue_grey'" />
+<!-- <xsl:param name="html.css.colorfile" select="''" /> -->
+<!-- <xsl:param name="debug.colors" select="'green_plum'" /> -->
 <!-- A space-separated list of CSS URLs (points to servers or local files) -->
-<xsl:param name="html.css.extra"  select="'custom-styles.css'" />
+<!-- <xsl:param name="html.css.extra"  select="'custom-styles.css'" /> -->
 
 <!-- Navigation -->
 <!-- Navigation may follow two different logical models:                     -->

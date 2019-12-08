@@ -191,7 +191,7 @@
       We consider two ways to do this:
     </p>
 
-    <assemblage permid="FuE">
+    <definition permid="FuE">
       <title>Closed formula</title>
       <p permid="Uwy">
         A <term>closed formula</term>
@@ -201,9 +201,9 @@
         just as if you were defining a function in terms of <m>n</m>
         (because that is exactly what you are doing).
       </p>
-    </assemblage>
+    </definition>
 
-    <assemblage permid="lBN">
+    <definition permid="lBN">
       <title>Recursive definition</title>
       <p permid="ADH">
         A <term>recursive definition</term>
@@ -217,7 +217,7 @@
         a list of a few terms of the sequence
         (one less than the number of terms in the recurrence relation).
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="RBS">
       It is easier to understand what is going on here with an example:

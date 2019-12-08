@@ -153,12 +153,19 @@ html: ww-merge
 	-rm $(HTMLOUT)/knowl/*.html
 	cp -a images $(HTMLOUT)
 	cd $(HTMLOUT); \
-	xsltproc --xinclude $(XSL)/custom-html.xsl $(MERGED);
+	xsltproc --xinclude --stringparam publisher "$(SRC)/pubopts.xml" $(XSL)/custom-html.xsl $(MERGED);
 
 html-fresh: diagrams ww-extraction html
 
 viewhtml:
 	$(HTMLVIEWER) $(HTMLOUT)/dmoi.html &
+
+devpreview:
+	cp -a $(HTMLOUT)/. $(DMOIDEV)/docs/
+	cd $(DMOIDEV); \
+	git add .; \
+	git commit -a -m "rebuild"; \
+	git push
 
 # Full PDF version
 #   copies in all image files, which is overkill (SVG's)

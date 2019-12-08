@@ -196,7 +196,7 @@
       the weights of the above strings are 2, 0, 4, and 5 respectively.
     </p>
 
-    <assemblage permid="gQu">
+    <definition permid="gQu">
       <title>Bit Strings</title>
       <p permid="NHx">
             <idx><h>bit string</h></idx>
@@ -242,7 +242,7 @@
           </li>
         </ul>
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="Dis">
       For example,
@@ -575,7 +575,7 @@
       <m>{n \choose k}</m>.
     </p>
 
-    <assemblage permid="MXD">
+    <definition permid="MXD">
       <title>Binomial Coefficients</title>
       <p permid="tOG">
             <idx><h>binomial coefficients</h></idx>
@@ -609,7 +609,7 @@
           </li>
         </ul>
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="iki">
       The last bullet point is usually taken as the definition of <m>{n \choose k}</m>.
@@ -681,14 +681,14 @@
       the same recurrence relation holds for binomial coefficients:
     </p>
 
-    <assemblage permid="teM">
+    <theorem permid="teM">
       <title>Recurrence relation for <m>{n \choose k}</m></title>
       <p permid="ZVP">
         <me permid="UQx">
           {n \choose k} = {n-1 \choose k-1} + {n-1 \choose k}
         </me>.
       </p>
-    </assemblage>
+    </theorem>
 
   </subsection>
 

@@ -220,7 +220,7 @@
       <m>\neg</m>.
     </p>
 
-    <assemblage permid="pfN">
+    <definition permid="pfN">
       <title>Logical Connectives</title>
       <p permid="DMi">
         <ul permid="zjt">
@@ -282,7 +282,7 @@
           </li>
         </ul>
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="RPN">
       The
@@ -290,7 +290,7 @@
       depending on the connectives:
     </p>
 
-    <assemblage permid="VmW">
+    <definition permid="VmW">
       <title>Truth Conditions for Connectives</title>
       <p permid="jTr">
         <ul permid="fqC">
@@ -314,7 +314,7 @@
           <li permid="qzB"><m>\neg P</m> is true when <m>P</m> is false.</li>
         </ul>
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="xWW">
       Note that for us, <em>or</em> is the
@@ -339,7 +339,7 @@
 
   <subsection xml:id="subsec_implications" permid="cRv">
     <title>Implications</title>
-    <assemblage permid="Buf">
+    <definition permid="Buf">
       <title>Implications</title>
         <idx>antecedent</idx>
         <idx>consequent</idx>
@@ -377,7 +377,7 @@
         <m>P \imp Q</m> to be false is for <m>P</m> to be true
         <em>and</em> <m>Q</m> to be false.
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="eef">
       Easily the most common type of statement in mathematics is the implication.
@@ -565,7 +565,7 @@
       you already have the outline for a proof.
     </p>
 
-    <assemblage permid="hBo">
+    <theorem permid="hBo">
       <title>Direct Proofs of Implications</title>
       <p permid="coS">
         To prove an implication
@@ -573,7 +573,7 @@
         <m>P</m>, and from it, deduce
         <m>Q</m>.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="iNY">
       Perhaps a better way to say this is that to prove a statement of the form <m>P \imp Q</m> directly,
@@ -842,7 +842,7 @@
       This is the biconditional we mentioned earlier.
     </p>
 
-    <assemblage permid="tPG">
+    <theorem permid="tPG">
       <title>If and only if</title>
       <blockquote permid="xug">
         <p permid="goR">
@@ -857,7 +857,7 @@
         then <m>n^2</m> is even, as well as the converse:
         if <m>n^2</m> is even, then <m>n</m> is even.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="MaB">
       You can think of <q>if and only if</q>
@@ -1016,7 +1016,7 @@
       In fact, let's agree once and for all what they mean.
     </p>
 
-    <assemblage permid="ZWP">
+    <definition permid="ZWP">
       <title>Necessary and Sufficient</title>
         <idx><h>necessary condition</h></idx>
         <idx><h>sufficient condition</h></idx>
@@ -1038,7 +1038,7 @@
           </li>
         </ul>
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="kDl">
       To be honest, I have trouble with these if I'm not very careful.
@@ -1163,7 +1163,7 @@
       existential and universal.
     </p>
 
-    <assemblage permid="mlh">
+    <definition permid="mlh">
       <title>Universal and Existential Quantifiers</title>
         <idx><h>quantifiers</h></idx>
 
@@ -1204,7 +1204,7 @@
         </me>
         asserts that every number is greater than or equal to 0.
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="pne">
       As with all mathematical statements,
@@ -1252,7 +1252,7 @@
       This is typical.
     </p>
 
-    <assemblage permid="Ssq">
+    <theorem permid="Ssq">
       <title>Quantifiers and Negation</title>
       <blockquote permid="dBp">
         <p permid="Mwa">
@@ -1266,7 +1266,7 @@
           </m>.
         </p>
       </blockquote>
-    </assemblage>
+    </theorem>
 
     <p permid="hIF">
       Essentially, we can pass the negation symbol over a quantifier,

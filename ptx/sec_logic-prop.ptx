@@ -606,7 +606,7 @@
       We have a similar rule for distributing over conjunctions (<q>and</q>s):
     </p>
 
-    <assemblage permid="IDs">
+    <theorem permid="IDs">
       <title>De Morgan's Laws</title>
       <p permid="IRN">
             <idx><h>De Morgan's laws</h></idx>
@@ -617,7 +617,7 @@
           \neg(P \vee Q) \text{ is logically equivalent to } \neg P \wedge \neg Q
         </me>.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="PqT">
       This suggests there might be a sort of <q>algebra</q>
@@ -632,7 +632,7 @@
       De Morgan's laws do not do not directly help us with implications, but as we saw above, every implication can be written as a disjunction:
     </p>
     
-    <assemblage xml:id="assemblage-imp-disj" permid="oKB">
+    <theorem xml:id="assemblage-imp-disj" permid="oKB">
       <title>Implications are Disjuctions</title>
       <idx><h>implication</h><h>equivalent disjuction</h></idx>
       <idx><h>disjuction</h><h>equivalent implication</h></idx>
@@ -645,7 +645,7 @@
       <p permid="Vgf">
         Example: <q>If a number is a multiple of 4, then it is even</q> is equivalent to, <q>a number is not a multiple of 4 or (else) it is even.</q>
       </p>
-    </assemblage>
+    </theorem>
     
     <p permid="bFl">
       With this and De Morgan's laws, you can take any statement and <em>simplify</em> it to the point where negations are only being applied to atomic propositions.  Well, actually not, because you could get multiple negations stacked up.  But this can be easily dealt with:
@@ -700,7 +700,7 @@
       it is a conjunction!  We saw this before, in <xref ref="sec_intro-statements"/>, but it is so important and useful, it warants a second blue box here:
     </p>
     
-    <assemblage xml:id="assemblage-negimp-again" permid="AYT">
+    <theorem xml:id="assemblage-negimp-again" permid="AYT">
       <title>Negation of an Implication</title>
       <p permid="NBG">
         The negation of an implication is a conjuction:
@@ -709,7 +709,7 @@
         </me>.
         That is, the only way for an implication to be false is for the hypothesis to be true <em>AND</em> the conclusion to be false.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="UaM">
       To verify that two statements are logically equivalent,

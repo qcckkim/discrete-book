@@ -142,7 +142,7 @@
     <m>N(S)</m> is the set of topics liked by the students of <m>S</m>.) Our discussion above can be summarized as follows:
   </p>
 
-  <assemblage permid="Kdx">
+  <definition permid="Kdx">
     <title>Matching Condition</title>
       <idx><h>matching condition</h></idx>
     <p permid="LSK">
@@ -152,7 +152,7 @@
       </me>
       for all <m>S \subseteq A</m>.
     </p>
-  </assemblage>
+  </definition>
 
   <p permid="IYe">
     Is the converse true?

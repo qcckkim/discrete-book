@@ -465,13 +465,13 @@
       so we have a nice lower bound:
     </p>
 
-    <theorem permid="Pby">
+    <proposition permid="Pby">
       <statement>
         <p permid="jEj">
           The chromatic number of a graph <m>G</m> is at least the clique number of <m>G</m>.
         </p>
       </statement>
-    </theorem>
+    </proposition>
 
     <p permid="TpS">
       There are times when the chromatic number of <m>G</m> is

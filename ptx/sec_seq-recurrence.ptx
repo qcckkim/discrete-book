@@ -522,7 +522,7 @@
       We are in luck though:
     </p>
 
-    <assemblage xml:id="asmb-char-rep-roots" permid="Tyw">
+    <theorem xml:id="asmb-char-rep-roots" permid="Tyw">
       <title>Characteristic Root Technique for Repeated Roots</title>
       <p permid="oLb">
         Suppose the recurrence relation
@@ -533,7 +533,7 @@
         </me>
         where <m>a</m> and <m>b</m> are constants determined by the initial conditions.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="lQv">
       Notice the extra <m>n</m> in <m>bnr^n</m>.

@@ -93,12 +93,12 @@
       This generalizes:
     </p>
 
-    <assemblage permid="ekj">
+    <theorem permid="ekj">
       <title>Permutations of <m>n</m> elements</title>
       <p permid="RAs">
         There are <m>n! = n\cdot (n-1)\cdot (n-2)\cdot \cdots \cdot 2\cdot 1</m> permutations of <m>n</m> (distinct) elements.
       </p>
-    </assemblage>
+    </theorem>
 
     <example xml:id="example-counting-functions-bijective" permid="CMT">
       <title>Counting Bijective Functions</title>
@@ -187,7 +187,7 @@
       Careful: The factorial in the denominator is not <m>4!</m> but rather <m>(10-4)!</m>.
     </p>
 
-    <assemblage permid="Krs">
+    <theorem permid="Krs">
       <title><m>k</m>-permutations of <m>n</m> elements</title>
       <p permid="xHB">
             <idx><h><em>k</em>-permutation</h></idx>
@@ -199,7 +199,7 @@
           P(n,k) = \frac{n!}{(n-k)!} = n(n-1)(n-2)\cdots (n-(k-1))
         </me>.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="aUe">
       Note that when <m>n = k</m>, we have <m>P(n,n) = \frac{n!}{(n-n)!} = n!</m>
@@ -271,14 +271,14 @@
       If we divide both sides by <m>k!</m> we get a closed formula for <m>{n \choose k}</m>.
     </p>
 
-    <assemblage permid="qyB">
+    <theorem permid="qyB">
       <title>Closed formula for <m>{n \choose k}</m></title>
       <p permid="dOK">
         <me permid="cJr">
           {n \choose k} = \frac{n!}{(n-k)!k!} = \frac{n(n-1)(n-2)\cdots(n-(k-1))}{k(k-1)(k-2)\cdots 1}
         </me>.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="zwO">
       We say <m>P(n,k)</m> counts <em>permutations</em>,

@@ -44,7 +44,7 @@
       another discipline which studies logic):
     </p>
 
-    <assemblage permid="cBA">
+    <definition permid="cBA">
       <title>Arguments</title>
       <p permid="tzL">
         An <term>argument</term>
@@ -59,7 +59,7 @@
         An argument is <term>invalid</term> if it is not valid;
         it is possible for all the premises to be true and the conclusion to be false.
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="ZGU">
       For example, consider the following two arguments:

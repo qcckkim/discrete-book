@@ -105,7 +105,7 @@
       (this is saying <m>a</m> is some multiple of <m>b</m>).
     </p>
 
-    <assemblage permid="HaN">
+    <defiition permid="HaN">
       <title>The Divisibility Relation</title>
       <p permid="xzX">
             <idx><h>divisibility relation</h></idx>
@@ -130,7 +130,7 @@
           <li permid="YIS"><m>n</m> is a multiple of <m>m</m>.</li>
         </ol>
       </p>
-    </assemblage>
+    </defiition>
 
     <p permid="DZd">
       Notice that <m>m \mid n</m> is a statement.
@@ -314,7 +314,7 @@
       <em>division algorithm</em>:
     </p>
 
-    <assemblage permid="nhW">
+    <theorem permid="nhW">
       <title>The Division Algorithm</title>
       <p permid="dHg">
             <idx><h>Division algorithm</h></idx>
@@ -324,7 +324,7 @@
         </me>
         where <m>r</m> is an integer satisfying <m>0 \le r \lt  |b|</m>
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="hlG">
       The idea is that we can always take a large enough multiple of <m>b</m> so that the remainder <m>r</m> is as small as possible.
@@ -460,7 +460,7 @@
       </me>.
     </p>
 
-    <assemblage permid="Tpf">
+    <definition permid="Tpf">
       <title>Congruence Modulo <m>n</m></title>
       <p permid="JOp">
         We say <term><m>a</m> is congruent to <m>b</m> modulo <m>n</m></term>,
@@ -474,7 +474,7 @@
         In other words,
         provided <m>a</m> and <m>b</m> belong to the same remainder class modulo <m>n</m>.
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="ScI">
       Many books define congruence modulo <m>n</m> slightly differently.
@@ -522,7 +522,7 @@
       Thus we have:
     </p>
 
-    <assemblage permid="zwo">
+    <theorem permid="zwo">
       <title>Congruence and Divisibility</title>
       <p permid="pVy">
         For any integers <m>a</m>, <m>b</m>, and <m>n</m>, we have
@@ -530,7 +530,7 @@
           a \equiv b \pmod{n} \qquad \mbox{ if and only if }  \qquad n \mid a-b
         </me>.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="CTK">
       It will also be useful to switch back and forth between congruences and regular equations.
@@ -544,7 +544,7 @@
       This conforms with our earlier observation that all the numbers in a particular remainder class are the same amount larger than the multiples of <m>n</m>.
     </p>
 
-    <assemblage permid="fDx">
+    <theorem permid="fDx">
       <title>Congruence and Equality</title>
       <p permid="WcH">
         For any integers <m>a</m>, <m>b</m>, and <m>n</m>, we have
@@ -552,7 +552,7 @@
           a \equiv b \pmod{n} \qquad \mbox{ if and only if }  \qquad a = b + kn \mbox{ for some integer } k 
         </me>.
       </p>
-    </assemblage>
+    </theorem>
   </subsection>
 
   <subsection permid="OFm">
@@ -566,7 +566,7 @@
       which would require checking the following three facts:
     </p>
 
-    <assemblage permid="LKG">
+    <theorem permid="LKG">
       <title>Congruence Modulo <m>n</m> is an Equivalence Relation</title>
       <p permid="CjQ">
         Given any integers <m>a</m>, <m>b</m>, and <m>c</m>,
@@ -596,7 +596,7 @@
         In other words, congruence modulo <m>n</m> is reflexive,
         symmetric, and transitive, so is an equivalence relation.
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="Pic">
       You should take a minute to convince yourself that each of the properties above actually hold of congruence.
@@ -612,7 +612,7 @@
       Will we get something congruent to 3?
     </p>
 
-    <assemblage permid="rRP">
+    <theorem permid="rRP">
       <title>Congruence and Arithmetic</title>
       <p permid="uFr">
             <idx><h>modular arithmetic</h></idx>
@@ -628,7 +628,7 @@
           <li permid="PZa"><m>ac \equiv bd \pmod{n}</m>.</li>
         </ol>
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="bwu">
       The above facts might be written a little strangely, but the idea is simple.
@@ -848,7 +848,7 @@
       <m>\gcd(6,8) = 2</m> since the greatest divisor common to 6 and 8 is 2.
     </p>
 
-    <assemblage permid="XYY">
+    <theorem permid="XYY">
       <title>Congruence and Division</title>
       <p permid="GTJ">
         Suppose <m>ad \equiv bd \pmod n</m>.
@@ -859,7 +859,7 @@
         If <m>d</m> and <m>n</m> have no common factors then <m>\gcd(d,n) = 1</m>,
         so <m>a \equiv b \pmod n</m>.
       </p>
-    </assemblage>
+    </theorem>
 
     <example permid="oXj">
       <statement>
@@ -1087,12 +1087,12 @@
       Thus, a more compact way to say this is:
     </p>
 
-    <assemblage permid="Egh">
+    <theorem permid="Egh">
       <title>Congruences with no solutions</title>
       <p permid="Tib">
         If <m>\gcd(a,n) \nmid b</m>, then <m>ax \equiv b \pmod{n}</m> has no solutions.
       </p>
-    </assemblage>
+    </theorem>
   </subsection>
 
   <subsection permid="aTE">
@@ -1114,7 +1114,7 @@
       which are considerably easier to work with.
     </p>
 
-    <assemblage permid="knq">
+    <definition permid="knq">
       <title>Diophantine Equations</title>
       <p permid="zpk">
         An equation in two or more variables is called a
@@ -1128,7 +1128,7 @@
       <p permid="fwt">
         A <term>solution</term> to a Diophantine equation is a solution to the equation consisting only of integers.
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="SMC">
       We have the tools we need to solve linear Diophantine equations.

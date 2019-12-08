@@ -246,7 +246,7 @@
     Instead, here is the (now) standard definition of a graph.
   </p>
 
-  <assemblage permid="AgV">
+  <definition permid="AgV">
     <title>Graph Definition</title>
     <p permid="rLy">
       A <term>graph</term> is an ordered pair
@@ -256,7 +256,7 @@
       (called the <term>edges</term>)
       of two-element subsets of <m>V</m>.
     </p>
-  </assemblage>
+  </definition>
 
   <p permid="oQS">
     Strange.
@@ -455,7 +455,7 @@
     we give the following definitions:
   </p>
 
-  <assemblage permid="goe">
+  <definition permid="goe">
       <idx><h>isomorphic</h></idx>
     <title>Isomorphic Graphs</title>
     <p permid="XSH">
@@ -470,7 +470,7 @@
       Two graphs are <term>isomorphic</term> if there is an isomorphism between them.
       In this case we write <m>G_1 \isom G_2</m>.
     </p>
-  </assemblage>
+  </definition>
 
   <p permid="FPd">
     An isomorphism is simply a function which renames the vertices.
@@ -681,7 +681,7 @@
     In fact, there are two reasonable notions for what a subgraph should mean.
   </p>
 
-  <assemblage permid="Mvn">
+  <definition permid="Mvn">
     <title>Subgraphs</title>
       <idx><h>subgraph</h></idx>
     <p oldPERMID="cBa" permid="kgZ">
@@ -698,7 +698,7 @@
       of <m>G = (V, E)</m> provided
       <m>V' \subseteq V</m> and every edge in <m>E</m> whose vertices are still in <m>V'</m> is also an edge in <m>E'</m>.
     </p>
-  </assemblage>
+  </definition>
 
   <p permid="qGf">
     Notice that every induced subgraph is also an ordinary subgraph,

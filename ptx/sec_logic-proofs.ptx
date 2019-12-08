@@ -115,14 +115,14 @@
       A good place to start might be to study a classic.
     </p>
 
-    <theorem permid="LFc">
+    <proposition permid="LFc">
       <statement>
         <p permid="wKz">
           There are infinitely many primes.
               <idx><h>prime numbers</h></idx>
         </p>
       </statement>
-    </theorem>
+    </proposition>
 
     <proof permid="qGS">
       <p permid="saG">

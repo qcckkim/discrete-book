@@ -530,7 +530,7 @@
       since you need to know the images of other (previous) elements in the domain.
     </p>
 
-    <assemblage permid="aNA">
+    <definition permid="aNA">
       <title>Recursively Defined Functions</title>
         <idx><h>recursively defined functions</h></idx>
 
@@ -543,7 +543,7 @@
         The recurrence relation is a formula for <m>f(n+1)</m> in terms for <m>f(n)</m>
         (and possibly <m>n</m> itself).
       </p>
-    </assemblage>
+    </definition>
 
     <example permid="fxt">
       <statement>
@@ -900,7 +900,7 @@
       consider a more formal definition of each, side by side.
     </p>
 
-    <assemblage permid="GUJ">
+    <definition permid="GUJ">
       <title>Injective vs Surjective</title>
       <p permid="xtT">
         A function is <term>injective</term>
@@ -913,7 +913,7 @@
         provided every element of the codomain is the image of <em>at least</em>
         one element from the domain.
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="AYt">
       Notice both properties are determined by what happens to elements of the codomain:

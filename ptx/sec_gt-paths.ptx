@@ -231,7 +231,7 @@
       a circuit using the edges you previously missed.
     </p>
 
-    <assemblage permid="Gdy">
+    <theorem permid="Gdy">
       <title>Euler Paths and Circuits</title>
       <p permid="Lxl">
         <ul permid="vEt">
@@ -248,7 +248,7 @@
           </li>
         </ul>
       </p>
-    </assemblage>
+    </theorem>
 
     <p permid="rEu">
       Since the bridges of Königsberg graph has all four vertices with odd degree,

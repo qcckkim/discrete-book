@@ -49,7 +49,7 @@
       and also understand why it is important enough to warrant its own section.
     </p>
 
-    <assemblage permid="kYk">
+    <definition permid="kYk">
       <title>Definition of a Tree</title>
       <idx><h>tree</h></idx>
       <idx><h>forest</h></idx>
@@ -64,7 +64,7 @@
       <p permid="wRd">
         A <term>forest</term> is a graph containing no cycles.   Note that this means that a connected forest is a tree.
       </p>
-    </assemblage>
+    </definition>
 
     <p permid="cYm">
       Does the definition above agree with your intuition for what graphs we should call trees?
