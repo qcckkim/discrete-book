@@ -622,7 +622,7 @@ fonttitle=\bfseries, attach boxed title to top left={xshift=4mm,yshift=-4mm,yshi
 %% configure hyperref's  \url  to match listings' inline verbatim
 \renewcommand\UrlFont{\small\ttfamily}
 %% Hyperlinking active in electronic PDFs, all links solid and blue
-\hypersetup{hidelinks=true,colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue}
+\hypersetup{hidelinks=true,colorlinks=true,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black}
 \hypersetup{pdftitle={Discrete Mathematics}}
 %% If you manually remove hyperref, leave in this next command
 \providecommand\phantomsection{}
@@ -2077,10 +2077,10 @@ HI/.style={USA map/HI/.style={#1}}, AK/.style={USA map/AK/.style={#1}}, FL/.styl
 \begin{document}
 \frontmatter
 %% Cover image, not numbered
-\setcounter{page}{0}%
-\includepdf[noautoscale=false]{images/front.pdf}%
-%% Blank obverse for 2-sided version
-\thispagestyle{empty}\hbox{}\setcounter{page}{0}\cleardoublepage%
+% \setcounter{page}{0}%
+% \includepdf[noautoscale=false]{images/front.pdf}%
+% %% Blank obverse for 2-sided version
+% \thispagestyle{empty}\hbox{}\setcounter{page}{0}\cleardoublepage%
 %% no half-title
 %% No adcard
 %% begin: title page
@@ -3703,7 +3703,7 @@ Find the least element of each of the following sets, if there is one.\leavevmod
 \item\hypertarget{li-3359}{}\hypertarget{p-3360}{}%
 \(\{n \in \N \st n^2 - 3 \ge 2\}\text{.}\)%
 \item\hypertarget{li-3364}{}\hypertarget{p-3365}{}%
-\(\{n \ge 0 \st n^2 - 5 \in \N\}\text{.}\)%
+\(\{n \in \N \st n^2 - 5 \in \N\}\text{.}\)%
 \item\hypertarget{li-3369}{}\hypertarget{p-3370}{}%
 \(\{n^2+1 \st n \in \N\}\text{.}\)%
 \item\hypertarget{li-3374}{}\hypertarget{p-3375}{}%
@@ -3738,7 +3738,7 @@ Let \(A = \{n \in \N \st 20 \le n \lt 50\}\) and \(B = \{n \in \N \st 10 \lt n \
 \end{divisionexercise}%
 \begin{divisionexercise}{\hyperlink{hint-3626-back}{7}}{}{}{exercise-3592}%
 \hypertarget{p-3618}{}%
-Let \(A = \{1,2,3,4,5\}\) and \(B = \{2, 3, 4\}\text{.}\) How many set \(C\) have the property that \(C \subseteq A\) and \(B \subseteq C\text{.}\)%
+Let \(A = \{1,2,3,4,5\}\) and \(B = \{2, 3, 4\}\text{.}\) How many sets \(C\) have the property that \(C \subseteq A\) and \(B \subseteq C\text{.}\)%
 \end{divisionexercise}%
 \begin{divisionexercise}{\hyperlink{solution-3714-back}{8}}{}{}{exercise-3644}%
 \hypertarget{p-3689}{}%
@@ -3933,7 +3933,7 @@ Explain why there is no set \(A\) which satisfies \(A = \{2, \card{A}\}\).%
 \end{divisionexercise}%
 \begin{divisionexercise}{30}{}{}{exercise-4190}%
 \hypertarget{p-4192}{}%
-Find sets \(A\), \(B\), and \(C\) which satisfy the following.%
+Find all sets \(A\), \(B\), and \(C\) which satisfy the following.%
 \begin{align*}
 A = \amp \{1, \card{B}, \card{C}\}\\
 B = \amp \{2, \card{A}, \card{C}\}\\
@@ -4011,7 +4011,7 @@ It is worth making a distinction between a function and its description. The fun
 Some calculus textbooks talk about the \emph{Rule of Four}, that every function can be described in four ways: algebraically (a formula), numerically (a table), graphically, or in words. In discrete math, we can still use any of these to describe functions, but we can also be more specific since we are primarily concerned with functions that have \(\N\) or a finite subset of \(\N\) as their domain.%
 \par
 \hypertarget{p-4295}{}%
-Describing a function graphically usually means drawing the graph of the function: plotting the points on the plain. We can do this, and might get a graph like the following for a function \(f:\{1,2,3\} \to \{1,2,3\}\).%
+Describing a function graphically usually means drawing the graph of the function: plotting the points on the plane. We can do this, and might get a graph like the following for a function \(f:\{1,2,3\} \to \{1,2,3\}\).%
 \begin{sidebyside}{1}{0.35}{0.35}{0}%
 \begin{sbspanel}{0.3}%
 \resizebox{\linewidth}{!}{{
@@ -4761,7 +4761,7 @@ Find \(f\inv(12)\).%
 Let \(X = \{n \in \N \st 0 \le n \le 999\}\) be the set of all numbers with three or fewer digits. Define the function \(f:X \to \N\) by \(f(abc) = a+b+c\text{,}\) where \(a\text{,}\) \(b\text{,}\) and \(c\) are the digits of the number in \(X\) (write numbers less than 100 with leading 0's to make them three digits). For example, \(f(253) = 2 + 5 + 3 = 10\text{.}\)\leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-5705}{}\hypertarget{p-5706}{}%
-Let \(A = \{n \in X \st 113 \le x \le 122\}\text{.}\) Find \(f(A)\text{.}\)%
+Let \(A = \{n \in X \st 113 \le n \le 122\}\text{.}\) Find \(f(A)\text{.}\)%
 \item\hypertarget{li-5711}{}\hypertarget{p-5712}{}%
 Find \(f\inv(\{1,2\})\)%
 \item\hypertarget{li-5716}{}\hypertarget{p-5717}{}%
@@ -5581,7 +5581,7 @@ Now for a subset to contain exactly three elements, the corresponding bit string
 The \terminology{integer lattice} is the set of all points in the Cartesian plane for which both the \(x\) and \(y\) coordinates are integers. If you like to draw graphs on graph paper, the lattice is the set of all the intersections of the grid lines.%
 \par
 \hypertarget{p-7231}{}%
-A \terminology{lattice path} \index{lattice path} is one of the shortest possible paths connecting two points on the lattice, moving only horizontally and vertically. For example, here are three possible lattice paths from the points \((0,0)\) to \((3,2)\):%
+A \terminology{lattice path} \index{lattice path} is one of the shortest possible paths connecting two points on the lattice, moving only horizontally and vertically. For example, here are three possible lattice paths from the point \((0,0)\) to \((3,2)\):%
 \begin{sidebyside}{3}{0.0166666666666667}{0.0166666666666667}{0.0333333333333333}%
 \begin{sbspanel}{0.3}%
 \resizebox{\linewidth}{!}{{
@@ -7957,7 +7957,7 @@ How many shortest lattice paths are there from \((0,0)\) to \((10,4)\)?%
 \item\hypertarget{li-11449}{}\hypertarget{p-11450}{}%
 If you have 10 bow ties, \index{bow ties} and you want to select 4 of them for next week, how many choices do you have?%
 \item\hypertarget{li-11453}{}\hypertarget{p-11454}{}%
-Suppose you have 10 bow ties and you will wear one on each of the next 4 days. How many choices do you have?%
+Suppose you have 10 bow ties and you will wear a different one on each of the next 4 days. How many choices do you have?%
 \item\hypertarget{li-11455}{}\hypertarget{p-11456}{}%
 If you want to wear 4 of your 10 bow ties next week (Monday through Sunday), how many ways can this be accomplished?%
 \item\hypertarget{li-11457}{}\hypertarget{p-11458}{}%
@@ -8302,7 +8302,7 @@ Here are a few closed formulas for sequences:%\leavevmode%
 \begin{itemize}[label=\textbullet]
 \item{}\(a_n = n^2\).%
 \item{}\(\d a_n = \frac{n(n+1)}{2}\).%
-\item{}\(\d a_n = \frac{\left(\frac{1 + \sqrt 5}{2}\right)^n - \left(\frac{1 + \sqrt 5}{2}\right)^{-n}}{5}\).%
+\item{}\(\d a_n = \frac{\left(\frac{1 + \sqrt 5}{2}\right)^n - \left(\frac{1 - \sqrt 5}{2}\right)^{-n}}{\sqrt{5}}\).%
 \end{itemize}
 %
 \par
@@ -9988,7 +9988,7 @@ To find \(a\) and \(b\), plug in \(n =0\) and \(n = 1\) to get a system of two e
 \hypertarget{p-15384}{}%
 Solving this system gives \(a = \frac{7}{3}\) and \(b = -\frac{1}{3}\) so the solution to the recurrence relation is%
 \begin{equation*}
-a_n = \frac{7}{3}2^n - \frac{1}{3} 3^n\text{.}
+a_n = \frac{7}{3}2^n - \frac{1}{3} 5^n\text{.}
 \end{equation*}
 %
 \end{example}
@@ -13038,14 +13038,14 @@ Graphs that are basically the same (but perhaps not equal) are called \terminolo
 Consider the graphs:%
 %
 \begin{equation*}
-where
-and ;
-\end{equation*}
+  G_1 = \{V_1, E_1\} \text{ where }
+  V_1 = \{a, b, c\} \text{ and } E_1 = \{\{a,b\}, \{a,c\}, \{b,c\}\};
+  \end{equation*}
 %
 \begin{equation*}
-where
-and .
-\end{equation*}
+  G_2 = \{V_2, E_2\} \text{ where }
+  V_2 = \{u,v,w\} \text{ and }E_2 = \{\{u,v\}, \{u,w\}, \{v,w\}\}.
+  \end{equation*}
 \hypertarget{p-20513}{}%
 Are these graphs the same?%
 \par\smallskip%
@@ -18408,13 +18408,13 @@ For any numbers, if the cubes of two numbers are equal, then the numbers are equ
 \leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-3283}{}\hypertarget{p-3284}{}%
-3.%
+\(\{1,3,4,6,9\}\).%
 \item\hypertarget{li-3285}{}\hypertarget{p-3286}{}%
-3.%
+\(\{1\}\).%
 \item\hypertarget{li-3287}{}\hypertarget{p-3288}{}%
-1.%
+\(\{4,9\}\).%
 \item\hypertarget{li-3289}{}\hypertarget{p-3290}{}%
-1.%
+\(\{3,6,10\}\).%
 \end{enumerate}
 %
 \end{divisionsolution}%
@@ -18426,10 +18426,10 @@ For any numbers, if the cubes of two numbers are equal, then the numbers are equ
 \item\hypertarget{li-3382}{}\hypertarget{p-3383}{}%
 This is the set \(\{3, 4, 5, \ldots \}\) since we need each element to be a natural number whose square is at least three more than 2. Since \(3^2 - 3 = 6\) but \(2^2 - 3 = 1\) we see that the first such natural number is 3.%
 \item\hypertarget{li-3387}{}\hypertarget{p-3388}{}%
-Here we don't specify that \(n\) must be a whole number at first, but the condition we place on it, that \(n^2 - 5 \in \N\) does guarantee this (since square a non-integer always gives a non-integer, as does subtracting 5 from a non-integer). So in fact, we get the same set as we did in the previous part, and the smallest non-negative number for which \(n^2 - 5\) is a natural numbers is 3.%
+We get the same set as we did in the previous part, and the smallest non-negative number for which \(n^2 - 5\) is a natural numbers is 3.%
 \par
 \hypertarget{p-3393}{}%
-Note that if we didn't specify \(n \ge 0\) then any integer less than \(-3\) would also be in the set, so there would not be a least element.%
+Note that if we didn't specify \(n \in \N\) then any integer less than \(-3\) would also be in the set, so there would not be a least element.%
 \item\hypertarget{li-3397}{}\hypertarget{p-3398}{}%
 This is the set \(\{1, 2, 5, 10, \ldots\}\text{,}\) namely the set of numbers that are the \emph{result} of squaring and adding 1 to a natural number. (\(0^2 + 1 = 1\text{,}\) \(1^2 + 1 = 2\text{,}\) \(2^2 + 1 = 5\) and so on.) Thus the least element of the set is 1.%
 \item\hypertarget{li-3404}{}\hypertarget{p-3405}{}%
@@ -19676,7 +19676,7 @@ Here we insist that each type of cookie be given at least once, so now we are as
 \leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-13133}{}\hypertarget{p-13134}{}%
-Note that if we subtract 1 from each term, we get the familiar triangular numbers. Thus \(a_n = n^2 + 1\text{.}\)%
+Note that if we subtract 1 from each term, we get the familiar square numbers. Thus \(a_n = n^2 + 1\text{.}\)%
 \item\hypertarget{li-13136}{}\hypertarget{p-13137}{}%
 These look like the triangular numbers, only shifted by 1. We get: \(a_n = \frac{n(n+1)}{2} - 1\text{.}\)%
 \item\hypertarget{li-13139}{}\hypertarget{p-13140}{}%
@@ -21482,9 +21482,9 @@ Divide through by 2: \(3x + 5y = 16\). Convert to a congruence, modulo 3: \(5y \
 This book was authored in PreTeXt.%
 \end{backcolophon}%
 \vspace*{\stretch{2}}
-%% Back cover image, not numbered
-\cleardoublepage%
-%% 2-sided, and at end of even page, so add odd page
-\thispagestyle{empty}\hbox{}\newpage%
-\includepdf[noautoscale=false]{images/back.pdf}%
+% %% Back cover image, not numbered
+% \cleardoublepage%
+% %% 2-sided, and at end of even page, so add odd page
+% \thispagestyle{empty}\hbox{}\newpage%
+% \includepdf[noautoscale=false]{images/back.pdf}%
 \end{document}
