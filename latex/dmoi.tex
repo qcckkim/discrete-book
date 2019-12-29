@@ -445,7 +445,9 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
       frame hidden,
       borderline west={1pt}{0mm}{MidnightBlue},
       overlay unbroken and last={
-        \draw[MidnightBlue, path fading=east, line width=.5pt] (frame.south west) -- (frame.south east);
+        \draw[MidnightBlue, line width=.75pt] (frame.south west) -- (frame.south east);
+        \draw[white, path fading=west, line width=1pt] (frame.south east) -- (frame.south west);
+        % \draw[MidnightBlue, path fading=east, line width=.5pt] (frame.south west) -- (frame.south east);
       },
       colback=white,
       coltitle=white,
@@ -622,7 +624,8 @@ fonttitle=\bfseries, attach boxed title to top left={xshift=4mm,yshift=-4mm,yshi
 %% configure hyperref's  \url  to match listings' inline verbatim
 \renewcommand\UrlFont{\small\ttfamily}
 %% Hyperlinking active in electronic PDFs, all links solid and blue
-\hypersetup{hidelinks=true,colorlinks=true,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black}
+\hypersetup{hidelinks=true,colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue}
+% \hypersetup{hidelinks=true,colorlinks=true,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black}
 \hypersetup{pdftitle={Discrete Mathematics}}
 %% If you manually remove hyperref, leave in this next command
 \providecommand\phantomsection{}
@@ -2049,8 +2052,8 @@ HI/.style={USA map/HI/.style={#1}}, AK/.style={USA map/AK/.style={#1}}, FL/.styl
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
-\newcommand{\C}{\mathbb C}
-\newcommand{\U}{\mathcal U}
+% \renewcommand{\C}{\mathbb C}
+\renewcommand{\U}{\mathcal U}
 \newcommand{\pow}{\mathcal P}
 \newcommand{\inv}{^{-1}}
 \newcommand{\st}{:}
@@ -2076,15 +2079,15 @@ HI/.style={USA map/HI/.style={#1}}, AK/.style={USA map/AK/.style={#1}}, FL/.styl
 %% End: Author-provided macros
 \begin{document}
 \frontmatter
-%% Cover image, not numbered
-% \setcounter{page}{0}%
-% \includepdf[noautoscale=false]{images/front.pdf}%
-% %% Blank obverse for 2-sided version
-% \thispagestyle{empty}\hbox{}\setcounter{page}{0}\cleardoublepage%
-%% no half-title
-%% No adcard
-%% begin: title page
-%% my custom page.
+% Cover image, not numbered
+\setcounter{page}{0}%
+\includepdf[noautoscale=false]{images/front.pdf}%
+%% Blank obverse for 2-sided version
+\thispagestyle{empty}\hbox{}\setcounter{page}{0}\cleardoublepage%
+% no half-title
+% No adcard
+% begin: title page
+% my custom page.
 \input{frontmatter/title-page}
 %% end: title page
 %% begin: copyright-page
@@ -2204,7 +2207,7 @@ Both hints and solutions are intended as a way to check your work, but often wha
 For those of you reading this in a pdf or in print, I encourage you to also check out the interactive online version, which makes navigating the book a little easier.  Additionally, some of the exercises are implemented as WeBWorK problems, which allow you to check your work without seeing the correct answer immediately.  Additional interactivity is planned, including instructional videos for examples and additional exercises at the end of sections.  These ``bonus'' features will be added on a rolling basis, so keep an eye out!%
 \par
 \hypertarget{p-97}{}%
-You can view the interactive version for free at \url{http://discrete.openmathbooks.org/} or by scanning the QR code below with your smart phone.%
+You can view the interactive version for free at \begin{center}\url{http://discrete.openmathbooks.org/}\end{center} or by scanning the QR code below with your smart phone.%
 \begin{center}
 \includegraphics[width=1in]{images/qrcode.png}
 \end{center}
@@ -3202,7 +3205,7 @@ A = \{x \in \N \st x\text{ is even} \}\text{.}
 Note: Sometimes mathematicians use \(|\) or \(\backepsilon\) for the ``such that'' symbol instead of the colon. Also, there is a fairly even split between mathematicians about whether \(0\) is an element of the natural numbers, so be careful there.%
 \par
 \hypertarget{p-2461}{}%
-This notation is usually called \terminology{set builder notation}. It tells use how to \emph{build} a set by telling us pricisely the condition elements must meet to gain access (the condition is the logical statement after the ``\(\st\)'' symbol).  Reading and comprehending sets written in this way takes practice. Here are some more examples:%
+This notation is usually called \terminology{set builder notation}. It tells use how to \emph{build} a set by telling us precisely the condition elements must meet to gain access (the condition is the logical statement after the ``\(\st\)'' symbol).  Reading and comprehending sets written in this way takes practice. Here are some more examples:%
 \begin{example}{}{example-2466}%
 \hypertarget{p-2468}{}%
 Describe each of the following sets both in words and by listing out enough elements to see the pattern.%
@@ -15046,7 +15049,7 @@ Find the chromatic number of each of the following graphs.%
 \end{divisionexercise}%
 \begin{divisionexercise}{4}{}{}{exercise-22620}%
 \hypertarget{p-22622}{}%
-A group of 10 friends decides to head up to a cabin in the woods (where nothing could possibly go wrong). Unfortunately, a number of these friends have dated each other in the past, and things are still a little awkward. To get the cabin, they need to divide up into some number of cars, and no two people who dated should be in the same car.\leavevmode%
+A group of 10 friends decides to head up to a cabin in the woods (where nothing could possibly go wrong). Unfortunately, a number of these friends have dated each other in the past, and things are still a little awkward. To get to the cabin, they need to divide up into some number of cars, and no two people who dated should be in the same car.\leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-22624}{}\hypertarget{p-22625}{}%
 What is the smallest number of cars you need if all the relationships were strictly heterosexual? Represent an example of such a situation with a graph. What kind of graph do you get?%
@@ -21043,7 +21046,7 @@ This is easy to do if you draw the picture. Here is such a graph:%
 Any labeling of this graph will be not isomorphic to \(G\). For example, we could take \(V'' = \{a,b,c,d,e,f,g\}\) and \(E'' = \{ab,
 ac, ad, be, cf, dg\} \).%
 \item\hypertarget{li-23325}{}\hypertarget{p-23326}{}%
-The degree sequence for \(G\) is \((3, 3, 2, 1, 1, 1 1)\).%
+The degree sequence for \(G\) is \((3, 3, 2, 1, 1, 1, 1)\).%
 \item\hypertarget{li-23329}{}\hypertarget{p-23330}{}%
 In general this should be possible: the degree sequence does not determine the graph's isomorphism class. However, in this case, I was almost certain this was not possible. That is, until I stumbled up this:%
 \begin{sidebyside}{1}{0.35}{0.35}{0}%
@@ -21482,9 +21485,9 @@ Divide through by 2: \(3x + 5y = 16\). Convert to a congruence, modulo 3: \(5y \
 This book was authored in PreTeXt.%
 \end{backcolophon}%
 \vspace*{\stretch{2}}
-% %% Back cover image, not numbered
-% \cleardoublepage%
-% %% 2-sided, and at end of even page, so add odd page
-% \thispagestyle{empty}\hbox{}\newpage%
-% \includepdf[noautoscale=false]{images/back.pdf}%
+%% Back cover image, not numbered
+\cleardoublepage%
+%% 2-sided, and at end of even page, so add odd page
+\thispagestyle{empty}\hbox{}\newpage%
+\includepdf[noautoscale=false]{images/back.pdf}%
 \end{document}
