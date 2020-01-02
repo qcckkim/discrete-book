@@ -13041,12 +13041,12 @@ Graphs that are basically the same (but perhaps not equal) are called \terminolo
 Consider the graphs:%
 %
 \begin{equation*}
-  G_1 = \{V_1, E_1\} \text{ where }
+  G_1 = (V_1, E_1) \text{ where }
   V_1 = \{a, b, c\} \text{ and } E_1 = \{\{a,b\}, \{a,c\}, \{b,c\}\};
   \end{equation*}
 %
 \begin{equation*}
-  G_2 = \{V_2, E_2\} \text{ where }
+  G_2 = (V_2, E_2) \text{ where }
   V_2 = \{u,v,w\} \text{ and }E_2 = \{\{u,v\}, \{u,w\}, \{v,w\}\}.
   \end{equation*}
 \hypertarget{p-20513}{}%
@@ -13090,7 +13090,7 @@ Two graphs are \terminology{isomorphic} if there is an isomorphism between them.
 An isomorphism is simply a function which renames the vertices. It must be a bijection so every vertex gets a new name. These newly named vertices must be connected by edges precisely when they were connected by edges with their old names.%
 \begin{example}{}{example-20549}%
 \hypertarget{p-20551}{}%
-Decide whether the graphs \(G_1 = \{V_1, E_1\}\) and \(G_2 = \{V_2, E_2\}\) are equal or isomorphic.%
+Decide whether the graphs \(G_1 = (V_1, E_1)\) and \(G_2 = (V_2, E_2)\) are equal or isomorphic.%
 \par
 \hypertarget{p-20554}{}%
 \(V_1 = \{a,b,c,d\}\), \(E_1 = \{\{a,b\}, \{a,c\}, \{a,d\}, \{c,d\}\}\)%
@@ -13327,7 +13327,7 @@ The number of vertices is easy to find: it is the number of degrees in the seque
 so the number of edges is half this: 10.%
 \end{example}
 \hypertarget{p-20769}{}%
-The handshake lemma also tells use what is not possible.%
+The handshake lemma also tells us what is not possible.%
 \begin{example}{}{example-20770}%
 \hypertarget{p-20772}{}%
 At a recent math seminar, 9 mathematicians greeted each other by shaking hands. Is it possible that each mathematician shook hands with exactly 7 people at the seminar?%
@@ -14804,7 +14804,7 @@ J&B G H
 How many different time slots are needed to teach these classes (and which should be taught at the same time)? More importantly, how could we use graph coloring to answer this question?%
 \end{investigation}
 \hypertarget{p-22437}{}%
-Cartography is certainly not the only application of graph coloring. There are plenty of situations in which you might wish partition the objects in question so that related objects are not in the same set. For example, you might wish to store chemicals safely. To avoid explosions, certain pairs of chemicals should not be stored in the same room. By coloring a graph (with vertices representing chemicals and edges representing potential negative interactions), you can determine the smallest number of rooms needed to store the chemicals.%
+Cartography is certainly not the only application of graph coloring. There are plenty of situations in which you might wish to partition the objects in question so that related objects are not in the same set. For example, you might wish to store chemicals safely. To avoid explosions, certain pairs of chemicals should not be stored in the same room. By coloring a graph (with vertices representing chemicals and edges representing potential negative interactions), you can determine the smallest number of rooms needed to store the chemicals.%
 \par
 \hypertarget{p-22438}{}%
 Here is a further example:%
