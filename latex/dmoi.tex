@@ -4441,7 +4441,7 @@ To address the first situation, what we are after is a way to describe the \emph
 We can do this in the other direction as well. We might ask which elements of the domain get mapped to a particular set in the codomain. Let \(f:X \to Y\) be a function and suppose \(B \subseteq Y\) is a subset of the codomain. Then we will write \(f\inv(B)\) for the \terminology{inverse image of \(B\) under \(f\)}, namely the set of elements in \(X\) whose image are elements in \(B\). In other words, \(f\inv(B) = \{x \in X \st f(x) \in B\}\). \label{notation-4660}%
 \par
 \hypertarget{p-4665}{}%
-Often we are interested in the element(s) whose image is a particular element \(y\) of in the codomain. The notation above works: \(f\inv(\{y\})\) is the set of all elements in the domain that \(f\) sends to \(y\). It makes sense to think of this as a set: there might not be anything sent to \(y\) (if \(y\) is not in the range), in which case \(f\inv(\{y\}) = \emptyset\). Or \(f\) might send multiple elements to \(y\) (if \(f\) is not injective). As a notational convenience, we usually drop the set braces around the \(y\) and write \(f\inf(y)\) instead for this set.%
+Often we are interested in the element(s) whose image is a particular element \(y\) of in the codomain. The notation above works: \(f\inv(\{y\})\) is the set of all elements in the domain that \(f\) sends to \(y\). It makes sense to think of this as a set: there might not be anything sent to \(y\) (if \(y\) is not in the range), in which case \(f\inv(\{y\}) = \emptyset\). Or \(f\) might send multiple elements to \(y\) (if \(f\) is not injective). As a notational convenience, we usually drop the set braces around the \(y\) and write \(f\inv(y)\) instead for this set.%
 \par
 \hypertarget{p-4678}{}%
 WARNING: \(f\inv(y)\) is not an inverse function! Inverse functions only exist for bijections, but \(f\inv(y)\) is defined for any function \(f\). The point: \(f\inv(y)\) is a \emph{set}, not an \emph{element} of the domain. This is just sloppy notation for \(f\inv(\{y\})\). To help make this distinction, we would call \(f\inv(y)\) the \terminology{complete inverse image of \(y\) under \(f\)}. It is not the image of \(y\) under \(f\inv\) (since the function \(f\inv\) might not exist).%
@@ -4451,17 +4451,17 @@ Consider the function \(f:\{1,2,3,4,5,6\} \to \{a,b,c,d\}\) given by%
 \begin{equation*}
 f = \begin{pmatrix}1 \amp 2 \amp 3 \amp 4 \amp 5 \amp 6 \\ a \amp a \amp b \amp b \amp b \amp c\end{pmatrix}\text{.}
 \end{equation*}
-Find \(f(\{1,2,3\})\), \(f\inf(\{a,b\})\), and \(f\inv(d)\).%
+Find \(f(\{1,2,3\})\), \(f\inv(\{a,b\})\), and \(f\inv(d)\).%
 \par\smallskip%
 \noindent\textbf{Solution}.\hypertarget{solution-4701}{}~~%
 \hypertarget{p-4702}{}%
 \(f(\{1,2,3\}) = \{a,b\}\) since \(a\) and \(b\) are the elements in the codomain to which \(f\) sends \(1\) and \(2\).%
 \par
 \hypertarget{p-4709}{}%
-\(f\inf(\{a,b\}) = \{1,2,3,4,5\}\) since these are exactly the elements that \(f\) sends to \(a\) and \(b\).%
+\(f\inv(\{a,b\}) = \{1,2,3,4,5\}\) since these are exactly the elements that \(f\) sends to \(a\) and \(b\).%
 \par
 \hypertarget{p-4714}{}%
-\(f\inf(d) = \emptyset\) since \(d\) is not in the range of \(f\).%
+\(f\inv(d) = \emptyset\) since \(d\) is not in the range of \(f\).%
 \end{example}
 \begin{example}{}{example-4718}%
 \hypertarget{p-4720}{}%
